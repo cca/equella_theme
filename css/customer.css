@@ -1,0 +1,2183 @@
+/*
+
+CCA
+Last updated 2014/08/28
+
+
+
+
+
+
+*/
+body {
+background: #fff;
+}
+
+#body {
+background-color: #fff;
+}
+
+#topbar {
+background: #EEE;
+height: 26px;
+}
+
+#topmenu a, #topmenu span {
+color: #738A99;
+text-decoration: none;
+}
+#topmenu a:hover {
+color: #936;
+text-decoration: none;
+}
+
+#header-inner h2 {
+color: #045F7F;
+max-width: 660px;
+display: none;
+}
+#servermessage {
+
+}
+
+/*#servermessage {
+background: white;
+border: none;
+}
+
+#servermessage p {
+color: #936;
+font-size: 14px;
+}*/
+
+.topblock p, .topblock ul{
+	color: #666;
+}
+
+#screen-options a, #help a, #screen-options a:hover, #help a:hover {
+color: #C69EB3;
+}
+
+.area {
+border: 1px solid #C69EB3;
+}
+
+.area h2 {
+color: #936;
+font-size: 18px;
+}
+.area .displayNodeFull h2{
+margin-bottom: 0px;
+}
+.content a {
+color: #2F6FA5;
+}
+
+.content a:hover {
+color: #235D8C;
+}
+
+
+
+
+#menu ul li .tooltip {
+background-color: #FFEFEF;
+border-color: #CCC;
+padding: 5px;
+}
+
+.alt-links a, .recent-item h4 a, .news-item h4 a {
+color: #045F7F !important;
+}
+
+.recent-item h4 a:hover, .news-item h4 a:hover{
+	color: #4B4842;
+}
+
+.recent-item span, .news-item .news-date {
+color: #777;
+}
+
+.itemresult-metaline .itemresult-meta-delim, .itemresult-metaline abbr {
+color: #C69EB3;
+}
+.itemresult.selected {
+background-color: #FFEFEF;
+padding: 10px;
+}
+.itemsummary-layout .area {
+background: white;
+}
+
+#receipt-message, #versions li.selected{
+background-color: #FFEFEF;
+}
+#screen-options, #help {
+background-color: #FFEFEF;
+border: 1px solid #C69EB3;
+}
+.search-layout #col2 div.input h4 {
+color: #045F7F;
+font-size: 12px;
+font-weight: normal;
+}
+.area fieldset h3{
+color: #C69EB3;
+}
+.area .control h3, .area .edit h3, .topblock h3, .modal-content-inner h3, div.formsection h3  {
+color: #045F7F;
+line-height: 16px;
+}
+.halfControl  {
+width: 47%;
+}
+.modal-title h3{
+background: #045F7F;
+border: 1px solid #045F7F;
+color: white;
+text-shadow: none;
+}
+
+.button-strip {
+background: 0;
+}
+.area .button-strip {
+background: none;
+}
+.box_head{
+background-color: #CCC;
+}
+.box_head:hover{
+background-color: #aaa;
+}
+.modal-footer{
+background: #045F7F;
+border: 1px solid #045F7F;
+}
+
+.button, .button.downarrow, .button.add, .button.delete, .button.ccasave  {
+background:#eee;
+border: 1px solid;
+color: #738A99;
+}
+.button.ccasave {
+font-weight: bold;
+border: 2px solid;
+padding: 5px;
+}
+.button-big.rightarrow, .button-big.leftarrow, .button.rightarrow{
+color:#eee;
+}
+
+/*.button.downarrow{
+border-top: none;
+}*/
+.button.add, .button.delete{
+padding: 5px;
+}
+.button:hover, .button.downarrow:hover, .button.add:hover, .button.delete:hover{
+background:#ddd;
+}
+.button.downarrow.active {
+border-bottom: 1px solid #738A99;
+}
+.box_head h3, .button.downarrow, .button-big, .button-large, .button-big:hover, .button-large:hover, .action-button  {
+text-shadow: none;
+-moz-text-shadow: none;
+-webkit-text-shadow: none;
+}
+.button-big{
+border: 1px solid #045F7F;
+background: #DDD;
+color: #045F7F;
+}
+.button-big:hover {
+border: 1px solid #045F7F;
+background: #CCC;
+color: #045F7F;
+}
+.button-big.rightarrow:hover{
+background-image: url(../p/r/29397/com.tle.web.sections.equella/images/button-big-right.gif);
+color: #777;
+}
+.button.rightarrow {
+padding: 3px 15px;
+font-size: 10px;
+border: 1px solid #738A99;
+}
+.button.rightarrow:hover{
+color: #777;
+}
+.button-big.leftarrow:hover {
+background-image: url(../p/r/29397/com.tle.web.sections.equella/images/button-big-left.gif);
+color: #777;
+}
+
+#searchresults {
+background: white;
+}
+
+.itemresult-rating {
+background: #EEE;
+}
+#footer {
+color: #666C6C;
+border-bottom: 4px double #CCC;
+border-top: 4px double #CCC;
+}
+#footer a {
+color: #2F6FA5;
+text-decoration: none;
+}
+
+#footer a:hover {
+color: #235D8C;
+}
+
+#footer-inner{
+height: 0px;
+}
+
+#socialmedia {
+display: none;
+}
+
+input[type="text"], input[type="password"], textarea, select[multiple="multiple"] {
+border: 1px solid #CFCBBE;
+border-right: 1px solid #C3BEAE;
+border-top: 1px solid #C3BEAE;
+margin-right: 3px;
+}
+input[type="button"][disabled="disabled"].button, input[type="button"][disabled].button-big, input[type="button"][disabled="disabled"].button-big, input[type="button"][disabled].button-large, input[type="button"][disabled="disabled"].button-large {
+background: #666;
+}
+input[type="button"][disabled].button:hover, input[type="button"][disabled="disabled"].button:hover, input[type="button"][disabled].button-big:hover, input[type="button"][disabled="disabled"].button-big:hover, input[type="button"][disabled].button-large:hover, input[type="button"][disabled="disabled"].button-large:hover {
+background: #777;
+}
+
+/*--------------------itemsummary----------------------------------*/
+
+.itemsummary-layout .area h3 {
+font-size: 12px;
+font-weight: normal;
+margin: 5px 0px 0px 0px;
+color: #936;
+}
+.itemsummary-layout #col1 .displayNodeHalf, .itemsummary-layout #col1 .displayNodeFull {
+display: inline-block;
+vertical-align: top;
+margin: 0px;
+width: 47%;
+padding-left: 10px;
+}
+
+
+/*hide error message for wrap*/
+.displayNodeHalf p span {
+display: none;
+}
+
+.itemsummary-layout .area p {
+display: inline;
+}
+
+div.area > div.displayNodeFull:first-child > h3 {
+display: none;
+}
+
+div.itemsummary-layout img {
+margin: 5px;
+border: 1px solid #CCC;
+padding: 5px;
+}
+.itemsummary-layout .area h2 {
+margin: 8px 0px 8px 0px;
+color: #666;
+border-bottom: 1px solid #DDD;
+}
+
+.displayNodeHalf p, .displayNodeFull p {
+background: white;
+padding: 0px 15px;
+float: left;
+min-width: 85%;
+margin: 0px 0px 5px 0px;
+}
+
+/*change color of every other element */
+
+.displayNodeHalf p:nth-child(odd):before {
+content: "* ";
+}
+.displayNodeHalf p:nth-child(odd):after {
+content: " *";
+}
+.displayNodeHalf p:nth-child(odd) {
+padding: 0px 15px 3px 15px;
+}
+
+.itemsummary-layout #col1 .displayNodeFull {
+width: 100%;
+}
+
+.displayNodeFull p {
+width: 89%;
+}
+/*title*/
+div.area > div.displayNodeFull:first-child > h3 + p {
+background: white;
+border: none;
+border-bottom: 1px solid #DDD;
+font-size: 18px;
+padding: 0px;
+color: #045F7F;
+width: 97%;
+margin: 0px 0px 8px -8px;
+}
+/*collection*/
+div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
+padding: 0px;
+margin: 0px;
+text-align: right;
+color: #999;
+}
+
+.itemsummary-layout a {
+color: #045F7F;
+}
+.itemsummary-layout a:hover {
+text-decoration: none;
+border-bottom: 1px dotted #7FAEBE;
+color: #7FAEBE;
+}
+
+.itemsummary-layout #col2 ul li a {
+color: #045F7F;
+border: none;
+}
+.itemsummary-layout #col2 ul li a:hover {
+color: #045F7F;
+border: none;
+text-decoration: underline;
+}
+
+.itemsummary-layout #images a {
+border: none;
+}
+
+#image-single {
+float: left;
+max-width: 150px;
+}
+
+.itemsummary-layout .area  p.caption {
+margin: 0px 5px 5px 0px;
+line-height: 15px;
+display: block;
+}
+
+p.caption {
+color: #666;
+font-size: 8pt;
+text-align: center;
+}
+
+#more {
+float: left;
+padding: 10px;
+display: inline;
+color: #C69EB3;
+font-weight: bold;
+margin-left: 195px;
+}
+#secondtitle {
+margin: 0px 0px 0px 10px;
+padding: 0px;
+font-size: 12px;
+color: #666;
+display: block;
+}
+.rating-form div.input {
+margin-top: 5;
+}
+.rate {
+position: absolute;
+top: -5px;
+right: 0;
+width: 190px;
+}
+
+#image-descrip {
+float: right;
+max-width: 170px;
+text-align: left;
+}
+
+
+
+
+
+.itemsummary-layout .area p.commImagelist {
+margin: 0px 5px 5px 10px;
+line-height: 12px;
+display: block;
+}
+
+.itemsummary-layout .area p.photoImagelist {
+margin: 0px 5px 5px 12px;
+line-height: 17px;
+display: block;
+max-height: 220px;
+}
+
+.itemsummary-layout .area p.artistDocs {
+margin: 0px 15px 0px 5px;
+line-height: 12px;
+display: block;
+word-break: break-word;
+}
+
+p.photoImagelist {
+color: #666;
+font-size: 8pt;
+text-align: left;
+max-width: 130px;
+white-space: wrap;
+overflow: hidden!important;
+text-overflow: ellipsis;
+line-height: 20px!important;
+}
+
+p.photoImagelist i {
+display:block;
+width:  100%!important;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+p.artistDocs {
+color: #666;
+font-size: 8pt;
+text-align: left;
+max-width: 110px;
+}
+
+div.image-studentWork {
+float: left;
+min-width: 130px;
+max-width: 130px;
+min-height: 130px;
+text-align: center;
+}
+
+div.image-INTERstudentWork {
+float: left;
+min-width: 130px;
+max-width: 130px;
+min-height: 165px;
+text-align: center;
+}
+
+
+div.image-undergradExhibit {
+float: left;
+min-width: 130px;
+max-width: 130px;
+min-height: 170px;
+text-align: center;
+}
+
+div.image-photoStudentWork {
+float: left;
+max-width: 400px;
+min-height: 220px;
+}
+
+div.image-seniorPacket {
+float: left;
+max-width: 400px;
+min-height: 220px;
+}
+
+div.image-photoSeniorPacket {
+float: left;
+min-width: 130px;
+max-width: 130px;
+min-height: 235px;
+}
+
+div.image-artistDocs {
+float: left;
+max-width: 130px;
+min-width: 130px;
+min-height: 140px;
+}
+
+div.image-juniorReviewDocs {
+float: left;
+min-width: 130px;
+max-width: 130px;
+}
+
+div.image-Comm2 {
+float: left;
+width: 250px;
+text-align: left;
+min-height: auto;
+max-height: 400px;
+overflow: auto;
+}
+
+p.commImagelist {
+color: #666;
+font-size: 8pt;
+}
+
+table.commImages, td.commImages, th.commImages
+{
+border: none;
+width: 260px;
+height: 120px;
+text-align: right;
+vertical-align: middle;
+padding:10px;
+}
+
+div.image-juniorReviewWork {
+float: left;
+min-width: 130px;
+max-width: 130px;
+min-height: 255px;
+}
+
+div.image-juniorReviewMovImgWork {
+float: left;
+min-width: 500px;
+max-width: 500px;
+min-height: 170px;
+margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+/*--------------------searchresults----------------------------------*/
+
+#searchresults .itemresult-content p {
+font-size: 12px;
+}
+#searchresults .itemresult-metaline {
+font-size: 12px;
+margin-left: 10px;
+margin-bottom: 5px;
+}
+
+.timeago {
+margin-left: 3px;
+}
+
+.itemresult-wrapper {
+border-bottom: 1px solid #CCC;
+padding-bottom: 10px;
+}
+
+.itemresult h3 a {
+border-bottom: 1px dotted #936;
+}
+.itemresult h3 a:hover {
+border-bottom: 1px dotted #C69EB3;
+text-decoration: none;
+}
+/*-------------------itemresults freemarker------------------------------*/
+dt, .itemsummary-layout .area h3 {
+font-size: 17px;
+margin: 16px 0px 8px 0px;
+color: #666;
+border-bottom: 1px solid #DDD;
+
+}
+
+dt {
+clear: both;
+}
+dd {
+font-size: 12px;
+margin: 6px 30px 6px 15px;
+line-height: 16px;
+}
+dt.hide {
+display: none;
+}
+dd.collection {
+text-align: right;
+font-size: 11px;
+}
+
+#namestuff {
+display: block;
+margin-left: 25px;
+font-size: 11px;
+color: #666;
+line-height: 20px;
+}
+
+dt.minor {
+font-size: 12px;
+margin: 0px 0px 0px 15px;
+border: none;
+display: inline;
+}
+dd.minor {
+display: inline;
+margin-left: 0px;
+}
+#indent {
+margin-left: 15px;
+}
+#title {
+color: #936;
+}
+
+dt.loc {
+border-bottom: none;
+}
+dd.loc {
+border: 1px solid #CCC;
+padding: 5px;
+}
+
+dd.subject {
+display: inline;
+float: left;
+min-width: 210px;
+}
+
+dd.rights {
+margin-top: 15px;
+border-top: 1px solid #CCC;
+padding-top: 15px;
+text-align: center;
+clear: both;
+border-bottom: 1px solid #CCC;
+padding-bottom: 15px;
+}
+
+.attachments-browse {
+border: none;
+}
+.attachments-preview .attachments-thumb {
+height: 80px;
+}
+div.itemsummary-layout img.droparrow {
+margin: 0px;
+padding: 2px;
+}
+.customlinks #cls_selector_opener {
+color: #666;
+}
+
+#input-right {
+float: right;
+}
+
+dd.date {
+display: inline;
+float: left;
+min-width: 210px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+
+.topblock a, .topblock a, .topblock a:hover, .topblock a:hover {
+color: #045F7F;
+}
+
+.button input[type="button"] {
+color: #045F7F;
+text-transform: uppercase;
+}
+
+#header-inner .banner {
+display: none;
+}
+
+
+
+.alert-success {
+background-color: #dff0d8;
+border-color: rgba(4, 95, 127, 0.54);
+color: #045F7F;
+font-variant: small-caps;
+font-size: 120%;
+text-align: center;
+}
+
+/*
+.btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #045F7F;
+  background-image: -moz-linear-gradient(top, rgba(4, 95, 127, 0.5), #045F7F);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from rgba(4, 95, 127, 0.5), to(#045F7F)); // Error Invalid CSS Proprty Value
+  background-image: -webkit-linear-gradient(top, rgba(4, 95, 127, 0.5), rgba(4, 95, 127, 0.5));
+  background-image: -o-linear-gradient(top, rgba(4, 95, 127, 0.5), #045F7F);
+  background-image: linear-gradient(to bottom, rgba(4, 95, 127, 0.5), #045F7F);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(4, 95, 127, 0.5)', endColorstr='#045F7F', GradientType=0);
+  border-color: #045F7F #045F7F #045F7F;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: rgba(4, 95, 127, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.btn-success:hover
+.btn-success:active
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  background-color: #045F7F;
+  *background-color: #045F7F;
+}*/
+
+#coursestuff {
+display: block;
+margin-left: 15px;
+margin-bottom: 6px;
+font-size: 11px;
+line-height: 22px;
+}
+
+p.imageList {
+margin: 0px 5px 5px 0px;
+line-height: 15px;
+display: block;
+text-align: left;
+color: #666;
+font-size: 11px;
+}
+
+.box_content_inner {
+padding: 0 5px 5px 5px;
+background:none!important;
+
+}
+
+#servermessage {
+background: #F99;
+border-color: #F99;
+}
+
+
+#VisStcoursestuff {
+display: block;
+font-size: 11px;
+margin-bottom: 6px;
+line-height: 22px;
+}
+
+#WrLitcoursestuff {
+display: block;
+font-size: 12px;
+margin-bottom: 6px;
+line-height: 22px;
+}
+
+.icon-circle-arrow-down {
+ display: none;
+}
+dt.indentNoLine {
+font-size: 17px;
+margin: 10px 5px 5px 15px;
+color: #045F7F;
+border-bottom: none;
+}
+
+dt.subHeading {
+font-size: 15px;
+margin: 10px 5px 5px 15px;
+color: #666;
+border-bottom: none;
+}
+
+dd.big {
+font-size: 14px;
+}
+
+
+
+
+/*  ------------------ Implemented Update 2014 ------------------  */
+
+
+
+/* --------- CSS STYLES INDEX -----------
+
+- General stuff
+
+- Body
+
+- Page Options
+
+- Navigation ( left hand menu )
+
+- Left Hand Nav Icons
+
+- Page Body Styles
+
+- Zebra Table Styles
+
+- Random Assorted Icon Styles
+
+- Contribute
+
+- Main Page Section Styling
+
+- Bootstrap Icons
+
+- Bootstrap Button Classes
+
+
+
+
+
+
+/* ------------------
+General
+ ------------------ */
+
+h1,h2,h3,h4,h5,h6{
+
+}
+
+/* ------------------
+Body
+------------------ */
+
+
+#content{
+	background: none;
+
+}
+
+#content-inner{
+	background: none;
+}
+
+
+#content-bottom{
+	background: none;
+}
+
+
+.box{
+	background: none;
+	border: 0px none transparent;
+}
+
+.box_content{
+	background: none;
+  border-bottom: none;
+}
+
+
+
+
+
+/*Buttons*/
+
+
+
+
+
+
+
+
+
+/* ------------------
+    Page Options
+------------------ */
+
+/*New Navagation (Help and Options)*/
+body #helpAndOptions {
+  display:  block;
+}
+
+#startTourBtn {
+  position: absolute;
+  right: 40px;
+  top: 44px;
+  text-align: right;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#startTourBtn:hover {
+  text-decoration:  underline!important;
+}
+
+
+
+/* ------------------
+Navagation (Left hand Nav)
+------------------ */
+
+#menu.menu-collapsed {
+  display:none;
+}
+
+
+#menu ul{
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin: 0 0 0px 0;  
+	border-top:0px none transparent;
+	border-bottom: 0px none transparent;
+	border-right: 0px none transparent;
+	border-left: 0px none transparent;
+
+}
+
+
+#menu ul li{
+	background-color: #fff;
+
+}
+
+
+#menu ul li a {
+	background-color: #fff;
+	border-top: 1px solid #333;border-style: hidden;
+}
+
+#menu ul li a:hover{
+	background-color: #fff;
+	text-shadow: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* Design notes
+
+
+CCA RED #EF4036
+
+
+
+
+
+*/
+
+
+/****************************************
+
+Additions - Christopher Paniati - 03/12/14
+
+lefthand menu
+
+****************************************/
+
+
+	#body{
+		background: white;
+	}
+
+	#topbar	{
+		background:transparent!important;
+	}
+
+
+
+    #menu ul li{
+            border:none!important;
+
+        background:transparent!important;
+         -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    #menu ul li a{
+        color:black;
+
+    }
+    #menu ul:hover{
+        border:1px solid #bbb!important;
+    }
+
+    #menu ul li:hover{
+        padding-left:5px;
+        border-bottom: 1px solid black;
+    }
+
+
+    #menu ul li:first-child{
+            border:none!important;
+
+    }
+
+    #menu ul{
+            border:none!important;
+            margin-bottom: 10px!important;
+        border-radius:5px;
+        overflow:hidden;
+       border:1px solid #ddd!important;
+        background:white;
+    }
+
+    #menu ul:hover{
+            border-top: 1px solid black;
+    }
+
+
+
+
+
+/* ------------------
+LEFT HAND NAV ICONS
+------------------ */
+
+
+
+    /*---------------------------******---------------------------*/
+    /* Having troube with these ever-changing left-hand nav ID's? */
+    /*------------------------------------------------------------*/
+
+    
+
+    /* - Instead of referring to links by their #ID's, which appear 
+    to change randomly -__-" you could refer to them by their links
+    which ( might ) be more static across all pages.
+
+    Example: (Dashboard Link)
+
+    #menu>ul>li>a[href='/access/home.do']{
+        background: url('http://vm-equella-03.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/icon_50669.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    This should only effect this dashboard link on the left-hand nav. 
+
+    Good luck! :) - */
+    
+
+    /*------------------------------------------------------------*/
+    /*                        CHRISTOPHER                         */
+    /*---------------------------******---------------------------*/
+
+
+    /* -- DASHBOARD -- */
+    #menu>ul>li>a[href*='access/home.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/icon_50669.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    /* -- SETTINGS -- */
+    #menu>ul>li>a[href*='access/settings.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/engine.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    /* -- MY RESOURCES -- */
+    #menu>ul>li>a[href*='access/myresources.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/manage.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    /* -- FAVOURITES -- */
+    #menu>ul>li>a[href*='access/favourites.do']{
+        /*background: url('http://vm-equella-03.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/icon_50608.png') no-repeat 10px center!important;*/
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/star.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    /* -- MANAGE RESOURCES -- */
+    #menu>ul>li>a[href*='access/itemadmin.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/manage.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+
+
+    /* -- LIBRARY COLLECTIONS -- */
+    #menu>ul>li>a[href*='access/hierarchy.do?topic=23532860-ca7d-69ec-f5c3-235fac553941']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/list 1.png') no-repeat 10px center!important;
+        background-size:  13px!important;
+    }
+    /* -- CONTRIBUTE -- */
+    #menu>ul>li>a[href*='access/contribute.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/upload.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+
+
+    /* -- CCA LIBRARIES CATALOG-- */
+    #menu>ul>li>a[href*='libraries.cca.edu']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/catalog.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+    /* -- ANNEMARIE HAAR -- */
+    #menu>ul>li>a[href*='libraries.cca.edu/staff']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/email 1.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+
+    /* -- TASKS -- */
+    #menu>ul>li>a[href*='access/tasklist.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/calendar.png') no-repeat 10px center!important;
+        background-size:  14px!important;
+    }
+    /* -- MANAGE ACTIVATIONS -- */
+    #menu>ul>li>a[href*='access/activations.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/icon_50776.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    /* -- SEARCH -- */
+    #menu>ul>li>a[href*='access/searching.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/search.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    
+    /* -- NOTIFICATIONS -- */
+    #menu>ul>li>a[href*='access/notifications.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/flag.png') no-repeat 10px center!important;
+        background-size:  13px!important;
+    }
+
+    /* -- REPORTS -- */
+    #menu>ul>li>a[href*='access/reports.do']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/icon_50834.png') no-repeat 10px center!important;
+        background-size:15px!important;
+    }
+
+    /* -- INFO FAQ GUIDES -- */
+    #menu>ul>li>a[href*='access/hierarchy.do?topic=44db2f8a-bb57-4f1d-801a-43443ae55176']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/list 1.png') no-repeat 10px center!important;
+        background-size:  13px!important;
+    }
+
+    /* -- INFO FAQ GUIDES -- */
+    #menu>ul>li>a[href*='access/hierarchy.do?topic=efec5da1-a103-4bc6-b41b-e06df973eab7']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/list 1.png') no-repeat 10px center!important;
+        background-size:  13px!important;
+    }
+
+    /* -- Student Work -- */
+    #menu>ul>li>a[href*='access/hierarchy.do?topic=a1927486-9032-4452-b3ef-3712a51f81c8']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/list 1.png') no-repeat 10px center!important;
+        background-size:  13px!important;
+    }
+
+    /* -- Syllabus Collection -- */
+    #menu>ul>li>a[href*='access/hierarchy.do?topic=977df0cc-5f5c-4b8d-9699-ad11b33496df']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/list 1.png') no-repeat 10px center!important;
+        background-size:  13px!important;
+    }
+
+    /* -- More -- */
+    #menu>ul>li>a[href*='access/hierarchy.do?hier.topic=ALL']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/list 1.png') no-repeat 10px center!important;
+        background-size:  13px!important;
+    }
+
+    /* -- Assessments -- */
+    #menu>ul>li>a[href*='access/runwizard.do?method=newitem&itemdefUuid=64efdfe9-9fcb-40ed-9688-206f1985eea0']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/info.png') no-repeat 14px center!important;
+        background-size:  6px!important;
+    }
+
+    /* -- Technology -- */
+    #menu>ul>li>a[href*='technology.cca.edu']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/display.png') no-repeat 11px center!important;
+        background-size:  14px!important;
+    }
+
+    /* -- CCA -- */
+    #menu>ul>li>a[href*='www.cca.edu']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/cca.png') no-repeat 13px center!important;
+        background-size:  11px!important;
+    }
+
+    /* -- Webadvisor -- */
+    #menu>ul>li>a[href*='webadvisor.cca.edu']{
+        background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/flash.png') no-repeat 14px center!important;
+        background-size:  8px!important;
+    }
+
+    
+
+
+
+    
+
+    
+
+    
+
+    /* -- DEFAULT PAGE BODY STYLES -- */
+    /*
+    #content-body .area {
+      border:1px solid #ddd!important;
+    }
+
+    #content-body .area:hover {
+      border:1px solid #ddd!important;
+    }
+
+    #content-body .area:first-child {
+      border:1px solid #bbb!important;
+      background:white;
+    }*/
+
+    #header{
+      border:none!important;
+    }
+
+    #content-body .area h2  {
+      color:  #222!important;
+      padding-bottom: 5px;
+    }
+
+    #content-body .area h1  {
+      color:  #222!important;
+    }
+
+    #content-body a:hover {
+      text-decoration:underline;
+    }
+
+    .itemresult-metaline .itemresult-meta-delim, .itemresult-metaline abbr {
+      color: #666;
+    }
+
+    #sa_sortBox_minimise:active  {
+      background:none!important;
+    }
+
+    #sa_sortBox_minimise  {
+       background:none!important;
+       border-top:none;
+    }
+
+    #sa_sortBox_minimise:hover  {
+       background:none!important;
+    }
+
+
+    #sa_filterBox_minimise:active  {
+      background:none!important;
+    }
+
+    #sa_filterBox_minimise  {
+       background:none!important;
+       border-top:none;
+    }
+
+    #sa_filterBox_minimise:hover  {
+       background:none!important;
+    }
+
+
+
+    #isa_sortBox_minimise:active  {
+      background:none!important;
+    }
+
+    #isa_sortBox_minimise  {
+       background:none!important;
+       border-top:none;
+    }
+
+    #isa_sortBox_minimise:hover  {
+       background:none!important;
+    }
+
+
+    #isa_filterBox_minimise:active  {
+      background:none!important;
+    }
+
+    #isa_filterBox_minimise  {
+       background:none!important;
+       border-top:none;
+    }
+
+    #isa_filterBox_minimise:hover  {
+       background:none!important;
+    }
+
+
+
+    .box_head {
+      background: white!important;
+      border: none!important;
+    }
+
+    .box_title_wrapper  {
+      background: white!important;
+    }
+
+
+
+    #searchactions-sort .box_minimise {
+      content:url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/rightArrow.png")!important;
+      width:  12px;
+      height: 12px;
+      background: white!important;
+    }
+
+    #searchactions-sort .box_minimise[alt='Hide the contents of this box']  {
+      content:url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/downArrow.png")!important;
+      width:  12px;
+      height: 12px;
+    }
+
+
+
+    #sa_filterBox .box_minimise {
+      content:url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/rightArrow.png")!important;
+      width:  12px;
+      height: 12px;
+      background: white!important;
+    }
+
+    #sa_filterBox .box_minimise[alt='Hide the contents of this box'] {
+      content:url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/downArrow.png")!important;
+      width:  12px;
+      height: 12px;
+    }
+
+    #isa_filterBox .box_minimise {
+      content:url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/rightArrow.png")!important;
+      width:  12px;
+      height: 12px;
+      background: white!important;
+    }
+
+    #isa_filterBox .box_minimise[alt='Hide the contents of this box'] {
+      content:url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/downArrow.png")!important;
+      width:  12px;
+      height: 12px;
+    }
+
+
+    .itemresult h3 a{
+      border:none!important;
+    }
+
+    /*---------------------
+      Zebra Table Styling
+    ---------------------*/
+
+
+
+    table.zebra.large th {
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    table.zebra TR TH {
+      background:none!important;
+      color:  #222;
+      font-weight:  bold!important;
+    }
+
+    table.zebra {
+      border: none!important;
+    }
+
+    table.zebra tbody {
+      border-radius: 5px;
+      overflow: hidden!important;
+      border: none!important;
+    }
+
+    table.zebra tbody tr.even TD {
+      background: #eee!important;
+      border-top: 1px solid white;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    table.zebra tbody tr.odd TD {
+      background: #f6f6f6!important;
+      border-top: 1px solid white;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    table.zebra.large tbody tr.even TD:hover {
+      padding-left: 18px;
+      background: #eee!important;
+    }
+
+    table.zebra.large tbody tr.odd TD:hover {
+      padding-left: 18px;
+      background: #f6f6f6!important;
+    }
+
+
+
+
+
+    .search-layout #col2 div.input h4 {
+      color:  #666!important;
+    }
+
+    .box_content hr  {
+      border-color: white!important;
+    }
+
+    .area .control h3 {
+      color:  #666;
+    }
+
+    #breadcrumbs a {
+      color: #444;
+    }
+
+    .itemresult-rating  {
+      background: white!important;
+      border: none!important;
+
+    }
+
+    /* contribute page selected course - highlight */
+    #p0c3d_ttri14 td {
+      background: #fff!important;
+    }
+
+    .itemresult-rating>a, .itemresult-rating>span, .itemresult-rating>.itemresult-stars  {
+      display:  none!important;
+    }
+
+    /* hide all comments */
+    #comments-list  {
+      display:  none;
+    }
+
+    label[for='sc_comments_c']  {
+      display:  none;
+    }
+
+    #comments-add {
+      display:  none;
+    }
+
+
+
+
+    /*---------------------------------------------
+      Random and Assorted Vault Icon Replacements 
+    ---------------------------------------------*/
+
+
+    /*-- Favorites --*/
+
+    #content-body #col2 .action-button.add-to-favourites {
+      background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/heart.png') no-repeat 10px center!important;
+      background-size: 12px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+          margin-left:  0px;
+    }
+
+    #content-body #col2 .action-button.add-to-favourites:hover {
+      margin-left:  5px;
+    }
+
+
+    /*-- Favorites 2 --*/
+
+    #content-body #col2 .action-button.addToFavourites {
+      background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/heart.png') no-repeat 10px center!important;
+      background-size: 12px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+          margin-left:  0px;
+    }
+
+    #content-body #col2 .action-button.addToFavourites:hover {
+      margin-left:  5px;
+    }
+
+
+    /*-- Share --*/
+
+    #content-body #col2 .action-button.share-search  {
+      background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/share.png') no-repeat 10px center!important;
+      background-size: 12px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+    }
+
+    #content-body #col2 .action-button.share-search:hover  {
+      margin-left:  4px;
+    }
+
+
+    /*-- Share 2 --*/
+
+    #content-body #col2 .action-button.shareButton  {
+      background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/share.png') no-repeat 10px center!important;
+      background-size: 12px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+    }
+
+    #content-body #col2 .action-button.shareButton:hover  {
+      margin-left:  4px;
+    }
+
+
+
+    #ed_changePassButton  {
+      background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/locked.png') no-repeat 10px center!important;
+      background-size: 12px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+    }
+
+    #ed_changePassButton:hover  {
+      margin-left:  4px;
+    }
+
+
+    /*-- Search --*/
+
+    #content-body #col2 .action-button.remote-repo {
+      background: url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/search.png') no-repeat 10px center!important;
+      background-size: 12px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+    }
+
+     #content-body #col2 .action-button.remote-repo:hover {
+      margin-left:  4px;
+    }
+
+
+    /*-- Date Picker / Calendar --*/
+
+    .ui-datepicker-trigger  {
+      width: 16px;
+      padding-top: 5px;
+    }
+
+
+    /*-- Clear Selected --*/
+
+    #content-body #col2 #bss_clearSelectedButton {
+      background: #ddd url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/error 2.png') no-repeat 10px center!important;
+      background-size: 14px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+       color: black!important;
+      text-shadow: none!important;
+      border: 0!important;
+      border-bottom: 1px solid #bbb!important;
+      width:  130px;
+      border-radius:  3px;
+    }
+
+     #content-body #col2 #bss_clearSelectedButton:hover {
+      background: #ccc url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/error 2.png') no-repeat 10px center!important;
+      color:  black!important;
+      background-size: 14px!important;
+    }
+
+
+    /*-- Execute Action --*/
+
+    #content-body #col2 .action-button.execute-action{
+      background: #ddd url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/play.png') no-repeat 10px center!important;
+      background-size: 8px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+      width:  144px;
+      border-bottom: 1px solid #bbb!important;
+      border-radius:  3px;
+      color:  black;
+    }
+
+    #content-body #col2 .action-button.execute-action:hover {
+      background: #ccc url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/play.png') no-repeat 10px center!important;
+      color:  black!important;
+      background-size: 8px!important;
+    }
+
+
+    /*-- Add files --*/
+
+    #content-body #col2 .action-button.add_handle_button{
+      background: #ddd url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/file up.png') no-repeat 10px center!important;
+      background-size: 8px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+      width:  144px;
+      border-bottom: 1px solid #bbb!important;
+      border-radius:  3px;
+      color:  black;
+    }
+
+    #content-body #col2 .action-button.execute-action:hover {
+      background: #ccc url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/file up.png') no-repeat 10px center!important;
+      color:  black!important;
+      background-size: 8px!important;
+    }
+
+    #content-body #col2 #cmca_b{
+      background: #ddd url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/file up.png') no-repeat 10px center!important;
+      background-size: 10px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+      width:  114px;
+      border-bottom: 1px solid #bbb!important;
+      border-radius:  3px;
+      color:  black;
+    }
+
+    #content-body #col2 #cmca_b:hover {
+      background: #ccc url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/file up.png') no-repeat 10px center!important;
+      color:  black!important;
+      background-size: 10px!important;
+    }
+
+    #content-body #col2 #cmca2_b{
+      background: #ddd url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/file plus.png') no-repeat 10px center!important;
+      background-size: 12px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+      width:  174px;
+      border-bottom: 1px solid #bbb!important;
+      border-radius:  3px;
+      color:  black;
+    }
+
+    #content-body #col2 #cmca2_b:hover {
+      background: #ccc url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/file plus.png') no-repeat 10px center!important;
+      color:  black!important;
+      background-size: 12px!important;
+    }
+
+    /*-- Add + --*/
+
+    #content-body a.add{
+      background: #c0e091 url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/plus.png') no-repeat 10px center!important;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 3px;
+      border-bottom: 1px solid #b0c061;
+      background-color: #c0e091!important;
+      padding-left: 30px;
+      background-size: 12px!important;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+
+    }
+
+    #content-body a.add:hover{
+      background: #c0e091 url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/plus.png') no-repeat 10px center!important;
+      color: black!important;
+      border-bottom: 1px solid #a5c031!important;
+      background-color: #b0d071!important;
+      background-size: 12px!important;
+      text-decoration:  none!important;
+    }
+    
+
+
+    /*-------------------------------------------------
+      Contribute - Right panel Save actions restyling 
+    -------------------------------------------------*/
+
+
+    #wizard-actions {
+      text-align: left;
+      float: left;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+
+    #wizard-major-actions {
+      float:  left;
+      margin-left:  10px;
+    }
+
+      /* hide "Save and Continue" link */
+#wizard-actions a[title="Save and continue"] {
+  display: none;
+}
+
+#wizard-actions a[title="Preview"] {
+  margin-left:  15px;
+  margin-right: 15px;
+}
+
+#wizard-actions {
+  text-align: left;
+}
+
+#wizard-actions span{
+  display:  none;
+}
+
+    #wizard-major-actions .action-button.save, #ed_saveButton {
+      background: #7b2 url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/tick 2.png') no-repeat 10px center!important;
+      background-size: 14px!important;
+      padding-left: 40px;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+      margin-left:  0px;
+      width:  80px;
+      border-bottom: 1px solid #390!important;
+      border-radius:  3px;
+      color:  black;
+    }
+
+    #wizard-major-actions .action-button.save:hover, #ed_saveButton:hover {
+      background: #9c0 url('//vault.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/tick 2.png') no-repeat 10px center!important;
+      color:  black!important;
+      background-size: 14px!important;
+    }
+
+
+    
+      
+    /*---------------------------
+      Main Page Section Styling
+    ---------------------------*/
+
+
+
+
+
+    #content-body .area {
+      background: white!important;
+      border: 1px solid #bbb!important;
+    }
+
+    #content-body .area:first-child {
+      background: white!important;
+      border: 1px solid #bbb!important;
+    }
+
+
+
+
+    
+
+
+
+
+
+
+
+    /*--------------------------------
+      Right Filter Toggle CSS Styles - Removed due to impending Equella update
+    --------------------------------*/
+
+
+/*
+
+
+    #content-body.activateCol2 #col1  {
+        width:  515px!important;
+    }
+
+    #content-body #col1  {
+  -webkit-transition: all 0.3s ease-out; 
+     -moz-transition: all 0.3s ease-out;  
+       -o-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out;
+           width:  750px;
+    }
+
+    #content-body #col2  {
+      border: 1px solid #ddd;
+      border-radius:  5px;
+      padding:  10px;
+      margin-right: -28px;
+      opacity:  0;
+  -webkit-transition: opacity 0.5s ease-out; 
+     -moz-transition: opacity 0.5s ease-out; 
+       -o-transition: opacity 0.5s ease-out; 
+          transition: opacity 0.5s ease-out;
+      position: absolute;
+      background: white;
+      right:  -9999px;
+    }
+
+    #content-body.activateCol2 #col2  {
+      opacity:  1!important;
+      right: 17px;
+      -webkit-transition: opacity 0.5s ease-out;  
+     -moz-transition: opacity 0.5s ease-out; 
+       -o-transition: opacity 0.5s ease-out;
+          transition: opacity 0.5s ease-out;
+    }
+
+    #filterToggle {
+      width:40px;
+      height:40px;
+      border-radius:3px;
+      border:1px solid #ddd;
+      position:absolute;
+      right:-40px;
+      top: 32px;
+      background: white url('//vm-equella-03.cca.edu/p/r/6.2.r1360/com.tle.web.ALLICONS/images/search.png') no-repeat center center;
+      background-size:  25px;
+    }
+
+    #filterToggle:hover {
+      background-color: #eee!important;
+    }
+
+
+     #content-body.activateCol2 #filterToggle {
+      background-color: #ddd;
+      right:  -47px;
+    }
+*/
+
+
+
+
+
+
+
+
+    /*-----------------------------------------------
+      Resetting Bootstrap Icons from white to black 
+    -----------------------------------------------*/
+
+
+
+    .icon-search {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -48px 0;
+    }
+
+    .icon-warning-sign  {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -144px -120px;
+    }
+
+    .icon-wrench  {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -360px -144px;
+    }
+
+    .icon-user {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -168px 0;
+    }
+
+    .icon-chevron-down  {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -313px -119px;
+    }
+
+    .icon-pencil  {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: 0 -72px;
+    }
+
+    .icon-remove  {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -312px 0;
+    }
+
+    .icon-ok  {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -288px 0;
+    }
+
+    .icon-upload  {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -144px -24px;
+    }
+
+    .icon-thumbs-up {
+      background-image: url("//vault.cca.edu/p/r/6.2.r1360/com.tle.web.sections.equella/bootstrap/img/glyphicons-halflings.png");
+      background-position: -96px -144px;
+    }
+
+    
+
+
+
+
+
+
+
+
+    /*----------------------------------------------
+      Customizing Default Bootstrap Button Classes 
+    ----------------------------------------------*/
+
+
+    /*-- Default Gray Buttons --*/
+
+    .btn.btn-equella  {
+      color: black!important;
+      text-shadow: none!important;
+      background: #ddd!important;
+      border: 0!important;
+      border-bottom: 1px solid #bbb!important;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+    }
+
+    .btn.btn-equella:hover  {
+      background: #ccc!important;
+      color:  black!important;
+    }
+
+    /*-- Success Button / Save --*/
+
+    .btn-success  {
+      color: black!important;
+      text-shadow: none!important;
+      border: 0!important;
+      border-bottom: 1px solid #390!important;
+      background: #7b2!important;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+    }
+
+    .btn-success:hover  {
+      background: #9c0!important;
+      color:  black!important;
+    }
+
+    /*-- Info Button / Gray --*/
+
+    .btn-info {
+      color: black!important;
+      text-shadow: none!important;
+      background: #ddd!important;
+      border: 0!important;
+      border-bottom: 1px solid #bbb!important;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+    }
+
+    .btn-info:hover  {
+      background: #ccc!important;
+      color:  black!important;
+    }
+
+
+    /*-- Warning button / orange --*/
+
+    .btn-warning  {
+      color: black!important;
+      text-shadow: none!important;
+      border: 0!important;
+      border-bottom: 1px solid #b40!important;
+      background: #e84!important;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+    }
+
+    .btn-warning:hover  {
+      background: #e62!important;
+      color:  black!important;
+    }
+
+    /*-- Danger button / Red --*/
+
+    .btn-danger  {
+      color: black!important;
+      text-shadow: none!important;
+      border: 0!important;
+      border-bottom: 1px solid #b00!important;
+      background: #e44!important;
+      -webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;
+    }
+
+    .btn-danger:hover  {
+      background: #e22!important;
+      color:  black!important;
+    }
+
+
+
+  
+
+
+
+
+
+
+    /*-------------------------------------------
+      Re-styling Contribute page Fancybox Popup 
+    -------------------------------------------*/
+
+
+
+
+#fancybox-inner .modal-title h3 {
+  background: white!important;
+  color:  black!important;
+  font-weight:  bold;
+  border: 1px solid white!important;
+}
+
+#fancybox-inner .modal-footer {
+  background: white!important;
+  border: none!important;
+  box-sizing: border-box;
+  padding-bottom: 33px;
+}
+
+#fancybox-inner .modal-content {
+  background: white!important;
+}
+
+#fancybox-inner .modal-content-background {
+  background: white!important;
+}
+
+#fancybox-outer .fancy-bg {
+  display:  none!important;
+}
+
+#fancybox-overlay {
+  opacity:  .5!important;
+}
+
+#fancybox-inner .modal{
+  border: none!important;
+}
+
+#termChooser  {
+  border: none!important;
+  padding:  0px;
+}
+
+#termChooser .ui-tabs-nav  {
+  background: white!important;
+  border: none!important;
+}
+
+#termChooser .ui-tabs-nav li[role='tab']  {
+  background: none!important;
+  border: none!important;
+}
+
+#termChooser .ui-tabs-nav li[role='tab'].ui-tabs-active  {
+  color:  black!important;
+  font-weight:  bold;
+}
+
+
+
+#termChooser div[role='tabpanel']  {
+  background: white!important;
+  border: 1px solid #bbb!important;
+  border-radius:  4px!important;
+}
+
+
+
+.settingLabel {
+  color:  #222;
+}
+
+.topblock {
+  background: white;
+  border: 0px solid white!important;
+  border-bottom:  1px solid #ddd!important;
+  margin-bottom:  20px;
+  padding-bottom: 20px;
+  padding: 20px 5px 5px 5px;
+}
+
+
+/* -------------------------- */
+
+
+
+
+
