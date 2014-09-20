@@ -4,6 +4,8 @@ module.exports = function (grunt) {
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
 
+    // @todo no watch task, is it even worth it?
+
     grunt.initConfig({
         clean: {
             dist: {
@@ -25,6 +27,8 @@ module.exports = function (grunt) {
         csslint: {
             dist: {
                 options: {
+                    // see https://github.com/CSSLint/csslint/wiki/Rules
+                    // for available rules
                     csslintrc: '.csslintrc'
                 },
                 src: [ 'css/customer.css' ]
