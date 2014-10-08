@@ -14,6 +14,8 @@ module.exports = function (grunt) {
                     src: [
                         'dist'
                     ]
+                },{
+                    src: [ 'theme.zip' ]
                 }]
             }
         },
