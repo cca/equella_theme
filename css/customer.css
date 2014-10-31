@@ -22,8 +22,6 @@ body {
   max-width: 660px;
   display: none;
 }
-#servermessage {
-}
 
 /* #servermessage {
   background: white;
@@ -751,8 +749,6 @@ dd.big {
 /* ------------------ Implemented Update 2014 ------------------ */
 /* --------- CSS STYLES INDEX -----------
 
-- General stuff
-
 - Body
 
 - Page Options
@@ -774,23 +770,6 @@ dd.big {
 - Bootstrap Icons
 
 - Bootstrap Button Classes
-
-
-
-
-
-
-/* ------------------
-General
------------------- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
 
 /* ------------------
 Body
@@ -897,7 +876,6 @@ lefthand menu ****************************************/
   border: none !important;
 }
 #menu ul {
-  border: none !important;
   margin-bottom: 10px !important;
   border-radius: 5px;
   overflow: hidden;
