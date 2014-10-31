@@ -282,6 +282,9 @@ input[type="button"][disabled="disabled"].button-large:hover {
 .displayNodeHalf p span {
   display: none;
 }
+/* this rule is killing me all the time
+why would we want all paragraphs to be inline?
+where is this useful? -EJP */
 .itemsummary-layout .area p {
   display: inline;
 }
@@ -413,7 +416,6 @@ p.caption {
 }
 .itemsummary-layout .area p.photoImagelist {
   margin: 0 5px 5px 12px;
-  line-height: 17px;
   display: block;
   max-height: 220px;
 }
@@ -431,7 +433,7 @@ p.photoImagelist {
   white-space: wrap;
   overflow: hidden !important;
   text-overflow: ellipsis;
-  line-height: 20px !important;
+  line-height: 20px;
 }
 p.photoImagelist i {
   display: block;
