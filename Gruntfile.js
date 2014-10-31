@@ -20,6 +20,9 @@ module.exports = function (grunt) {
             }
         },
         cssmin: {
+            options: {
+                banner: '/* Last updated: ' + grunt.template.today() + ' */'
+            },
             dist: {
                 files: {
                     'dist/css/customer.css': [ 'css/customer.css' ]
