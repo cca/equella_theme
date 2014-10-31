@@ -1,8 +1,6 @@
-body {
-  background: #fff;
-}
+body,
 #body {
-  background-color: #fff;
+  background: #fff;
 }
 #topbar {
   background: #EEE;
