@@ -21,3 +21,4 @@ You may need add NPM and Grunt to your `$PATH` in order to make them accessible.
 To install the theme, run `grunt build` & then visit [/access/themesettings.do](https://vault.cca.edu/access/themesettings.do) where you can *remove custom theme* & replace it with the "theme.zip" created by the build process.
 
 **Never** upload the theme without running it through the build process first. We want to deliver optimized assets & reduce page download size as much as possible.
+# LICENSE\n\n[Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)\n
