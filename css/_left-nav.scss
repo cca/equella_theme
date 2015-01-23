@@ -1,0 +1,164 @@
+/* ------------------
+LEFT HAND NAV ICONS
+------------------ */
+/* ---------------------------******--------------------------- */
+/* Having troube with these ever-changing left-hand nav ID's? */
+/* ------------------------------------------------------------ */
+
+/* - Instead of referring to links by their #ID's,
+which appear
+to change randomly -__-" you could refer to them by their links
+which ( might ) be more static across all pages.
+
+Example:(Dashboard Link)
+
+#menu > ul > li > a[href='/access/home.do'] {
+  background: url('http:#{$icons-path}/icon_50669.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+This should only effect this dashboard link on the left-hand nav.
+
+Good luck!:) - */
+
+
+/* ------------------------------------------------------------ */
+/* CHRISTOPHER */
+/* ---------------------------******--------------------------- */
+
+/* -- DASHBOARD -- */
+#menu > ul > li > a[href*='access/home.do'] {
+  background: url('#{$icons-path}/icon_50669.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- SETTINGS -- */
+#menu > ul > li > a[href*='access/settings.do'] {
+  background: url('#{$icons-path}/engine.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- MY RESOURCES -- */
+#menu > ul > li > a[href*='access/myresources.do'] {
+  background: url('#{$icons-path}/manage.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- FAVOURITES -- */
+#menu > ul > li > a[href*='access/favourites.do'] {
+  background: url('#{$icons-path}/star.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- MANAGE RESOURCES -- */
+#menu > ul > li > a[href*='access/itemadmin.do'] {
+  background: url('#{$icons-path}/manage.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- LIBRARY COLLECTIONS -- */
+#menu > ul > li > a[href*='access/hierarchy.do?topic=23532860-ca7d-69ec-f5c3-235fac553941'] {
+  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
+  background-size: 13px !important;
+}
+
+/* -- CONTRIBUTE -- */
+#menu > ul > li > a[href*='access/contribute.do'] {
+  background: url('#{$icons-path}/upload.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- CCA LIBRARIES CATALOG-- */
+#menu > ul > li > a[href*='libraries.cca.edu'] {
+  background: url('#{$icons-path}/catalog.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- ANNEMARIE HAAR -- */
+#menu > ul > li > a[href*='libraries.cca.edu/staff'] {
+  background: url('#{$icons-path}/email 1.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- TASKS -- */
+#menu > ul > li > a[href*='access/tasklist.do'] {
+  background: url('#{$icons-path}/calendar.png') no-repeat 10px center !important;
+  background-size: 14px !important;
+}
+
+/* -- MANAGE ACTIVATIONS -- */
+#menu > ul > li > a[href*='access/activations.do'] {
+  background: url('#{$icons-path}/icon_50776.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- SEARCH -- */
+#menu > ul > li > a[href*='access/searching.do'] {
+  background: url('#{$icons-path}/search.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- NOTIFICATIONS -- */
+#menu > ul > li > a[href*='access/notifications.do'] {
+  background: url('#{$icons-path}/flag.png') no-repeat 10px center !important;
+  background-size: 13px !important;
+}
+
+/* -- REPORTS -- */
+#menu > ul > li > a[href*='access/reports.do'] {
+  background: url('#{$icons-path}/icon_50834.png') no-repeat 10px center !important;
+  background-size: 15px !important;
+}
+
+/* -- INFO FAQ GUIDES -- */
+#menu > ul > li > a[href*='access/hierarchy.do?topic=44db2f8a-bb57-4f1d-801a-43443ae55176'] {
+  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
+  background-size: 13px !important;
+}
+
+/* -- INFO FAQ GUIDES -- */
+#menu > ul > li > a[href*='access/hierarchy.do?topic=efec5da1-a103-4bc6-b41b-e06df973eab7'] {
+  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
+  background-size: 13px !important;
+}
+
+/* -- Student Work -- */
+#menu > ul > li > a[href*='access/hierarchy.do?topic=a1927486-9032-4452-b3ef-3712a51f81c8'] {
+  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
+  background-size: 13px !important;
+}
+
+/* -- Syllabus Collection -- */
+#menu > ul > li > a[href*='access/hierarchy.do?topic=977df0cc-5f5c-4b8d-9699-ad11b33496df'] {
+  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
+  background-size: 13px !important;
+}
+
+/* -- More -- */
+#menu > ul > li > a[href*='access/hierarchy.do?hier.topic=ALL'] {
+  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
+  background-size: 13px !important;
+}
+
+/* -- Assessments -- */
+#menu > ul > li > a[href*='access/runwizard.do?method=newitem&itemdefUuid=64efdfe9-9fcb-40ed-9688-206f1985eea0'] {
+  background: url('#{$icons-path}/info.png') no-repeat 14px center !important;
+  background-size: 6px !important;
+}
+
+/* -- Technology -- */
+#menu > ul > li > a[href*='technology.cca.edu'] {
+  background: url('#{$icons-path}/display.png') no-repeat 11px center !important;
+  background-size: 14px !important;
+}
+
+/* -- CCA -- */
+#menu > ul > li > a[href*='www.cca.edu'] {
+  background: url('#{$icons-path}/cca.png') no-repeat 13px center !important;
+  background-size: 11px !important;
+}
+
+/* -- Webadvisor -- */
+#menu > ul > li > a[href*='webadvisor.cca.edu'] {
+  background: url('#{$icons-path}/flash.png') no-repeat 14px center !important;
+  background-size: 8px !important;
+}
