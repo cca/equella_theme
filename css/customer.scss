@@ -1,3 +1,5 @@
+@import '_vars';
+
 body,
 #body {
   background: #fff;
@@ -21,6 +23,12 @@ body,
       cursor: pointer;
       text-decoration: none;
     }
+  }
+
+  // white icon is almost impossible to see
+  // fix by using the icon-black bg img
+  .icon-off.icon-white {
+    background-image: url("#{$path}/bootstrap/img/glyphicons-halflings.png");
   }
 }
 
