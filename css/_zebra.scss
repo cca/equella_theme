@@ -1,0 +1,44 @@
+/* ---------------------
+Zebra Table Styling
+--------------------- */
+table.zebra.large th {
+  font-size: 14px;
+  font-weight: normal;
+}
+table.zebra TR TH {
+  background: none !important;
+  color: #222;
+  font-weight: bold !important;
+}
+table.zebra {
+  border: none !important;
+}
+table.zebra tbody {
+  border-radius: 5px;
+  overflow: hidden !important;
+  border: none !important;
+}
+table.zebra tbody tr.even TD {
+  background: #eee !important;
+  border-top: 1px solid white;
+  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+  transition: all 0.1s ease-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+table.zebra tbody tr.odd TD {
+  background: #f6f6f6 !important;
+  border-top: 1px solid white;
+  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+  transition: all 0.1s ease-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+table.zebra.large tbody tr.even TD:hover {
+  padding-left: 18px;
+  background: #eee !important;
+}
+table.zebra.large tbody tr.odd TD:hover {
+  padding-left: 18px;
+  background: #f6f6f6 !important;
+}
