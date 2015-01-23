@@ -43,3 +43,14 @@
 .itemresult-rating {
   display: none;
 }
+
+/* "sort" & "filter" options on search results page */
+#actioncontent.resulttopblock {
+  background: 0;
+  border-bottom: 0;
+  border-color: #8F8B7E;
+}
+/* headings in this section */
+#searchresults-actions #actioncontent h3 {
+  color: #222;
+}

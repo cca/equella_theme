@@ -648,8 +648,9 @@ Body
   border-bottom: none;
 }
 
-/* top "screen options" section */
-#bluebar_screenoptions {
+/* top "screen options" & "help" sections */
+#bluebar_screenoptions,
+#bluebar_help {
   border: 0;
   margin-bottom: 0;
 }
@@ -1267,8 +1268,8 @@ Re-styling Contribute page Fancybox Popup
 }
 .topblock {
   background: white;
-  border: 0 !important;
-  border-bottom: 1px solid #ddd !important;
+  border: 0;
+  border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
   padding: 20px 5px 5px 5px;
 }
