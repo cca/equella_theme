@@ -1,0 +1,92 @@
+/* ----------------------------------------------
+Customizing Default Bootstrap Button Classes
+---------------------------------------------- */
+/* -- Danger button / Red -- */
+.btn-danger {
+  color: black !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #b00 !important;
+  background: #e44 !important;
+  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background: #e22 !important;
+    color: black !important;
+  }
+}
+
+/* -- Default Gray Buttons -- */
+.btn.btn-equella {
+  color: black !important;
+  text-shadow: none !important;
+  background: #ddd !important;
+  border: 0 !important;
+  border-bottom: 1px solid #bbb !important;
+  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background: #ccc !important;
+    color: black !important;
+  }
+}
+
+/* -- Info Button / Gray -- */
+.btn-info {
+  color: black !important;
+  text-shadow: none !important;
+  background: #ddd !important;
+  border: 0 !important;
+  border-bottom: 1px solid #bbb !important;
+  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background: #ccc !important;
+    color: black !important;
+  }
+}
+
+/* -- Success Button / Save -- */
+.btn-success {
+  color: black !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #390 !important;
+  background: #7b2 !important;
+  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background: #9c0 !important;
+    color: black !important;
+  }
+}
+
+/* -- Warning button / orange -- */
+.btn-warning {
+  color: black !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #b40 !important;
+  background: #e84 !important;
+  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background: #e62 !important;
+    color: black !important;
+  }
+}

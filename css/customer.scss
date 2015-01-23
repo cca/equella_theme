@@ -24,12 +24,6 @@ body,
       text-decoration: none;
     }
   }
-
-  // white icon is almost impossible to see
-  // fix by using the icon-black bg img
-  .icon-off.icon-white {
-    background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  }
 }
 
 #header-inner h2 {
@@ -1554,139 +1548,6 @@ Main Page Section Styling
   border: 1px solid #bbb !important;
 }
 
-/* -----------------------------------------------
-Resetting Bootstrap Icons from white to black
------------------------------------------------ */
-
-.icon-search {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -48px 0;
-}
-.icon-warning-sign {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -144px -120px;
-}
-.icon-wrench {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -360px -144px;
-}
-.icon-user {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -168px 0;
-}
-.icon-chevron-down {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -313px -119px;
-}
-.icon-pencil {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: 0 -72px;
-}
-.icon-remove {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -312px 0;
-}
-.icon-ok {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -288px 0;
-}
-.icon-upload {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -144px -24px;
-}
-.icon-thumbs-up {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-  background-position: -96px -144px;
-}
-
-/* ----------------------------------------------
-Customizing Default Bootstrap Button Classes
----------------------------------------------- */
-/* -- Default Gray Buttons -- */
-
-.btn.btn-equella {
-  color: black !important;
-  text-shadow: none !important;
-  background: #ddd !important;
-  border: 0 !important;
-  border-bottom: 1px solid #bbb !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-}
-.btn.btn-equella:hover {
-  background: #ccc !important;
-  color: black !important;
-}
-
-/* -- Success Button / Save -- */
-.btn-success {
-  color: black !important;
-  text-shadow: none !important;
-  border: 0 !important;
-  border-bottom: 1px solid #390 !important;
-  background: #7b2 !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-}
-.btn-success:hover {
-  background: #9c0 !important;
-  color: black !important;
-}
-
-/* -- Info Button / Gray -- */
-.btn-info {
-  color: black !important;
-  text-shadow: none !important;
-  background: #ddd !important;
-  border: 0 !important;
-  border-bottom: 1px solid #bbb !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-}
-.btn-info:hover {
-  background: #ccc !important;
-  color: black !important;
-}
-
-/* -- Warning button / orange -- */
-.btn-warning {
-  color: black !important;
-  text-shadow: none !important;
-  border: 0 !important;
-  border-bottom: 1px solid #b40 !important;
-  background: #e84 !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-}
-.btn-warning:hover {
-  background: #e62 !important;
-  color: black !important;
-}
-
-/* -- Danger button / Red -- */
-.btn-danger {
-  color: black !important;
-  text-shadow: none !important;
-  border: 0 !important;
-  border-bottom: 1px solid #b00 !important;
-  background: #e44 !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-}
-.btn-danger:hover {
-  background: #e22 !important;
-  color: black !important;
-}
 
 /* -------------------------------------------
 Re-styling Contribute page Fancybox Popup
@@ -1750,3 +1611,6 @@ Re-styling Contribute page Fancybox Popup
   padding-bottom: 20px;
   padding: 20px 5px 5px 5px;
 }
+
+@import '_reset-bootstrap-icons';
+@import '_reset-bootstrap-buttons';

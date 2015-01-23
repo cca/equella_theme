@@ -1,0 +1,49 @@
+/* -----------------------------------------------
+Resetting Bootstrap Icons from white to black
+----------------------------------------------- */
+/* @todo *ALL* of these background-position rules should be
+unnecessary as the position doesn't change between white or black
+image sprite files */
+.icon-chevron-down {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -313px -119px;
+}
+.icon-off {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+}
+.icon-ok {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -288px 0;
+}
+.icon-pencil {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: 0 -72px;
+}
+.icon-remove {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -312px 0;
+}
+.icon-search {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -48px 0;
+}
+.icon-thumbs-up {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -96px -144px;
+}
+.icon-user {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -168px 0;
+}
+.icon-warning-sign {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -144px -120px;
+}
+.icon-wrench {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -360px -144px;
+}
+.icon-upload {
+  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
+  background-position: -144px -24px;
+}
