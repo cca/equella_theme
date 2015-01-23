@@ -1,0 +1,91 @@
+.button,
+.button.downarrow,
+.button.add,
+.button.delete,
+.button.ccasave {
+  background: #eee;
+  border: 1px solid;
+  color: #738A99;
+}
+.button.ccasave {
+  font-weight: bold;
+  border: 2px solid;
+  padding: 5px;
+}
+.button-big.rightarrow,
+.button-big.leftarrow,
+.button.rightarrow {
+  color: #eee;
+}
+
+/* .button.downarrow {
+  border-top: none;
+}
+*/
+.button.add,
+.button.delete {
+  padding: 5px;
+}
+.button:hover,
+.button.downarrow:hover,
+.button.add:hover,
+.button.delete:hover {
+  background: #ddd;
+}
+.button.downarrow.active {
+  border-bottom: 1px solid #738A99;
+}
+.box_head h3,
+.button.downarrow,
+.button-big,
+.button-large,
+.button-big:hover,
+.button-large:hover,
+.action-button {
+  text-shadow: none;
+  -moz-text-shadow: none;
+  -webkit-text-shadow: none;
+}
+.button-big {
+  border: 1px solid #045F7F;
+  background: #DDD;
+  color: #045F7F;
+}
+.button-big:hover {
+  border: 1px solid #045F7F;
+  background: #CCC;
+  color: #045F7F;
+}
+.button-big.rightarrow:hover {
+  background-image: url(#{$img-path}/button-big-right.gif);
+  color: #777;
+}
+.button.rightarrow {
+  padding: 3px 15px;
+  font-size: 10px;
+  border: 1px solid #738A99;
+}
+.button.rightarrow:hover {
+  color: #777;
+}
+.button-big.leftarrow:hover {
+  background-image: url(#{$img-path}/button-big-left.gif);
+  color: #777;
+}
+
+/* disabled buttons */
+input[type="button"][disabled="disabled"].button,
+input[type="button"][disabled].button-big,
+input[type="button"][disabled="disabled"].button-big,
+input[type="button"][disabled].button-large,
+input[type="button"][disabled="disabled"].button-large {
+  background: #666;
+}
+input[type="button"][disabled].button:hover,
+input[type="button"][disabled="disabled"].button:hover,
+input[type="button"][disabled].button-big:hover,
+input[type="button"][disabled="disabled"].button-big:hover,
+input[type="button"][disabled].button-large:hover,
+input[type="button"][disabled="disabled"].button-large:hover {
+  background: #777;
+}

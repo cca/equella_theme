@@ -20,7 +20,6 @@ body,
     &:hover {
       background-color: inherit;
       color: #936;
-      cursor: pointer;
       text-decoration: none;
     }
   }
@@ -147,80 +146,6 @@ div.formsection h3 {
   background: #045F7F;
   border: 1px solid #045F7F;
 }
-.button,
-.button.downarrow,
-.button.add,
-.button.delete,
-.button.ccasave {
-  background: #eee;
-  border: 1px solid;
-  color: #738A99;
-}
-.button.ccasave {
-  font-weight: bold;
-  border: 2px solid;
-  padding: 5px;
-}
-.button-big.rightarrow,
-.button-big.leftarrow,
-.button.rightarrow {
-  color: #eee;
-}
-
-/* .button.downarrow {
-  border-top: none;
-}
-*/
-.button.add,
-.button.delete {
-  padding: 5px;
-}
-.button:hover,
-.button.downarrow:hover,
-.button.add:hover,
-.button.delete:hover {
-  background: #ddd;
-}
-.button.downarrow.active {
-  border-bottom: 1px solid #738A99;
-}
-.box_head h3,
-.button.downarrow,
-.button-big,
-.button-large,
-.button-big:hover,
-.button-large:hover,
-.action-button {
-  text-shadow: none;
-  -moz-text-shadow: none;
-  -webkit-text-shadow: none;
-}
-.button-big {
-  border: 1px solid #045F7F;
-  background: #DDD;
-  color: #045F7F;
-}
-.button-big:hover {
-  border: 1px solid #045F7F;
-  background: #CCC;
-  color: #045F7F;
-}
-.button-big.rightarrow:hover {
-  background-image: url(../p/r/29397/com.tle.web.sections.equella/images/button-big-right.gif);
-  color: #777;
-}
-.button.rightarrow {
-  padding: 3px 15px;
-  font-size: 10px;
-  border: 1px solid #738A99;
-}
-.button.rightarrow:hover {
-  color: #777;
-}
-.button-big.leftarrow:hover {
-  background-image: url(../p/r/29397/com.tle.web.sections.equella/images/button-big-left.gif);
-  color: #777;
-}
 
 #footer {
   color: #666C6C;
@@ -248,21 +173,6 @@ select[multiple="multiple"] {
   border-right: 1px solid #C3BEAE;
   border-top: 1px solid #C3BEAE;
   margin-right: 3px;
-}
-input[type="button"][disabled="disabled"].button,
-input[type="button"][disabled].button-big,
-input[type="button"][disabled="disabled"].button-big,
-input[type="button"][disabled].button-large,
-input[type="button"][disabled="disabled"].button-large {
-  background: #666;
-}
-input[type="button"][disabled].button:hover,
-input[type="button"][disabled="disabled"].button:hover,
-input[type="button"][disabled].button-big:hover,
-input[type="button"][disabled="disabled"].button-big:hover,
-input[type="button"][disabled].button-large:hover,
-input[type="button"][disabled="disabled"].button-large:hover {
-  background: #777;
 }
 
 /* --------------------itemsummary---------------------------------- */
@@ -706,10 +616,6 @@ dd.big {
 - Body
 
 - Page Options
-
-- Navigation ( left hand menu )
-
-- Left Hand Nav Icons
 
 - Page Body Styles
 
@@ -1362,7 +1268,8 @@ Re-styling Contribute page Fancybox Popup
   padding: 20px 5px 5px 5px;
 }
 
-@import '_left-nav.scss';
-@import '_search.scss';
+@import '_btns';
+@import '_left-nav';
+@import '_search';
 @import '_reset-bootstrap-icons';
 @import '_reset-bootstrap-buttons';
