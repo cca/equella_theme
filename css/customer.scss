@@ -2,26 +2,36 @@ body,
 #body {
   background: #fff;
 }
+
+/* upper right menu with profile ilnks */
 #topbar {
   background: #EEE;
   height: 26px;
 }
-#topmenu a,
-#topmenu span {
-  color: #738A99;
-  text-decoration: none;
+
+#topmenu {
+  a,
+  span {
+    color: #738A99;
+    text-decoration: none;
+
+    &:hover {
+      background-color: inherit;
+      color: #936;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
 }
-#topmenu a:hover {
-  color: #936;
-  text-decoration: none;
-}
+
 #header-inner h2 {
   color: #045F7F;
   max-width: 660px;
   display: none;
 }
 
-/* #servermessage {
+/*
+#servermessage {
   background: white;
   border: none;
 }

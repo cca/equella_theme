@@ -19,16 +19,18 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        cssmin: {
+        sass: {
+          dist: {
             options: {
-                banner: '/* Last updated: ' + grunt.template.today() + ' */'
+              style: 'compressed',
+              sourcemap: 'none'
             },
-            dist: {
-                files: {
-                    'dist/css/customer.css': [ 'css/customer.css' ]
-                }
+            files: {
+              'dist/css/customer.css': 'css/customer.scss'
             }
+          }
         },
+        // @todo replace with scss-lint
         csslint: {
             dist: {
                 options: {
@@ -74,7 +76,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean',
-        'cssmin',
+        'sass',
         'copy',
         'compress'
     ]);
