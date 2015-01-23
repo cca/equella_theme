@@ -7,7 +7,7 @@ body,
 
 /* upper right menu with profile links */
 #topbar {
-  background: #eee;
+  background: #fff;
   height: 26px;
 }
 
@@ -660,7 +660,7 @@ Body
 Page Options
 ------------------ */
 
-/* New Navagation (Help and Options) */
+/* New Navigation (Help and Options) */
 body #helpAndOptions {
   display: block;
 }
@@ -676,78 +676,8 @@ body #helpAndOptions {
   text-decoration: underline !important;
 }
 
-/* ------------------
-Navagation (Left hand Nav)
------------------- */
-#menu.menu-collapsed {
-  display: none;
-}
-#menu ul {
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  margin: 0 0 0 0;
-  border: 0;
-}
-#menu ul li {
-  background-color: #fff;
-}
-#menu ul li a {
-  background-color: #fff;
-  border: 0;
-}
-#menu ul li a:hover {
-  background-color: #fff;
-  text-shadow: none;
-}
-
 /* Design notes
-
-
 CCA RED #EF4036 */
-/**************************************** Additions - Christopher Paniati - 03/12/14
-
-lefthand menu ****************************************/
-
-
-#body {
-  background: white;
-}
-#topbar {
-  background: transparent !important;
-}
-#menu ul li {
-  border: none !important;
-  background: transparent !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
-}
-#menu ul li a {
-  color: black;
-}
-#menu ul:hover {
-  border: 1px solid #bbb !important;
-}
-#menu ul li:hover {
-  padding-left: 5px;
-  border-bottom: 1px solid black;
-}
-#menu ul li:first-child {
-  border: none !important;
-}
-#menu ul {
-  margin-bottom: 10px !important;
-  border-radius: 5px;
-  overflow: hidden;
-  border: 1px solid #ddd !important;
-  background: white;
-}
-#menu ul:hover {
-  border-top: 1px solid black;
-}
-
 #header {
   border: none !important;
 }

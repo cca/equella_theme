@@ -1,3 +1,50 @@
+
+/* ------------------
+Navigation (Left hand Nav)
+------------------ */
+#menu {
+  &.menu-collapsed {
+    display: none;
+  }
+
+  ul {
+    background: #fff;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 10px !important;
+    overflow: hidden;
+
+    li {
+      border: none !important;
+      background: transparent !important;
+      -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
+      -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
+      -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
+      transition: all 0.1s ease-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+    li a {
+      background-color: #fff;
+      border: 0;
+      color: black;
+    }
+    li a:hover {
+      background-color: #fff;
+      text-shadow: none;
+    }
+    li:hover {
+      padding-left: 5px;
+      border-bottom: 1px solid black;
+    }
+    li:first-child {
+      border: none !important;
+    }
+  }
+}
+
 /* ------------------
 LEFT HAND NAV ICONS
 ------------------ */
