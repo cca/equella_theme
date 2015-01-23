@@ -5,7 +5,7 @@ body,
   background: #fff;
 }
 
-/* upper right menu with profile ilnks */
+/* upper right menu with profile links */
 #topbar {
   background: #eee;
   height: 26px;
@@ -675,33 +675,6 @@ dd.date {
   text-align: center;
 }
 
-/* .btn-success {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #045F7F;
-  background-image: -moz-linear-gradient(top, rgba(4, 95, 127, 0.5), #045F7F);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from rgba(4, 95, 127, 0.5), to(#045F7F));
-  // Error Invalid CSS Proprty Value
-  background-image: -webkit-linear-gradient(top, rgba(4, 95, 127, 0.5), rgba(4, 95, 127, 0.5));
-  background-image: -o-linear-gradient(top, rgba(4, 95, 127, 0.5), #045F7F);
-  background-image: linear-gradient(to bottom, rgba(4, 95, 127, 0.5), #045F7F);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(4, 95, 127, 0.5)', endColorstr='#045F7F', GradientType=0);
-  border-color: #045F7F #045F7F #045F7F;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: rgba(4, 95, 127, 0.5);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-.btn-success:hover
-.btn-success:active
-.btn-success.active,
-.btn-success.disabled,
-.btn-success[disabled] {
-  color: #ffffff;
-  background-color: #045F7F;
-  *background-color: #045F7F;
-}
-*/
 #coursestuff {
   display: block;
   margin-left: 15px;
@@ -776,10 +749,6 @@ dd.big {
 - Contribute
 
 - Main Page Section Styling
-
-- Bootstrap Icons
-
-- Bootstrap Button Classes
 
 /* ------------------
 Body
@@ -1064,19 +1033,6 @@ Good luck!:) - */
   background: url('#{$icons-path}/flash.png') no-repeat 14px center !important;
   background-size: 8px !important;
 }
-
-/* -- DEFAULT PAGE BODY STYLES -- */
-/* #content-body .area {
-  border: 1px solid #ddd !important;
-}
-#content-body .area:hover {
-  border: 1px solid #ddd !important;
-}
-#content-body .area:first-child {
-  border: 1px solid #bbb !important;
-  background: white;
-}
-*/
 
 #header {
   border: none !important;
