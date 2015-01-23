@@ -1,3 +1,6 @@
+/* EQUELLA version ends up as part of many paths
+…what a terrible idea, btw */
 $eq-version: "6.3.r2083";
 /* a lot of assets end up stored in here */
-$path: "/p/r/#{$eq-version}/com.tle.web.sections.equella";
+$bs-path: "/p/r/#{$eq-version}/com.tle.web.sections.equella/bootstrap";
+$icons-path: "/p/r/#{$eq-version}/com.tle.web.ALLICONS/images";
