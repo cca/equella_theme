@@ -1,0 +1,45 @@
+/* --------------------
+  searchresults
+----------------------- */
+#searchresults {
+  /* @todo check if necessary
+  likely already solved by #content-body .area styles */
+  background: #fff;
+
+  .itemresult-content p {
+    font-size: 12px;
+  }
+
+  .itemresult-metaline {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+.search-layout .searchresults-header {
+  background: #fff;
+}
+
+.timeago {
+  margin-left: 3px;
+}
+
+.itemresult-wrapper {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 10px;
+}
+
+.itemresult h3 a {
+  border-bottom: 1px dotted #936;
+
+  &:hover {
+    border-bottom: 1px dotted #C69EB3;
+    text-decoration: none;
+  }
+}
+
+/* hide rating ability since we don't use it */
+.itemresult-rating {
+  display: none;
+}

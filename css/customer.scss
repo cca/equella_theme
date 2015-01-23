@@ -221,12 +221,7 @@ div.formsection h3 {
   background-image: url(../p/r/29397/com.tle.web.sections.equella/images/button-big-left.gif);
   color: #777;
 }
-#searchresults {
-  background: white;
-}
-.itemresult-rating {
-  background: #EEE;
-}
+
 #footer {
   color: #666C6C;
   border-bottom: 4px double #CCC;
@@ -537,30 +532,6 @@ div.image-juniorReviewMovImgWork {
   max-width: 500px;
   min-height: 170px;
   margin-left: 20px;
-}
-
-/* --------------------searchresults---------------------------------- */
-#searchresults .itemresult-content p {
-  font-size: 12px;
-}
-#searchresults .itemresult-metaline {
-  font-size: 12px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-}
-.timeago {
-  margin-left: 3px;
-}
-.itemresult-wrapper {
-  border-bottom: 1px solid #CCC;
-  padding-bottom: 10px;
-}
-.itemresult h3 a {
-  border-bottom: 1px dotted #936;
-}
-.itemresult h3 a:hover {
-  border-bottom: 1px dotted #C69EB3;
-  text-decoration: none;
 }
 
 /* -------------------itemresults freemarker------------------------------ */
@@ -1021,19 +992,10 @@ table.zebra.large tbody tr.odd TD:hover {
 #breadcrumbs a {
   color: #444;
 }
-.itemresult-rating {
-  background: white !important;
-  border: none !important;
-}
 
 /* contribute page selected course - highlight */
 #p0c3d_ttri14 td {
   background: #fff !important;
-}
-.itemresult-rating>a,
-.itemresult-rating>span,
-.itemresult-rating>.itemresult-stars {
-  display: none !important;
 }
 
 /* hide all comments */
@@ -1329,6 +1291,8 @@ Main Page Section Styling
   background: white !important;
   border: 1px solid #bbb !important;
 }
+/* @todo why would this be necessary?
+100% redundant with above */
 #content-body .area:first-child {
   background: white !important;
   border: 1px solid #bbb !important;
@@ -1399,5 +1363,6 @@ Re-styling Contribute page Fancybox Popup
 }
 
 @import '_left-nav.scss';
+@import '_search.scss';
 @import '_reset-bootstrap-icons';
 @import '_reset-bootstrap-buttons';
