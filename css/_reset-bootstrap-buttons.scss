@@ -20,7 +20,8 @@ Customizing Default Bootstrap Button Classes
 }
 
 /* -- Default Gray Buttons -- */
-.btn.btn-equella {
+.btn.btn-equella,
+.btn.btn-primary {
   color: black !important;
   text-shadow: none !important;
   background: #ddd !important;
