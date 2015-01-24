@@ -30,17 +30,6 @@ module.exports = function (grunt) {
             }
           }
         },
-        // @todo replace with scss-lint
-        csslint: {
-            dist: {
-                options: {
-                    // see https://github.com/CSSLint/csslint/wiki/Rules
-                    // for available rules
-                    csslintrc: '.csslintrc'
-                },
-                src: [ 'css/customer.css' ]
-            }
-        },
         // copy over all images
         copy: {
             dist: {
@@ -69,10 +58,6 @@ module.exports = function (grunt) {
             }
         }
     });
-
-    grunt.registerTask('test', [
-        'csslint'
-    ]);
 
     grunt.registerTask('build', [
         'clean',

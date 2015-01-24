@@ -10,17 +10,13 @@ The custom EQUELLA theme used by California College of the Arts. See the <a href
     + inside this project, `npm install` to install all package dependencies locally
 - Run `grunt --help` to confirm setup was successful; you should receive a list of available tasks
 
-You may need add NPM and Grunt to your `$PATH` in order to make them accessible. `export PATH="/path/to/npm:$PATH"` will do this; add that line to the `.bash_profile` inside your user's home directory to ensure it's done every time you open a terminal.]
+You may need add NPM and Grunt to your `$PATH` variable in order to make them accessible. `export PATH="/path/to/npm:$PATH"` will do this; add that line to the `.bash_profile` inside your user's home directory to ensure it's done every time you open a terminal.
 
 ## Usage
 
-`grunt build`, also the default `grunt` task, minifies customer.css, copies images into the build ("dist") directory, & compresses all sets into "theme.zip" for uploading.
-
-`grunt test`, also `grunt csslint`, lints customer.css. There are like a thousand warnings right now. We have some work to do.
+`grunt build`, also the default `grunt` task, compiles the SCSS to minified CSS, copies images into the build ("dist") directory, & compresses all sets into "theme.zip" for uploading. `grunt watch` will watch for changes to any file in the "css" directory & then run `build`.
 
 To install the theme, run `grunt build` & then visit [/access/themesettings.do](https://vault.cca.edu/access/themesettings.do) where you can *remove custom theme* & replace it with the "theme.zip" created by the build process.
-
-**Never** upload the theme without running it through the build process first. We want to deliver optimized assets & reduce page download size as much as possible.
 
 # LICENSE
 
