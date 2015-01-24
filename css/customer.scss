@@ -621,8 +621,6 @@ dd.big {
 
 - Random Assorted Icon Styles
 
-- Contribute
-
 - Main Page Section Styling
 
 /* ------------------
@@ -1031,122 +1029,6 @@ Random and Assorted Vault Icon Replacements
   text-decoration: none !important;
 }
 
-/* -------------------------------------------------
-Contribute - Right panel Save actions restyling
-------------------------------------------------- */
-#wizard-actions {
-  text-align: left;
-  float: left;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-#wizard-major-actions {
-  float: left;
-  margin-left: 10px;
-}
-
-/* hide "Save and Continue" link */
-#wizard-actions a[title="Save and continue"] {
-  display: none;
-}
-#wizard-actions a[title="Preview"] {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-#wizard-actions {
-  text-align: left;
-}
-#wizard-actions span {
-  display: none;
-}
-#wizard-major-actions .action-button.save,
-#ed_saveButton {
-  background: #7b2 url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
-  background-size: 14px !important;
-  padding-left: 40px;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-  margin-left: 0;
-  width: 80px;
-  border-bottom: 1px solid #390 !important;
-  border-radius: 3px;
-  color: black;
-}
-#wizard-major-actions .action-button.save:hover,
-#ed_saveButton:hover {
-  background: #9c0 url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
-  color: black !important;
-  background-size: 14px !important;
-}
-
-/* ---------------------------
-Main Page Section Styling
---------------------------- */
-#content-body .area {
-  background: white !important;
-  border: 1px solid #bbb !important;
-}
-/* @todo why would this be necessary?
-100% redundant with above */
-#content-body .area:first-child {
-  background: white !important;
-  border: 1px solid #bbb !important;
-}
-
-
-/* -------------------------------------------
-Re-styling Contribute page Fancybox Popup
-------------------------------------------- */
-#fancybox-inner .modal-title h3 {
-  background: white !important;
-  color: black !important;
-  font-weight: bold;
-  border: 1px solid white !important;
-}
-#fancybox-inner .modal-footer {
-  background: white !important;
-  border: none !important;
-  box-sizing: border-box;
-  padding-bottom: 33px;
-}
-#fancybox-inner .modal-content {
-  background: white !important;
-}
-#fancybox-inner .modal-content-background {
-  background: white !important;
-}
-#fancybox-outer .fancy-bg {
-  display: none !important;
-}
-#fancybox-overlay {
-  opacity: .5 !important;
-}
-#fancybox-inner .modal {
-  border: none !important;
-}
-#termChooser {
-  border: none !important;
-  padding: 0;
-}
-#termChooser .ui-tabs-nav {
-  background: white !important;
-  border: none !important;
-}
-#termChooser .ui-tabs-nav li[role='tab'] {
-  background: none !important;
-  border: none !important;
-}
-#termChooser .ui-tabs-nav li[role='tab'].ui-tabs-active {
-  color: black !important;
-  font-weight: bold;
-}
-#termChooser div[role='tabpanel'] {
-  background: white !important;
-  border: 1px solid #bbb !important;
-  border-radius: 4px !important;
-}
 .settingLabel {
   color: #222;
 }
@@ -1160,6 +1042,7 @@ Re-styling Contribute page Fancybox Popup
 
 @import '_btns';
 @import '_left-nav';
+@import '_contribute';
 @import '_search';
 @import '_zebra';
 @import '_reset-bootstrap-icons';

@@ -3,7 +3,7 @@ Customizing Default Bootstrap Button Classes
 ---------------------------------------------- */
 /* -- Danger button / Red -- */
 .btn-danger {
-  color: black !important;
+  color: #000 !important;
   text-shadow: none !important;
   border: 0 !important;
   border-bottom: 1px solid #b00 !important;
@@ -15,14 +15,14 @@ Customizing Default Bootstrap Button Classes
 
   &:hover {
     background: #e22 !important;
-    color: black !important;
+    color: #000 !important;
   }
 }
 
 /* -- Default Gray Buttons -- */
 .btn.btn-equella,
 .btn.btn-primary {
-  color: black !important;
+  color: #000 !important;
   text-shadow: none !important;
   background: #ddd !important;
   border: 0 !important;
@@ -34,13 +34,13 @@ Customizing Default Bootstrap Button Classes
 
   &:hover {
     background: #ccc !important;
-    color: black !important;
+    color: #000 !important;
   }
 }
 
 /* -- Info Button / Gray -- */
 .btn-info {
-  color: black !important;
+  color: #000 !important;
   text-shadow: none !important;
   background: #ddd !important;
   border: 0 !important;
@@ -52,13 +52,13 @@ Customizing Default Bootstrap Button Classes
 
   &:hover {
     background: #ccc !important;
-    color: black !important;
+    color: #000 !important;
   }
 }
 
 /* -- Success Button / Save -- */
 .btn-success {
-  color: black !important;
+  color: #000 !important;
   text-shadow: none !important;
   border: 0 !important;
   border-bottom: 1px solid #390 !important;
@@ -70,13 +70,13 @@ Customizing Default Bootstrap Button Classes
 
   &:hover {
     background: #9c0 !important;
-    color: black !important;
+    color: #000 !important;
   }
 }
 
 /* -- Warning button / orange -- */
 .btn-warning {
-  color: black !important;
+  color: #000 !important;
   text-shadow: none !important;
   border: 0 !important;
   border-bottom: 1px solid #b40 !important;
@@ -88,6 +88,6 @@ Customizing Default Bootstrap Button Classes
 
   &:hover {
     background: #e62 !important;
-    color: black !important;
+    color: #000 !important;
   }
 }
