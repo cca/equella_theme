@@ -1,93 +1,41 @@
 /* ----------------------------------------------
 Customizing Default Bootstrap Button Classes
 ---------------------------------------------- */
-/* -- Danger button / Red -- */
-.btn-danger {
+@mixin flat-button($bg-color) {
   color: #000 !important;
   text-shadow: none !important;
+  background: $bg-color !important;
   border: 0 !important;
-  border-bottom: 1px solid #b00 !important;
-  background: #e44 !important;
+  border-bottom: 1px solid #bbb !important;
   -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
   -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
   -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
   transition: all 0.1s ease-out;
 
   &:hover {
-    background: #e22 !important;
-    color: #000 !important;
+    background: lighten($bg-color, 6.5%) !important;
+    color: lighten(#000, 6.5%) !important;
   }
 }
 
 /* -- Default Gray Buttons -- */
 .btn.btn-equella,
-.btn.btn-primary {
-  color: #000 !important;
-  text-shadow: none !important;
-  background: #ddd !important;
-  border: 0 !important;
-  border-bottom: 1px solid #bbb !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-
-  &:hover {
-    background: #ccc !important;
-    color: #000 !important;
-  }
-}
-
-/* -- Info Button / Gray -- */
+.btn.btn-primary,
 .btn-info {
-  color: #000 !important;
-  text-shadow: none !important;
-  background: #ddd !important;
-  border: 0 !important;
-  border-bottom: 1px solid #bbb !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-
-  &:hover {
-    background: #ccc !important;
-    color: #000 !important;
-  }
+  @include flat-button(#ddd);
 }
 
-/* -- Success Button / Save -- */
-.btn-success {
-  color: #000 !important;
-  text-shadow: none !important;
-  border: 0 !important;
-  border-bottom: 1px solid #390 !important;
-  background: #7b2 !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-
-  &:hover {
-    background: #9c0 !important;
-    color: #000 !important;
-  }
+/* -- Danger button / Red -- */
+.btn-danger {
+  @include flat-button(#e44);
 }
 
 /* -- Warning button / orange -- */
 .btn-warning {
-  color: #000 !important;
-  text-shadow: none !important;
-  border: 0 !important;
-  border-bottom: 1px solid #b40 !important;
-  background: #e84 !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
+  @include flat-button(#e84);
+}
 
-  &:hover {
-    background: #e62 !important;
-    color: #000 !important;
-  }
+/* -- Success Button / Save -- */
+.btn-success {
+  @include flat-button(#7b2);
 }
