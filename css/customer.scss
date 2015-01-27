@@ -803,17 +803,22 @@ label[for='sc_comments_c'] {
   display: none;
 }
 
-
-
 .settingLabel {
   color: #222;
 }
+
 .topblock {
   background: white;
   border: 0;
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
   padding: 20px 5px 5px 5px;
+}
+
+/* /access/myresources.do?type=scrapbook
+ scrapbook Add to favs/Upload Files/Author new… actions look awkward as blocks */
+.query-action {
+  display: inline;
 }
 
 @import '_btns';
