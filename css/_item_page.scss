@@ -1,0 +1,336 @@
+/* styles on individual item pages e.g. /items/{{id}}/{{version}}/ URLs
+often involve classes commonly used in display templates */
+#title {
+  color: #936;
+}
+#more {
+  float: left;
+  padding: 10px;
+  display: inline;
+  color: #C69EB3;
+  font-weight: bold;
+  margin-left: 195px;
+}
+#secondtitle {
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+
+dt.loc {
+  border-bottom: none;
+  border: 1px solid #CCC;
+  padding: 5px;
+}
+dd.subject {
+  display: inline;
+  float: left;
+  min-width: 210px;
+}
+dd.rights {
+  margin-top: 15px;
+  border-top: 1px solid #CCC;
+  padding-top: 15px;
+  text-align: center;
+  clear: both;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 15px;
+}
+
+.itemsummary-layout {
+  .area {
+    h2 {
+      margin: 8px 0 8px 0;
+      color: #666;
+      border-bottom: 1px solid #DDD;
+    }
+    h3 {
+      font-size: 12px;
+      font-weight: normal;
+      margin: 5px 0 0 0;
+      color: #936;
+    }
+    /* this rule is killing me all the time
+    why would we want all paragraphs to be inline?
+    where is this useful? -EJP */
+    p {
+      display: inline;
+
+      &.caption {
+        margin: 0 5px 5px 0;
+        line-height: 15px;
+        display: block;
+      }
+      &.commImagelist {
+        margin: 0 5px 5px 10px;
+        line-height: 12px;
+        display: block;
+      }
+      &.photoImagelist {
+        margin: 0 5px 5px 12px;
+        display: block;
+        max-height: 220px;
+      }
+      &.artistDocs {
+        margin: 0 15px 0 5px;
+        line-height: 12px;
+        display: block;
+        word-break: break-word;
+      }
+    }
+  }
+
+  #col1 .displayNodeHalf,
+  #col1 .displayNodeFull {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    width: 47%;
+    padding-left: 10px;
+  }
+  #col1 .displayNodeFull {
+    width: 100%;
+  }
+
+  a {
+    color: #045F7F;
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px dotted #7FAEBE;
+      color: #7FAEBE;
+    }
+  }
+
+  #col2 ul li a {
+    color: #045F7F;
+    border: none;
+    &:hover {
+      color: #045F7F;
+      border: none;
+      text-decoration: underline;
+    }
+  }
+  #images a {
+    border: none;
+  }
+}
+
+div.itemsummary-layout img {
+  margin: 5px;
+  border: 1px solid #CCC;
+  padding: 5px;
+}
+
+/* hide error message for wrap */
+.displayNodeHalf p span {
+  display: none;
+}
+.displayNodeHalf p,
+.displayNodeFull p {
+  background: #fff;
+  padding: 0 15px;
+  float: left;
+  min-width: 85%;
+  margin: 0 0 5px 0;
+}
+
+div.area > div.displayNodeFull:first-child > h3 {
+  display: none;
+}
+
+/* change color of every other element */
+.displayNodeHalf p:nth-child(odd):before {
+  content: "* ";
+}
+.displayNodeHalf p:nth-child(odd):after {
+  content: " *";
+}
+.displayNodeHalf p:nth-child(odd) {
+  padding: 0 15px 3px 15px;
+}
+.displayNodeFull p {
+  width: 89%;
+}
+
+/* title */
+div.area > div.displayNodeFull:first-child > h3 + p {
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #DDD;
+  font-size: 18px;
+  padding: 0;
+  color: #045F7F;
+  width: 97%;
+  margin: 0 0 8px -8px;
+}
+
+/* collection */
+/* um…this selector is insane, can't be necessary -EJP */
+div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  color: #999;
+}
+
+#image-single {
+  float: left;
+  max-width: 150px;
+}
+
+p.caption {
+  color: #666;
+  font-size: 8pt;
+  text-align: center;
+}
+
+.rating-form div.input {
+  margin-top: 5;
+}
+.rate {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 190px;
+}
+#image-descrip {
+  float: right;
+  max-width: 170px;
+  text-align: left;
+}
+
+p.photoImagelist {
+  color: #666;
+  font-size: 8pt;
+  text-align: left;
+  max-width: 130px;
+  white-space: wrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  line-height: 20px;
+
+  i {
+    display: block;
+    width: 100% !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+p.artistDocs {
+  color: #666;
+  font-size: 8pt;
+  text-align: left;
+  max-width: 110px;
+}
+div.image-studentWork {
+  float: left;
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  text-align: center;
+}
+div.image-INTERstudentWork {
+  float: left;
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 165px;
+  text-align: center;
+}
+div.image-undergradExhibit {
+  float: left;
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 170px;
+  text-align: center;
+}
+div.image-photoStudentWork {
+  float: left;
+  max-width: 400px;
+  min-height: 220px;
+}
+div.image-seniorPacket {
+  float: left;
+  max-width: 400px;
+  min-height: 220px;
+}
+div.image-photoSeniorPacket {
+  float: left;
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 235px;
+}
+div.image-artistDocs {
+  float: left;
+  max-width: 130px;
+  min-width: 130px;
+  min-height: 140px;
+}
+div.image-juniorReviewDocs {
+  float: left;
+  min-width: 130px;
+  max-width: 130px;
+}
+div.image-Comm2 {
+  float: left;
+  width: 250px;
+  text-align: left;
+  min-height: auto;
+  max-height: 400px;
+  overflow: auto;
+}
+p.commImagelist {
+  color: #666;
+  font-size: 8pt;
+}
+table.commImages,
+td.commImages,
+th.commImages {
+  border: none;
+  width: 260px;
+  height: 120px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 10px;
+}
+div.image-juniorReviewWork {
+  float: left;
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 255px;
+}
+div.image-juniorReviewMovImgWork {
+  float: left;
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 170px;
+  margin-left: 20px;
+}
+p.imageList {
+  margin: 0 5px 5px 0;
+  line-height: 15px;
+  display: block;
+  text-align: left;
+  color: #666;
+  font-size: 11px;
+}
+#coursestuff {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 6px;
+  font-size: 11px;
+  line-height: 22px;
+}
+#VisStcoursestuff {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 6px;
+  line-height: 22px;
+}
+#WrLitcoursestuff {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+  line-height: 22px;
+}

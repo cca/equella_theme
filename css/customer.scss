@@ -34,7 +34,7 @@ body,
 
 /*
 #servermessage {
-  background: white;
+  background: #fff;
   border: none;
 }
 #servermessage p {
@@ -95,7 +95,7 @@ body,
   padding: 10px;
 }
 .itemsummary-layout .area {
-  background: white;
+  background: #fff;
 }
 #receipt-message,
 #versions li.selected {
@@ -128,7 +128,7 @@ div.formsection h3 {
 .modal-title h3 {
   background: #045F7F;
   border: 1px solid #045F7F;
-  color: white;
+  color: #fff;
   text-shadow: none;
 }
 .button-strip {
@@ -176,275 +176,6 @@ select[multiple="multiple"] {
   margin-right: 3px;
 }
 
-/* --------------------itemsummary---------------------------------- */
-.itemsummary-layout .area h3 {
-  font-size: 12px;
-  font-weight: normal;
-  margin: 5px 0 0 0;
-  color: #936;
-}
-.itemsummary-layout #col1 .displayNodeHalf,
-.itemsummary-layout #col1 .displayNodeFull {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-  width: 47%;
-  padding-left: 10px;
-}
-
-/* hide error message for wrap */
-.displayNodeHalf p span {
-  display: none;
-}
-/* this rule is killing me all the time
-why would we want all paragraphs to be inline?
-where is this useful? -EJP */
-.itemsummary-layout .area p {
-  display: inline;
-}
-div.area > div.displayNodeFull:first-child > h3 {
-  display: none;
-}
-div.itemsummary-layout img {
-  margin: 5px;
-  border: 1px solid #CCC;
-  padding: 5px;
-}
-.itemsummary-layout .area h2 {
-  margin: 8px 0 8px 0;
-  color: #666;
-  border-bottom: 1px solid #DDD;
-}
-.displayNodeHalf p,
-.displayNodeFull p {
-  background: white;
-  padding: 0 15px;
-  float: left;
-  min-width: 85%;
-  margin: 0 0 5px 0;
-}
-
-/* change color of every other element */
-.displayNodeHalf p:nth-child(odd):before {
-  content: "* ";
-}
-.displayNodeHalf p:nth-child(odd):after {
-  content: " *";
-}
-.displayNodeHalf p:nth-child(odd) {
-  padding: 0 15px 3px 15px;
-}
-.itemsummary-layout #col1 .displayNodeFull {
-  width: 100%;
-}
-.displayNodeFull p {
-  width: 89%;
-}
-
-/* title */
-div.area > div.displayNodeFull:first-child > h3 + p {
-  background: white;
-  border: none;
-  border-bottom: 1px solid #DDD;
-  font-size: 18px;
-  padding: 0;
-  color: #045F7F;
-  width: 97%;
-  margin: 0 0 8px -8px;
-}
-
-/* collection */
-div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
-  padding: 0;
-  margin: 0;
-  text-align: right;
-  color: #999;
-}
-.itemsummary-layout a {
-  color: #045F7F;
-}
-.itemsummary-layout a:hover {
-  text-decoration: none;
-  border-bottom: 1px dotted #7FAEBE;
-  color: #7FAEBE;
-}
-.itemsummary-layout #col2 ul li a {
-  color: #045F7F;
-  border: none;
-}
-.itemsummary-layout #col2 ul li a:hover {
-  color: #045F7F;
-  border: none;
-  text-decoration: underline;
-}
-.itemsummary-layout #images a {
-  border: none;
-}
-#image-single {
-  float: left;
-  max-width: 150px;
-}
-.itemsummary-layout .area  p.caption {
-  margin: 0 5px 5px 0;
-  line-height: 15px;
-  display: block;
-}
-p.caption {
-  color: #666;
-  font-size: 8pt;
-  text-align: center;
-}
-#more {
-  float: left;
-  padding: 10px;
-  display: inline;
-  color: #C69EB3;
-  font-weight: bold;
-  margin-left: 195px;
-}
-#secondtitle {
-  margin: 0 0 0 10px;
-  padding: 0;
-  font-size: 12px;
-  color: #666;
-  display: block;
-}
-.rating-form div.input {
-  margin-top: 5;
-}
-.rate {
-  position: absolute;
-  top: -5px;
-  right: 0;
-  width: 190px;
-}
-#image-descrip {
-  float: right;
-  max-width: 170px;
-  text-align: left;
-}
-.itemsummary-layout .area p.commImagelist {
-  margin: 0 5px 5px 10px;
-  line-height: 12px;
-  display: block;
-}
-.itemsummary-layout .area p.photoImagelist {
-  margin: 0 5px 5px 12px;
-  display: block;
-  max-height: 220px;
-}
-.itemsummary-layout .area p.artistDocs {
-  margin: 0 15px 0 5px;
-  line-height: 12px;
-  display: block;
-  word-break: break-word;
-}
-p.photoImagelist {
-  color: #666;
-  font-size: 8pt;
-  text-align: left;
-  max-width: 130px;
-  white-space: wrap;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
-  line-height: 20px;
-}
-p.photoImagelist i {
-  display: block;
-  width: 100% !important;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-p.artistDocs {
-  color: #666;
-  font-size: 8pt;
-  text-align: left;
-  max-width: 110px;
-}
-div.image-studentWork {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 130px;
-  text-align: center;
-}
-div.image-INTERstudentWork {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 165px;
-  text-align: center;
-}
-div.image-undergradExhibit {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 170px;
-  text-align: center;
-}
-div.image-photoStudentWork {
-  float: left;
-  max-width: 400px;
-  min-height: 220px;
-}
-div.image-seniorPacket {
-  float: left;
-  max-width: 400px;
-  min-height: 220px;
-}
-div.image-photoSeniorPacket {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 235px;
-}
-div.image-artistDocs {
-  float: left;
-  max-width: 130px;
-  min-width: 130px;
-  min-height: 140px;
-}
-div.image-juniorReviewDocs {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-}
-div.image-Comm2 {
-  float: left;
-  width: 250px;
-  text-align: left;
-  min-height: auto;
-  max-height: 400px;
-  overflow: auto;
-}
-p.commImagelist {
-  color: #666;
-  font-size: 8pt;
-}
-table.commImages,
-td.commImages,
-th.commImages {
-  border: none;
-  width: 260px;
-  height: 120px;
-  text-align: right;
-  vertical-align: middle;
-  padding: 10px;
-}
-div.image-juniorReviewWork {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 255px;
-}
-div.image-juniorReviewMovImgWork {
-  float: left;
-  min-width: 500px;
-  max-width: 500px;
-  min-height: 170px;
-  margin-left: 20px;
-}
-
 /* -------------------itemresults freemarker------------------------------ */
 dt,
 .itemsummary-layout .area h3 {
@@ -488,30 +219,6 @@ dd.minor {
 #indent {
   margin-left: 15px;
 }
-#title {
-  color: #936;
-}
-dt.loc {
-  border-bottom: none;
-}
-dd.loc {
-  border: 1px solid #CCC;
-  padding: 5px;
-}
-dd.subject {
-  display: inline;
-  float: left;
-  min-width: 210px;
-}
-dd.rights {
-  margin-top: 15px;
-  border-top: 1px solid #CCC;
-  padding-top: 15px;
-  text-align: center;
-  clear: both;
-  border-bottom: 1px solid #CCC;
-  padding-bottom: 15px;
-}
 .attachments-browse {
   border: none;
 }
@@ -536,8 +243,6 @@ dd.date {
   margin-bottom: 0;
 }
 .topblock a,
-.topblock a,
-.topblock a:hover,
 .topblock a:hover {
   color: #045F7F;
 }
@@ -556,22 +261,6 @@ dd.date {
   font-size: 120%;
   text-align: center;
 }
-
-#coursestuff {
-  display: block;
-  margin-left: 15px;
-  margin-bottom: 6px;
-  font-size: 11px;
-  line-height: 22px;
-}
-p.imageList {
-  margin: 0 5px 5px 0;
-  line-height: 15px;
-  display: block;
-  text-align: left;
-  color: #666;
-  font-size: 11px;
-}
 .box_content_inner {
   padding: 0 5px 5px 5px;
   background: none !important;
@@ -579,18 +268,6 @@ p.imageList {
 #servermessage {
   background: #F99;
   border-color: #F99;
-}
-#VisStcoursestuff {
-  display: block;
-  font-size: 11px;
-  margin-bottom: 6px;
-  line-height: 22px;
-}
-#WrLitcoursestuff {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 6px;
-  line-height: 22px;
 }
 .icon-circle-arrow-down {
   display: none;
@@ -656,7 +333,7 @@ Page Options
 ------------------ */
 
 /* New Navigation (Help and Options) */
-body #helpAndOptions {
+#helpAndOptions {
   display: block;
 }
 #startTourBtn {
@@ -666,9 +343,10 @@ body #helpAndOptions {
   text-align: right;
   z-index: 10;
   cursor: pointer;
-}
-#startTourBtn:hover {
-  text-decoration: underline !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
 }
 
 /* Design notes
@@ -685,10 +363,6 @@ CCA RED #EF4036 */
 }
 #content-body a:hover {
   text-decoration: underline;
-}
-.itemresult-metaline .itemresult-meta-delim,
-.itemresult-metaline abbr {
-  color: #666;
 }
 #sa_sortBox_minimise:active {
   background: none !important;
@@ -731,17 +405,17 @@ CCA RED #EF4036 */
   background: none !important;
 }
 .box_head {
-  background: white !important;
+  background: #fff !important;
   border: none !important;
 }
 .box_title_wrapper {
-  background: white !important;
+  background: #fff !important;
 }
 #searchactions-sort .box_minimise {
   content: url("#{$icons-path}/rightArrow.png") !important;
   width: 12px;
   height: 12px;
-  background: white !important;
+  background: #fff !important;
 }
 #searchactions-sort .box_minimise[alt='Hide the contents of this box'] {
   content: url("#{$icons-path}/downArrow.png") !important;
@@ -752,7 +426,7 @@ CCA RED #EF4036 */
   content: url("#{$icons-path}/rightArrow.png") !important;
   width: 12px;
   height: 12px;
-  background: white !important;
+  background: #fff !important;
 }
 #sa_filterBox .box_minimise[alt='Hide the contents of this box'] {
   content: url("#{$icons-path}/downArrow.png") !important;
@@ -763,7 +437,7 @@ CCA RED #EF4036 */
   content: url("#{$icons-path}/rightArrow.png") !important;
   width: 12px;
   height: 12px;
-  background: white !important;
+  background: #fff !important;
 }
 #isa_filterBox .box_minimise[alt='Hide the contents of this box'] {
   content: url("#{$icons-path}/downArrow.png") !important;
@@ -778,7 +452,7 @@ CCA RED #EF4036 */
   color: #666 !important;
 }
 .box_content hr {
-  border-color: white !important;
+  border-color: #fff !important;
 }
 .area .control h3 {
   color: #666;
@@ -808,7 +482,7 @@ label[for='sc_comments_c'] {
 }
 
 .topblock {
-  background: white;
+  background: #fff;
   border: 0;
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
@@ -825,6 +499,7 @@ label[for='sc_comments_c'] {
 @import '_reset_icons';
 @import '_left-nav';
 @import '_contribute';
+@import '_item_page';
 @import '_search';
 @import '_zebra';
 @import '_reset-bootstrap-icons';
