@@ -1,4 +1,5 @@
 @import '_vars';
+@import '_colors';
 
 body,
 #body {
@@ -62,7 +63,7 @@ body,
   margin-bottom: 0;
 }
 .content a {
-  color: #2F6FA5;
+  color: $link-dark-blue;
 }
 .content a:hover {
   color: #235D8C;
@@ -153,7 +154,7 @@ div.formsection h3 {
   border-top: 4px double #CCC;
 }
 #footer a {
-  color: #2F6FA5;
+  color: $link-dark-blue;
   text-decoration: none;
 }
 #footer a:hover {
