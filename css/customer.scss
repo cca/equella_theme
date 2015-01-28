@@ -412,12 +412,8 @@ or that the [alt] selector rules are unnecessary */
 }
 
 /* hide all comments */
-#comments-list {
-  display: none;
-}
-label[for='sc_comments_c'] {
-  display: none;
-}
+#comments-list,
+label[for='sc_comments_c'],
 #comments-add {
   display: none;
 }
