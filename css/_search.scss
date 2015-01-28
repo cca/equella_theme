@@ -33,6 +33,12 @@
 .itemresult-wrapper {
   border-bottom: 1px solid #CCC;
   padding-bottom: 10px;
+
+  &:last-child {
+    // final border is awkward looking since doesn't separate anything
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 .itemresult h3 a {
