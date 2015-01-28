@@ -12,10 +12,6 @@ body,
   display: none;
 }
 
-.topblock p,
-.topblock ul {
-  color: #666;
-}
 #screen-options a,
 #help a,
 #screen-options a:hover,
@@ -206,10 +202,7 @@ dd.date {
   margin-top: 0;
   margin-bottom: 0;
 }
-.topblock a,
-.topblock a:hover {
-  color: #045F7F;
-}
+
 .button input[type="button"] {
   color: #045F7F;
   text-transform: uppercase;
@@ -422,14 +415,6 @@ label[for='sc_comments_c'],
   color: #222;
 }
 
-.topblock {
-  background: #fff;
-  border: 0;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-  padding: 20px 5px 5px 5px;
-}
-
 /* /access/myresources.do?type=scrapbook
  scrapbook Add to favs/Upload Files/Author new… actions look awkward as blocks */
 .query-action {
@@ -439,6 +424,7 @@ label[for='sc_comments_c'],
 @import '_btns';
 @import '_reset_icons';
 @import '_topbar';
+@import '_topblock';
 @import '_left_nav';
 @import '_contribute';
 @import '_item_page';
