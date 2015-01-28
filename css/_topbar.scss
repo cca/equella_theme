@@ -22,4 +22,12 @@
   .embiggen {
     color: #fff; // readable font: white on bright red
   }
+
+  // handle inconsistency in how Tasks & Notifications are highlighted
+  // Tasks get a nice red background, let's give Notif. that too
+  a[Title="Notifications"] {
+    // stolen from topbar.css:64 #topmenu .embiggen
+    background-color: #F32;
+    color: #fff;
+  }
 }
