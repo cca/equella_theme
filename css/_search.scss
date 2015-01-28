@@ -41,11 +41,15 @@
   }
 }
 
+.itemresult.selected {
+  background-color: #FFEFEF;
+  padding: 10px;
+}
+
 .itemresult h3 a {
-  border-bottom: 1px dotted #936;
+  border: 0;
 
   &:hover {
-    border-bottom: 1px dotted #C69EB3;
     text-decoration: none;
   }
 }

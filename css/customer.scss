@@ -6,42 +6,12 @@ body,
   background: #fff;
 }
 
-/* upper right menu with profile links */
-#topbar {
-  background: #fff;
-  height: 26px;
-}
-
-#topmenu {
-  a,
-  span {
-    color: #738A99;
-    text-decoration: none;
-
-    &:hover {
-      background-color: inherit;
-      color: #936;
-      text-decoration: none;
-    }
-  }
-}
-
 #header-inner h2 {
   color: #045F7F;
   max-width: 660px;
   display: none;
 }
 
-/*
-#servermessage {
-  background: #fff;
-  border: none;
-}
-#servermessage p {
-  color: #936;
-  font-size: 14px;
-}
-*/
 .topblock p,
 .topblock ul {
   color: #666;
@@ -73,6 +43,7 @@ body,
   border-color: #CCC;
   padding: 5px;
 }
+
 .alt-links a,
 .recent-item h4 a,
 .news-item h4 a {
@@ -86,14 +57,7 @@ body,
 .news-item .news-date {
   color: #777;
 }
-.itemresult-metaline .itemresult-meta-delim,
-.itemresult-metaline abbr {
-  color: #C69EB3;
-}
-.itemresult.selected {
-  background-color: #FFEFEF;
-  padding: 10px;
-}
+
 .itemsummary-layout .area {
   background: #fff;
 }
@@ -443,9 +407,6 @@ CCA RED #EF4036 */
   content: url("#{$icons-path}/downArrow.png") !important;
   width: 12px;
   height: 12px;
-}
-.itemresult h3 a {
-  border: none !important;
 }
 
 .search-layout #col2 div.input h4 {
