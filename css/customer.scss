@@ -375,38 +375,22 @@ CCA RED #EF4036 */
 .box_title_wrapper {
   background: #fff !important;
 }
+
+/* @todo I suspect this is dead code
+or that the [alt] selector rules are unnecessary */
+#sa_filterBox .box_minimise,
+#isa_filterBox .box_minimise,
 #searchactions-sort .box_minimise {
   content: url("#{$icons-path}/rightArrow.png") !important;
   width: 12px;
   height: 12px;
   background: #fff !important;
-}
-#searchactions-sort .box_minimise[alt='Hide the contents of this box'] {
-  content: url("#{$icons-path}/downArrow.png") !important;
-  width: 12px;
-  height: 12px;
-}
-#sa_filterBox .box_minimise {
-  content: url("#{$icons-path}/rightArrow.png") !important;
-  width: 12px;
-  height: 12px;
-  background: #fff !important;
-}
-#sa_filterBox .box_minimise[alt='Hide the contents of this box'] {
-  content: url("#{$icons-path}/downArrow.png") !important;
-  width: 12px;
-  height: 12px;
-}
-#isa_filterBox .box_minimise {
-  content: url("#{$icons-path}/rightArrow.png") !important;
-  width: 12px;
-  height: 12px;
-  background: #fff !important;
-}
-#isa_filterBox .box_minimise[alt='Hide the contents of this box'] {
-  content: url("#{$icons-path}/downArrow.png") !important;
-  width: 12px;
-  height: 12px;
+
+  &[alt='Hide the contents of this box'] {
+    content: url("#{$icons-path}/downArrow.png") !important;
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .search-layout #col2 div.input h4 {
