@@ -1,36 +1,17 @@
 /* -----------------------------------------------
 Resetting Bootstrap Icons from white to black
 ----------------------------------------------- */
-.icon-chevron-down {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-off {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-ok {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-pencil {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-remove {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-search {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-thumbs-up {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-user {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-warning-sign {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
+.icon-bell,
+.icon-chevron-down,
+.icon-off,
+.icon-ok,
+.icon-pencil,
+.icon-remove,
+.icon-search,
+.icon-thumbs-up,
+.icon-upload,
+.icon-user,
+.icon-warning-sign,
 .icon-wrench {
-  background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
-}
-.icon-upload {
   background-image: url("#{$bs-path}/img/glyphicons-halflings.png");
 }
