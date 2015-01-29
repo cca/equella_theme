@@ -52,6 +52,13 @@ dd.rights {
       margin: 5px 0 0 0;
       color: #936;
     }
+
+    /* disable links that point nowhere */
+    a[href=""] {
+      color: $dark-font-color; /* default text color */
+      pointer-events: none;
+    }
+
     /* this rule is killing me all the time
     why would we want all paragraphs to be inline?
     where is this useful? -EJP */
