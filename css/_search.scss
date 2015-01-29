@@ -34,6 +34,11 @@
   border-bottom: 1px solid #CCC;
   padding-bottom: 10px;
 
+  // itemresult-wrapper needs to inherit micro-clearfix
+  // prevents search result thumbnails from bleeding into
+  // next result row
+  @include clearfix;
+
   &:last-child {
     // final border is awkward looking since doesn't separate anything
     border-bottom: 0;
