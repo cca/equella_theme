@@ -5,8 +5,8 @@ Customizing Default Bootstrap Button Classes
   color: #000 !important;
   text-shadow: none !important;
   background: $bg-color !important;
-  border: 0 !important;
-  border-bottom: 1px solid #bbb !important;
+  border: 0;
+  border-bottom: 1px solid #bbb;
   -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
   -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
   -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */

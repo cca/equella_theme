@@ -77,10 +77,26 @@ div.itemresult-wrapper {
   border-bottom: 0;
   border-color: #8F8B7E;
 }
+// no border betw various filter options
+.resulttopblock hr {
+  border: 1px solid #fff;
+
+  &:last-child {
+    display: none;
+  }
+}
+#sra_sort,
+#sra_filter,
+#sra_share {
+  border-bottom: 0;
+}
 /* headings in this section */
 #searchresults-actions #actioncontent {
   h3 {
     color: #222;
+  }
+  p {
+    margin: 0;
   }
   label {
     color: #000;
