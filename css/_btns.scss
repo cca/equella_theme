@@ -17,11 +17,6 @@
 .button.rightarrow {
   color: #eee;
 }
-
-/* .button.downarrow {
-  border-top: none;
-}
-*/
 .button.add,
 .button.delete {
   padding: 5px;
@@ -50,11 +45,13 @@
   border: 1px solid #045F7F;
   background: #DDD;
   color: #045F7F;
-}
-.button-big:hover {
-  border: 1px solid #045F7F;
-  background: #CCC;
-  color: #045F7F;
+
+  &:hover {
+    // @todo are redundant border & color rules necessary?
+    border: 1px solid #045F7F;
+    background: #CCC;
+    color: #045F7F;
+  }
 }
 .button-big.rightarrow:hover {
   background-image: url(#{$img-path}/button-big-right.gif);
@@ -64,9 +61,10 @@
   padding: 3px 15px;
   font-size: 10px;
   border: 1px solid #738A99;
-}
-.button.rightarrow:hover {
-  color: #777;
+
+  &:hover {
+    color: #777;
+  }
 }
 .button-big.leftarrow:hover {
   background-image: url(#{$img-path}/button-big-left.gif);
@@ -74,18 +72,14 @@
 }
 
 /* disabled buttons */
-input[type="button"][disabled="disabled"].button,
+input[type="button"][disabled].button,
 input[type="button"][disabled].button-big,
 input[type="button"][disabled="disabled"].button-big,
 input[type="button"][disabled].button-large,
 input[type="button"][disabled="disabled"].button-large {
   background: #666;
-}
-input[type="button"][disabled].button:hover,
-input[type="button"][disabled="disabled"].button:hover,
-input[type="button"][disabled].button-big:hover,
-input[type="button"][disabled="disabled"].button-big:hover,
-input[type="button"][disabled].button-large:hover,
-input[type="button"][disabled="disabled"].button-large:hover {
-  background: #777;
+
+  &:hover {
+    background: #777;
+  }
 }
