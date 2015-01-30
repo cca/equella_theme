@@ -30,8 +30,16 @@
   margin-left: 3px;
 }
 
-.itemresult-wrapper {
-  border-bottom: 1px solid #CCC;
+// div needed for specificity of 1st background rule
+// overrides div.itemresult-wrapper on gallerylist.css:1
+div.itemresult-wrapper {
+  // override gray background in gallery view
+  background: #fff;
+  // usually we have a 1px solid #ccc border on the bottom
+  // but that looks awkward in Gallery view, plus there's no way
+  // to target .itemresult-wrapper in Gallery vs. Standard view
+  // compromise: remove all borders in both views
+  border: 0;
   padding-bottom: 10px;
 
   // itemresult-wrapper needs to inherit micro-clearfix
@@ -40,8 +48,7 @@
   @include clearfix;
 
   &:last-child {
-    // final border is awkward looking since doesn't separate anything
-    border-bottom: 0;
+    // border: 0
     padding-bottom: 0;
   }
 }

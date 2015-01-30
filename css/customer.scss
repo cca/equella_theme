@@ -408,7 +408,10 @@ or that the [alt] selector rules are unnecessary */
 /* hide all comments */
 #comments-list,
 label[for='sc_comments_c'],
-#comments-add {
+#comments-add,
+// only way to get the .icon-comment & number sitting
+// in a .gallery-action <a> without useful style hooks
+#searchresults .gallery-action:last-child {
   display: none;
 }
 
