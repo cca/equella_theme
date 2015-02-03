@@ -230,6 +230,11 @@ p.artistDocs {
   font-size: 8pt;
   text-align: left;
   max-width: 110px;
+
+  &.label {
+    font-style: italic;
+    text-decoration: underline;
+  }
 }
 div.image-studentWork {
   float: left;
