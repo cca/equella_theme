@@ -66,6 +66,11 @@ div.itemresult-wrapper {
   }
 }
 
+/* gallery view */
+.gallery-preview img {
+    max-width: 100%;
+}
+
 /* hide rating ability since we don't use it */
 .itemresult-rating {
   display: none;
