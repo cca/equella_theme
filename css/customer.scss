@@ -48,7 +48,7 @@ body,
 }
 .recent-item h4 a:hover,
 .news-item h4 a:hover {
-  color: #4B4842;
+  color: $dark-font-color;
 }
 .recent-item span,
 .news-item .news-date {
@@ -279,13 +279,13 @@ or that the [alt] selector rules are unnecessary */
 }
 
 .search-layout #col2 div.input h4 {
-  color: #666 !important;
+  color: $dark-gray !important;
 }
 .box_content hr {
   border-color: #fff !important;
 }
 .area .control h3 {
-  color: #666;
+  color: $dark-gray;
 }
 #breadcrumbs a {
   color: #444;

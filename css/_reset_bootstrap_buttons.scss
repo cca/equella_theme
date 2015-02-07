@@ -25,17 +25,17 @@ Customizing Default Bootstrap Button Classes
   @include flat-button(#ddd);
 }
 
-/* -- Danger button / Red -- */
+/* -- Danger button -- */
 .btn-danger {
-  @include flat-button(#e44);
+  @include flat-button($error-red);
 }
 
-/* -- Warning button / orange -- */
+/* -- Warning button -- */
 .btn-warning {
-  @include flat-button(#e84);
+  @include flat-button($warning-orange);
 }
 
 /* -- Success Button / Save -- */
 .btn-success {
-  @include flat-button(#7b2);
+  @include flat-button($success-green);
 }

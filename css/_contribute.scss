@@ -21,7 +21,7 @@ Contribute - Right panel Save actions restyling
 #wizard-major-actions .action-button.save,
 #wizard-actions a[title="Cancel"],
 #ed_saveButton {
-  background: #7b2 url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
+  background: $success-green url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
   background-size: 14px !important;
   border-bottom: 1px solid #390 !important;
   border-radius: 3px;
@@ -42,9 +42,9 @@ Contribute - Right panel Save actions restyling
 }
 
 #wizard-actions a[title="Cancel"] {
-  background: #e44 url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+  background: $error-red url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
   background-size: 14px !important;
-  border-bottom-color: darken(#e44, 20%) !important;
+  border-bottom-color: darken($error-red, 20%) !important;
   width: 50px; // turns out to make "cancel" btn same length as "save"
 
   /* copied from .action-button in core styles.css */
@@ -66,13 +66,13 @@ Contribute - Right panel Save actions restyling
 Main Page Section Styling
 --------------------------- */
 #content-body .area {
-  background: white !important;
+  background: #fff !important;
   border: 1px solid #bbb !important;
 }
 /* @todo why would this be necessary?
 100% redundant with above */
 #content-body .area:first-child {
-  background: white !important;
+  background: #fff !important;
   border: 1px solid #bbb !important;
 }
 
@@ -81,22 +81,22 @@ Re-styling Contribute page Fancybox Popup
 ------------------------------------------- */
 #fancybox-inner {
   .modal-title h3 {
-    background: white !important;
+    background: #fff !important;
     color: #000 !important;
     font-weight: bold;
-    border: 1px solid white !important;
+    border: 1px solid #fff !important;
   }
   .modal-footer {
-    background: white !important;
+    background: #fff !important;
     border: none !important;
     box-sizing: border-box;
     padding-bottom: 33px;
   }
   .modal-content {
-    background: white !important;
+    background: #fff !important;
   }
   .modal-content-background {
-    background: white !important;
+    background: #fff !important;
   }
 }
 #fancybox-outer .fancy-bg {
@@ -115,7 +115,7 @@ Re-styling Contribute page Fancybox Popup
   padding: 0;
 
   .ui-tabs-nav {
-    background: white !important;
+    background: #fff !important;
     border: none !important;
   }
   .ui-tabs-nav li[role='tab'] {
@@ -127,7 +127,7 @@ Re-styling Contribute page Fancybox Popup
     font-weight: bold;
   }
   div[role='tabpanel'] {
-    background: white !important;
+    background: #fff !important;
     border: 1px solid #bbb !important;
     border-radius: 4px !important;
   }

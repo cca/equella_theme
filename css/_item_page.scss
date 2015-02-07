@@ -15,7 +15,7 @@ often involve classes commonly used in display templates */
   margin: 0 0 0 10px;
   padding: 0;
   font-size: 12px;
-  color: #666;
+  color: $dark-gray;
   display: block;
 }
 
@@ -43,7 +43,7 @@ dd.rights {
   .area {
     h2 {
       margin: 8px 0 8px 0;
-      color: #666;
+      color: $dark-gray;
       border-bottom: 1px solid #DDD;
     }
     h3 {
@@ -188,7 +188,7 @@ div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
 }
 
 p.caption {
-  color: #666;
+  color: $dark-gray;
   font-size: 8pt;
   text-align: center;
 }
@@ -209,7 +209,7 @@ p.caption {
 }
 
 p.photoImagelist {
-  color: #666;
+  color: $dark-gray;
   font-size: 8pt;
   text-align: left;
   max-width: 130px;
@@ -226,7 +226,7 @@ p.photoImagelist {
   }
 }
 p.artistDocs {
-  color: #666;
+  color: $dark-gray;
   font-size: 8pt;
   text-align: left;
   max-width: 110px;
@@ -293,7 +293,7 @@ div.image-Comm2 {
   overflow: auto;
 }
 p.commImagelist {
-  color: #666;
+  color: $dark-gray;
   font-size: 8pt;
 }
 table.commImages,
@@ -324,7 +324,7 @@ p.imageList {
   line-height: 15px;
   display: block;
   text-align: left;
-  color: #666;
+  color: $dark-gray;
   font-size: 11px;
 }
 #coursestuff {
@@ -352,11 +352,11 @@ dt,
 .itemsummary-layout .area h3 {
   font-size: 17px;
   margin: 16px 0 8px 0;
-  color: $gray-header;
+  color: $dark-gray;
   border-bottom: 1px solid #DDD;
 }
 .itemsummary-layout h4 {
-  color: $gray-header;
+  color: $dark-gray;
   text-decoration: underline;
 }
 dt {
@@ -378,7 +378,7 @@ dd.collection {
   display: block;
   margin-left: 25px;
   font-size: 11px;
-  color: #666;
+  color: $dark-gray;
   line-height: 20px;
 }
 dt.minor {
@@ -405,7 +405,7 @@ div.itemsummary-layout img.droparrow {
   padding: 2px;
 }
 .customlinks #cls_selector_opener {
-  color: #666;
+  color: $dark-gray;
 }
 #input-right {
   float: right;
@@ -453,7 +453,7 @@ dt.indentNoLine {
 dt.subHeading {
   font-size: 15px;
   margin: 10px 5px 5px 15px;
-  color: #666;
+  color: $dark-gray;
   border-bottom: none;
 }
 dd.big {

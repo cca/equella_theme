@@ -55,7 +55,7 @@
 }
 .button-big.rightarrow:hover {
   background-image: url(#{$img-path}/button-big-right.gif);
-  color: #777;
+  color: lighten($dark-gray, 6.5%);
 }
 .button.rightarrow {
   padding: 3px 15px;
@@ -63,12 +63,12 @@
   border: 1px solid #738A99;
 
   &:hover {
-    color: #777;
+    color: lighten($dark-gray, 6.5%);
   }
 }
 .button-big.leftarrow:hover {
   background-image: url(#{$img-path}/button-big-left.gif);
-  color: #777;
+  color: lighten($dark-gray, 6.5%);
 }
 
 /* disabled buttons */
@@ -77,9 +77,9 @@ input[type="button"][disabled].button-big,
 input[type="button"][disabled="disabled"].button-big,
 input[type="button"][disabled].button-large,
 input[type="button"][disabled="disabled"].button-large {
-  background: #666;
+  background: $dark-gray;
 
   &:hover {
-    background: #777;
+    background: lighten($dark-gray, 6.5%);
   }
 }
