@@ -110,3 +110,17 @@ div.itemresult-wrapper {
     color: $link-dark-blue;
   }
 }
+
+// we want to do this _only for single column search results_
+#col1 .searchresults-header {
+    // "Results" text, useless
+    > span {
+        display: none;
+    }
+
+    // see #6 - fix for text overlap in EQUELLA 6.3
+    // text is absolutely positioned in middle of searchresults-header
+    #searchresults-stats {
+        position: static;
+    }
+}
