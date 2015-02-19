@@ -1,6 +1,13 @@
 /* --------------------
   searchresults
 ----------------------- */
+// itemresult needs to inherit micro-clearfix
+// prevents search result thumbnails from bleeding into
+// next result row
+.itemresult {
+    @include clearfix;
+}
+
 #searchresults {
   /* @todo check if necessary
   likely already solved by #content-body .area styles */
@@ -42,11 +49,6 @@ div.itemresult-wrapper {
   border: 0;
   padding-bottom: 10px;
 
-  // itemresult-wrapper needs to inherit micro-clearfix
-  // prevents search result thumbnails from bleeding into
-  // next result row
-  @include clearfix;
-
   &:last-child {
     // border: 0
     padding-bottom: 0;
@@ -71,9 +73,22 @@ div.itemresult-wrapper {
     max-width: 100%;
 }
 
-/* hide rating ability since we don't use it */
+// hide rating ability since we don't use it
 .itemresult-rating {
+  background: #fff;
   display: none;
+
+  // prevent "Select" button position from varying
+  @include clearfix;
+
+  .rating-bar {
+    border: 0;
+  }
+}
+// but we need .itemresult-rating to "select" results on Manage Resources pg…
+// only way to target that page is with #itemadmin-page
+#itemadmin-page + #searchresults-outer-div .itemresult-rating {
+  display: inherit;
 }
 
 /* "sort" & "filter" options on search results page */
