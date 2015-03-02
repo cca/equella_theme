@@ -1,0 +1,73 @@
+/* student work galleries
+images with bits of metadata beneath
+used in CORE Waiver Portfolio, Textiles SR packets,  */
+.image-with-metadata {
+    display: block;
+    float: left;
+    margin: 20px 0 10px;
+    min-height: 230px;
+    max-height: 230px;
+    text-align: center;
+    // just enough to fit three images in a row
+    $iwm-width: 174px;
+    max-width: $iwm-width;
+    width: $iwm-width;
+
+    &:hover {
+        overflow: visible;
+    }
+
+    &:hover .metadata {
+        max-height: 1000px;
+        background: #eee;
+        height: auto;
+        position: absolute;
+        white-space: normal;
+    }
+
+    &.shorter {
+        min-height: 150px;
+    }
+
+    > a {
+        width: 110px;
+        display: block;
+        margin: auto;
+
+        &:hover {
+            border: none;
+
+            img {
+                border-color:black;
+            }
+        }
+    }
+
+    .metadata {
+        // needed to override .itemsummary-layout .area .p { display: inline }
+        // remove !imp once we get rid of that awful rule
+        display: block !important;
+        line-height: 20px;
+        margin: 0 5px 5px 12px;
+        max-height: 220px;
+        overflow: hidden;
+        $md-pad: 8px;
+        padding: $md-pad;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: $iwm-width - (2 * $md-pad);
+        width: $iwm-width - (2 * $md-pad);
+
+        .title {
+            border-bottom: 1px dotted #bbb;
+            display: block;
+            font-style: italic;
+            font-weight: bold;
+            overflow: hidden;
+            padding-bottom: 7px;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+    }
+}
