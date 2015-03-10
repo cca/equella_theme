@@ -85,9 +85,11 @@ div.itemresult-wrapper {
     border: 0;
   }
 }
-// but we need .itemresult-rating to "select" results on Manage Resources pg…
-// only way to target that page is with #itemadmin-page
-#itemadmin-page + #searchresults-outer-div .itemresult-rating {
+// but we need .itemresult-rating to "select" results on Manage Resources pg… (1)
+// and to remove saved searches on Favorites pg (2)
+// only way to target solely those pages is with ID sibling
+#itemadmin-page + #searchresults-outer-div .itemresult-rating,
+#query-header + #searchresults-outer-div .itemresult-rating {
   display: inherit;
 }
 
