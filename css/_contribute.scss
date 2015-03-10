@@ -69,13 +69,10 @@ Main Page Section Styling
   background: #fff !important;
   border: 1px solid #bbb !important;
 }
-/* @todo why would this be necessary?
-100% redundant with above */
-#content-body .area:first-child {
-  background: #fff !important;
-  border: 1px solid #bbb !important;
+// 10px margin-bottom is annoying, per arph 3/10/15
+.wizard-controls .control p {
+  margin: 0;
 }
-
 /* -------------------------------------------
 Re-styling Contribute page Fancybox Popup
 ------------------------------------------- */
