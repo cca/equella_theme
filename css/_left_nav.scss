@@ -59,7 +59,7 @@ which ( might ) be more static across all pages.
 
 Example:(Dashboard Link)
 
-#menu > ul > li > a[href='/access/home.do'] {
+#menu a[href='/access/home.do'] {
   background: url('http:#{$icons-path}/icon_50669.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
@@ -73,31 +73,31 @@ Good luck!:) - */
 /* ---------------------------******--------------------------- */
 
 /* -- DASHBOARD -- */
-#menu > ul > li > a[href*='access/home.do'] {
+#menu a[href*='access/home.do'] {
   background: url('#{$icons-path}/icon_50669.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- SETTINGS -- */
-#menu > ul > li > a[href*='access/settings.do'] {
+#menu a[href*='access/settings.do'] {
   background: url('#{$icons-path}/engine.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- MY RESOURCES -- */
-#menu > ul > li > a[href*='access/myresources.do'] {
+#menu a[href*='access/myresources.do'] {
   background: url('#{$icons-path}/manage.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- FAVOURITES -- */
-#menu > ul > li > a[href*='access/favourites.do'] {
+#menu a[href*='access/favourites.do'] {
   background: url('#{$icons-path}/star.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- MANAGE RESOURCES -- */
-#menu > ul > li > a[href*='access/itemadmin.do'] {
+#menu a[href*='access/itemadmin.do'] {
   background: url('#{$icons-path}/manage.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
@@ -109,73 +109,73 @@ Good luck!:) - */
 }
 
 /* -- CONTRIBUTE -- */
-#menu > ul > li > a[href*='access/contribute.do'] {
+#menu a[href*='access/contribute.do'] {
   background: url('#{$icons-path}/upload.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- CCA LIBRARIES CATALOG-- */
-#menu > ul > li > a[href*='libraries.cca.edu'] {
+#menu a[href*='libraries.cca.edu'] {
   background: url('#{$icons-path}/catalog.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- ANNEMARIE HAAR -- */
-#menu > ul > li > a[href*='libraries.cca.edu/staff'] {
+#menu a[href*='libraries.cca.edu/staff'] {
   background: url('#{$icons-path}/email 1.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- TASKS -- */
-#menu > ul > li > a[href*='access/tasklist.do'] {
+#menu a[href*='access/tasklist.do'] {
   background: url('#{$icons-path}/calendar.png') no-repeat 10px center !important;
   background-size: 14px !important;
 }
 
 /* -- MANAGE ACTIVATIONS -- */
-#menu > ul > li > a[href*='access/activations.do'] {
+#menu a[href*='access/activations.do'] {
   background: url('#{$icons-path}/icon_50776.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- SEARCH -- */
-#menu > ul > li > a[href*='access/searching.do'] {
+#menu a[href*='access/searching.do'] {
   background: url('#{$icons-path}/search.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- NOTIFICATIONS -- */
-#menu > ul > li > a[href*='access/notifications.do'] {
+#menu a[href*='access/notifications.do'] {
   background: url('#{$icons-path}/flag.png') no-repeat 10px center !important;
   background-size: 13px !important;
 }
 
 /* -- REPORTS -- */
-#menu > ul > li > a[href*='access/reports.do'] {
+#menu a[href*='access/reports.do'] {
   background: url('#{$icons-path}/icon_50834.png') no-repeat 10px center !important;
   background-size: 15px !important;
 }
 
 /* -- Assessments -- */
-#menu > ul > li > a[href*='access/runwizard.do?method=newitem&itemdefUuid=64efdfe9-9fcb-40ed-9688-206f1985eea0'] {
+#menu a[href*='access/runwizard.do?method=newitem&itemdefUuid=64efdfe9-9fcb-40ed-9688-206f1985eea0'] {
   background: url('#{$icons-path}/info.png') no-repeat 14px center !important;
   background-size: 6px !important;
 }
 
 /* -- Technology -- */
-#menu > ul > li > a[href*='technology.cca.edu'] {
+#menu a[href*='technology.cca.edu'] {
   background: url('#{$icons-path}/display.png') no-repeat 11px center !important;
   background-size: 14px !important;
 }
 
 /* -- CCA -- */
-#menu > ul > li > a[href*='www.cca.edu'] {
+#menu a[href*='www.cca.edu'] {
   background: url('#{$icons-path}/cca.png') no-repeat 13px center !important;
   background-size: 11px !important;
 }
 
 /* -- Webadvisor -- */
-#menu > ul > li > a[href*='webadvisor.cca.edu'] {
+#menu a[href*='webadvisor.cca.edu'] {
   background: url('#{$icons-path}/flash.png') no-repeat 14px center !important;
   background-size: 8px !important;
 }
