@@ -102,8 +102,8 @@ Good luck!:) - */
   background-size: 15px !important;
 }
 
-/* -- LIBRARY COLLECTIONS -- */
-#menu > ul > li > a[href*='access/hierarchy.do?topic=23532860-ca7d-69ec-f5c3-235fac553941'] {
+/* -- all the hierarchy links -- */
+#menu a[href^='access/hierarchy.do'] {
   background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
   background-size: 13px !important;
 }
@@ -154,36 +154,6 @@ Good luck!:) - */
 #menu > ul > li > a[href*='access/reports.do'] {
   background: url('#{$icons-path}/icon_50834.png') no-repeat 10px center !important;
   background-size: 15px !important;
-}
-
-/* -- INFO FAQ GUIDES -- */
-#menu > ul > li > a[href*='access/hierarchy.do?topic=44db2f8a-bb57-4f1d-801a-43443ae55176'] {
-  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
-  background-size: 13px !important;
-}
-
-/* -- INFO FAQ GUIDES -- */
-#menu > ul > li > a[href*='access/hierarchy.do?topic=efec5da1-a103-4bc6-b41b-e06df973eab7'] {
-  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
-  background-size: 13px !important;
-}
-
-/* -- Student Work -- */
-#menu > ul > li > a[href*='access/hierarchy.do?topic=a1927486-9032-4452-b3ef-3712a51f81c8'] {
-  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
-  background-size: 13px !important;
-}
-
-/* -- Syllabus Collection -- */
-#menu > ul > li > a[href*='access/hierarchy.do?topic=977df0cc-5f5c-4b8d-9699-ad11b33496df'] {
-  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
-  background-size: 13px !important;
-}
-
-/* -- More -- */
-#menu > ul > li > a[href*='access/hierarchy.do?hier.topic=ALL'] {
-  background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
-  background-size: 13px !important;
 }
 
 /* -- Assessments -- */
