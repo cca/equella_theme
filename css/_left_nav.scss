@@ -2,44 +2,42 @@
 Navigation (Left hand Nav)
 ------------------ */
 #menu {
-  &.menu-collapsed {
-    display: none;
-  }
-
-  ul {
-    background: #fff;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 0;
-    margin-bottom: 10px !important;
-    overflow: hidden;
-
-    li {
-      border: none !important;
-      background: transparent !important;
-      transition: all 0.1s ease-out;
-
-      a {
-        background-color: #fff;
-        border: 0;
-        color: #000;
-      }
-      a:hover {
-        background-color: #fff;
-        text-shadow: none;
-      }
-      &:hover {
-        padding-left: 5px;
-        border-bottom: 1px solid #000;
-      }
-      &:first-child {
-        border: none !important;
-      }
+    &.menu-collapsed {
+        display: none;
     }
-  }
+
+    ul {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: none;
+        margin: 0;
+        margin-bottom: 10px !important;
+        overflow: hidden;
+
+        li {
+            background: transparent !important;
+            border: none !important;
+            transition: all 0.1s ease-out;
+
+            a {
+                background-color: #fff;
+                border: 0;
+                color: #000;
+            }
+            a:hover {
+                background-color: #fff;
+                text-shadow: none;
+            }
+            &:hover {
+                padding-left: 5px;
+                border-bottom: 1px solid #000;
+            }
+            &:first-child {
+                border: none !important;
+            }
+        }
+    }
 
   /* ------------------
   LEFT HAND NAV ICONS
@@ -66,105 +64,93 @@ Navigation (Left hand Nav)
   /* CHRISTOPHER */
   /* ---------------------------******--------------------------- */
 
-  // default background size, override where necessary
-  a {
-      background-size: 15px !important;
-  }
+    /* -- DASHBOARD -- */
+    a[href*='access/home.do'] {
+        background: url('#{$icons-path}/icon_50669.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- DASHBOARD -- */
-  a[href*='access/home.do'] {
-    background: url('#{$icons-path}/icon_50669.png') no-repeat 10px center !important;
-  }
+    /* -- SETTINGS -- */
+    a[href*='access/settings.do'] {
+        background: url('#{$icons-path}/engine.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- SETTINGS -- */
-  a[href*='access/settings.do'] {
-    background: url('#{$icons-path}/engine.png') no-repeat 10px center !important;
-  }
+    /* -- MY RESOURCES -- */
+    a[href*='access/myresources.do'] {
+        background: url('#{$icons-path}/manage.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- MY RESOURCES -- */
-  a[href*='access/myresources.do'] {
-    background: url('#{$icons-path}/manage.png') no-repeat 10px center !important;
-  }
+    /* -- FAVOURITES -- */
+    a[href*='access/favourites.do'] {
+        background: url('#{$icons-path}/star.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- FAVOURITES -- */
-  a[href*='access/favourites.do'] {
-    background: url('#{$icons-path}/star.png') no-repeat 10px center !important;
-  }
+    /* -- MANAGE RESOURCES -- */
+    a[href*='access/itemadmin.do'] {
+        background: url('#{$icons-path}/manage.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- MANAGE RESOURCES -- */
-  a[href*='access/itemadmin.do'] {
-    background: url('#{$icons-path}/manage.png') no-repeat 10px center !important;
-  }
+    /* -- all the hierarchy links -- */
+    a[href^='access/hierarchy.do'] {
+        background: url('#{$icons-path}/list 1.png') 10px center / 13px no-repeat !important;
+    }
 
-  /* -- all the hierarchy links -- */
-  a[href^='access/hierarchy.do'] {
-    background: url('#{$icons-path}/list 1.png') no-repeat 10px center !important;
-    background-size: 13px !important;
-  }
+    /* -- CONTRIBUTE -- */
+    a[href*='access/contribute.do'] {
+        background: url('#{$icons-path}/upload.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- CONTRIBUTE -- */
-  a[href*='access/contribute.do'] {
-    background: url('#{$icons-path}/upload.png') no-repeat 10px center !important;
-  }
+    /* -- CCA LIBRARIES CATALOG-- */
+    a[href*='libraries.cca.edu'] {
+        background: url('#{$icons-path}/catalog.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- CCA LIBRARIES CATALOG-- */
-  a[href*='libraries.cca.edu'] {
-    background: url('#{$icons-path}/catalog.png') no-repeat 10px center !important;
-  }
+    /* -- ANNEMARIE HAAR -- */
+    a[href*='libraries.cca.edu/staff'] {
+        background: url('#{$icons-path}/email 1.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- ANNEMARIE HAAR -- */
-  a[href*='libraries.cca.edu/staff'] {
-    background: url('#{$icons-path}/email 1.png') no-repeat 10px center !important;
-  }
+    /* -- TASKS -- */
+    a[href*='access/tasklist.do'] {
+        background: url('#{$icons-path}/calendar.png') 10px center / 14px no-repeat !important;
+    }
 
-  /* -- TASKS -- */
-  a[href*='access/tasklist.do'] {
-    background: url('#{$icons-path}/calendar.png') no-repeat 10px center !important;
-    background-size: 14px !important;
-  }
+    /* -- MANAGE ACTIVATIONS -- */
+    a[href*='access/activations.do'] {
+        background: url('#{$icons-path}/icon_50776.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- MANAGE ACTIVATIONS -- */
-  a[href*='access/activations.do'] {
-    background: url('#{$icons-path}/icon_50776.png') no-repeat 10px center !important;
-  }
+    /* -- SEARCH -- */
+    a[href*='access/searching.do'] {
+        background: url('#{$icons-path}/search.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- SEARCH -- */
-  a[href*='access/searching.do'] {
-    background: url('#{$icons-path}/search.png') no-repeat 10px center !important;
-  }
+    /* -- NOTIFICATIONS -- */
+    a[href*='access/notifications.do'] {
+        background: url('#{$icons-path}/flag.png') 10px center / 13px no-repeat !important;
+    }
 
-  /* -- NOTIFICATIONS -- */
-  a[href*='access/notifications.do'] {
-    background: url('#{$icons-path}/flag.png') no-repeat 10px center !important;
-    background-size: 13px !important;
-  }
+    /* -- REPORTS -- */
+    a[href*='access/reports.do'] {
+        background: url('#{$icons-path}/icon_50834.png') 10px center / 15px no-repeat !important;
+    }
 
-  /* -- REPORTS -- */
-  a[href*='access/reports.do'] {
-    background: url('#{$icons-path}/icon_50834.png') no-repeat 10px center !important;
-  }
+    /* -- Assessments -- */
+    a[href*='access/runwizard.do?method=newitem&itemdefUuid=64efdfe9-9fcb-40ed-9688-206f1985eea0'] {
+        background: url('#{$icons-path}/info.png') 14px center / 6px no-repeat !important;
+    }
 
-  /* -- Assessments -- */
-  a[href*='access/runwizard.do?method=newitem&itemdefUuid=64efdfe9-9fcb-40ed-9688-206f1985eea0'] {
-    background: url('#{$icons-path}/info.png') no-repeat 14px center !important;
-    background-size: 6px !important;
-  }
+    /* -- Technology -- */
+    a[href*='technology.cca.edu'] {
+        background: url('#{$icons-path}/display.png') 11px center / 14px no-repeat  !important;
+    }
 
-  /* -- Technology -- */
-  a[href*='technology.cca.edu'] {
-    background: url('#{$icons-path}/display.png') no-repeat 11px center !important;
-    background-size: 14px !important;
-  }
+    /* -- CCA -- */
+    a[href*='www.cca.edu'] {
+        background: url('#{$icons-path}/cca.png') 13px center / 11px no-repeat  !important;
+    }
 
-  /* -- CCA -- */
-  a[href*='www.cca.edu'] {
-    background: url('#{$icons-path}/cca.png') no-repeat 13px center !important;
-    background-size: 11px !important;
-  }
-
-  /* -- Webadvisor -- */
-  a[href*='webadvisor.cca.edu'] {
-    background: url('#{$icons-path}/flash.png') no-repeat 14px center !important;
-    background-size: 8px !important;
-  }
+    /* -- Webadvisor -- */
+    a[href*='webadvisor.cca.edu'] {
+        background: url('#{$icons-path}/flash.png') 14px center / 8px no-repeat  !important;
+    }
 }
