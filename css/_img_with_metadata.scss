@@ -1,15 +1,23 @@
 /* student work galleries
 images with bits of metadata beneath
-used in CORE Waiver Portfolio, Textiles SR packets,  */
+used in CORE Waiver Portfolio & most Fine Arts Division SR Packets */
+
+// vars
+$md-margin-bottom: 5px;
+$md-height: 220px;
+$md-pad: 8px;
+$iwm-width: 174px;
+// link wrapping image, this height involves standard EQUELLA thumbnail size
+$iwm-a-height: 90px;
+
 .image-with-metadata {
     display: block;
     float: left;
     margin: 20px 0 10px;
     min-height: 230px;
-    max-height: 230px;
+    max-height: $iwm-a-height + $md-pad + $md-margin-bottom + $md-height;
     text-align: center;
     // just enough to fit three images in a row
-    $iwm-width: 174px;
     max-width: $iwm-width;
     width: $iwm-width;
 
@@ -23,6 +31,7 @@ used in CORE Waiver Portfolio, Textiles SR packets,  */
         height: auto;
         position: absolute;
         white-space: normal;
+        z-index: 1;
     }
 
     &.shorter {
@@ -30,9 +39,9 @@ used in CORE Waiver Portfolio, Textiles SR packets,  */
     }
 
     > a {
-        width: 110px;
         display: block;
         margin: auto;
+        width: 110px;
 
         &:hover {
             border: none;
@@ -48,10 +57,9 @@ used in CORE Waiver Portfolio, Textiles SR packets,  */
         // remove !imp once we get rid of that awful rule
         display: block !important;
         line-height: 20px;
-        margin: 0 5px 5px 12px;
-        max-height: 220px;
+        margin: 0 5px $md-margin-bottom 12px;
+        max-height: $md-height;
         overflow: hidden;
-        $md-pad: 8px;
         padding: $md-pad;
         text-align: left;
         text-overflow: ellipsis;
