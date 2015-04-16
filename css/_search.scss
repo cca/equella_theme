@@ -126,6 +126,11 @@ div.itemresult-wrapper {
   a {
     color: $link-dark-blue;
   }
+  // on itemadmin.do page, can't see owner text in "filter by owner"
+  // #searchresults-actions #actioncontent p white font on white bg, wth
+  span {
+      color: #000;
+  }
 }
 
 // we want to do this _only for single column search results_
