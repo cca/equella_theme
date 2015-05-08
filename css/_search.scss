@@ -87,10 +87,14 @@ div.itemresult-wrapper {
 }
 // but we need .itemresult-rating to "select" results on Manage Resources pg… (1)
 // and to remove saved searches on Favorites pg (2)
-// only way to target solely those pages is with ID sibling
-#itemadmin-page + #searchresults-outer-div .itemresult-rating,
-#query-header + #searchresults-outer-div .itemresult-rating {
-  display: inherit;
+// and to moderate items on task list pg (3)
+// only way to target solely those pages is with these crazy selectors
+#itemadmin-page + #searchresults-outer-div,
+#query-header + #searchresults-outer-div,
+#eqpageForm[action*="/access/tasklist.do"] {
+  .itemresult-rating {
+    display: inherit;
+  }
 }
 
 /* "sort" & "filter" options on search results page */
