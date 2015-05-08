@@ -312,6 +312,7 @@ or that the [alt] selector rules are unnecessary */
   display: inline;
 }
 
+@import '_text';
 @import '_btns';
 @import '_reset_icons';
 @import '_topbar';
