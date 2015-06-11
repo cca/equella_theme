@@ -88,10 +88,12 @@ div.itemresult-wrapper {
 // but we need .itemresult-rating to "select" results on Manage Resources pg… (1)
 // and to remove saved searches on Favorites pg (2)
 // and to moderate items on task list pg (3)
+// and to delete portlets (4)
 // only way to target solely those pages is with these crazy selectors
 #itemadmin-page + #searchresults-outer-div,
 #query-header + #searchresults-outer-div,
-#eqpageForm[action*="/access/tasklist.do"] {
+#eqpageForm[action*="/access/tasklist.do"],
+#content-body.portaladmin {
   .itemresult-rating {
     display: inherit;
   }
