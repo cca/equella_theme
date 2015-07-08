@@ -60,7 +60,12 @@ module.exports = function (grunt) {
             files: ['css/*.scss'],
             tasks: ['build']
           }
-        }
+      },
+      open: {
+          dist: {
+              path: 'https://vault.cca.edu/access/themesettings.do'
+          }
+      }
     });
 
     grunt.registerTask('build', [
