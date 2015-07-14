@@ -11,6 +11,7 @@ often involve classes commonly used in display templates */
   font-weight: bold;
   margin-left: 195px;
 }
+// only use I can find is in Libraries collection
 #secondtitle {
   margin: 0 0 0 10px;
   padding: 0;
@@ -102,9 +103,12 @@ dd.rights {
   }
 
   a {
+    // is there a reason we have two near-identical blue link colors?
+    // see _colors.scss for the other, these should likely be combined
     color: #045F7F;
     &:hover {
       text-decoration: none;
+      // colors are probably better as lighten($link-dark-blue, X%)
       border-bottom: 1px dotted #7FAEBE;
       color: #7FAEBE;
     }

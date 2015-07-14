@@ -111,19 +111,20 @@ div.formsection h3 {
 
 #footer {
   color: #666C6C;
-  border-bottom: 4px double $light-gray;
   border-top: 4px double $light-gray;
-}
-#footer a {
-  color: $link-dark-blue;
-  text-decoration: none;
-}
-#footer a:hover {
-  color: #235D8C;
+
+  a {
+    color: $link-dark-blue;
+
+    &:hover {
+        color: #235D8C;
+    }
+  }
 }
 #footer-inner {
   height: 0;
 }
+
 #socialmedia {
   display: none;
 }
@@ -198,8 +199,6 @@ Page Options
   }
 }
 
-/* Design notes
-CCA RED #EF4036 */
 #header {
   border: none !important;
 }
@@ -300,10 +299,6 @@ or that the [alt] selector rules are unnecessary */
 // in a .gallery-action <a> without useful style hooks
 #searchresults .gallery-action:last-child {
   display: none;
-}
-
-.settingLabel {
-  color: #222;
 }
 
 /* /access/myresources.do?type=scrapbook
