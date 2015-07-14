@@ -107,24 +107,16 @@ dd.rights {
     // see _colors.scss for the other, these should likely be combined
     color: #045F7F;
     &:hover {
-      text-decoration: none;
-      // colors are probably better as lighten($link-dark-blue, X%)
-      border-bottom: 1px dotted #7FAEBE;
+      // color is probably better as lighten($link-dark-blue, X%)
       color: #7FAEBE;
     }
   }
 
   #col2 ul li a {
     color: #045F7F;
-    border: none;
     &:hover {
       color: #045F7F;
-      border: none;
-      text-decoration: underline;
     }
-  }
-  #images a {
-    border: none;
   }
 }
 
