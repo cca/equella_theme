@@ -36,7 +36,7 @@ body,
   color: #235D8C;
 }
 #menu ul li .tooltip {
-  background-color: #FFEFEF;
+  background-color: $off-white;
   border-color: $light-gray;
   padding: 5px;
 }
@@ -60,11 +60,11 @@ body,
 }
 #receipt-message,
 #versions li.selected {
-  background-color: #FFEFEF;
+  background-color: $off-white;
 }
 #screen-options,
 #help {
-  background-color: #FFEFEF;
+  background-color: $off-white;
   border: 1px solid #C69EB3;
 }
 .search-layout #col2 div.input h4 {
@@ -110,7 +110,7 @@ div.formsection h3 {
 }
 
 #footer {
-  color: #666C6C;
+  color: $dark-gray;
   border-top: 4px double $light-gray;
 
   a {
