@@ -83,7 +83,7 @@ Random and Assorted Vault Icon Replacements
       border-radius: 3px;
     }
     #bss_clearSelectedButton:hover {
-      background: #ccc url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+      background: $light-gray url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
       color: #000 !important;
       background-size: 14px !important;
     }
@@ -99,7 +99,7 @@ Random and Assorted Vault Icon Replacements
       color: #000;
     }
     .action-button.execute-action:hover {
-      background: #ccc url('#{$icons-path}/play.png') no-repeat 10px center !important;
+      background: $light-gray url('#{$icons-path}/play.png') no-repeat 10px center !important;
       color: #000 !important;
       background-size: 8px !important;
     }
@@ -115,7 +115,7 @@ Random and Assorted Vault Icon Replacements
       color: #000;
     }
     .action-button.execute-action:hover {
-      background: #ccc url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+      background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
       color: #000 !important;
       background-size: 8px !important;
     }
@@ -129,7 +129,7 @@ Random and Assorted Vault Icon Replacements
       width: 114px;
     }
     #cmca_b:hover {
-      background: #ccc url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+      background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
       color: #000 !important;
       background-size: 10px !important;
     }
@@ -143,7 +143,7 @@ Random and Assorted Vault Icon Replacements
       color: #000;
     }
     #cmca2_b:hover {
-      background: #ccc url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
+      background: $light-gray url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
       color: #000 !important;
       background-size: 12px !important;
     }

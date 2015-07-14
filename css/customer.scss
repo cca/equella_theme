@@ -37,7 +37,7 @@ body,
 }
 #menu ul li .tooltip {
   background-color: #FFEFEF;
-  border-color: #CCC;
+  border-color: $light-gray;
   padding: 5px;
 }
 
@@ -99,7 +99,7 @@ div.formsection h3 {
   background: none;
 }
 .box_head {
-  background-color: #CCC;
+  background-color: $light-gray;
 }
 .box_head:hover {
   background-color: #aaa;
@@ -111,8 +111,8 @@ div.formsection h3 {
 
 #footer {
   color: #666C6C;
-  border-bottom: 4px double #CCC;
-  border-top: 4px double #CCC;
+  border-bottom: 4px double $light-gray;
+  border-top: 4px double $light-gray;
 }
 #footer a {
   color: $link-dark-blue;

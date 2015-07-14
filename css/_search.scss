@@ -42,7 +42,7 @@
 div.itemresult-wrapper {
   // override gray background in gallery view
   background: #fff;
-  // usually we have a 1px solid #ccc border on the bottom
+  // usually we have a 1px solid $light-gray border on the bottom
   // but that looks awkward in Gallery view, plus there's no way
   // to target .itemresult-wrapper in Gallery vs. Standard view
   // compromise: remove all borders in both views

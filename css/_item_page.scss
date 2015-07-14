@@ -21,7 +21,7 @@ often involve classes commonly used in display templates */
 
 dt.loc {
   border-bottom: none;
-  border: 1px solid #CCC;
+  border: 1px solid $light-gray;
   padding: 5px;
 }
 dd.subject {
@@ -31,11 +31,11 @@ dd.subject {
 }
 dd.rights {
   margin-top: 15px;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid $light-gray;
   padding-top: 15px;
   text-align: center;
   clear: both;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid $light-gray;
   padding-bottom: 15px;
 }
 
@@ -126,7 +126,7 @@ dd.rights {
 
 div.itemsummary-layout img {
   margin: 5px;
-  border: 1px solid #CCC;
+  border: 1px solid $light-gray;
   padding: 5px;
 }
 

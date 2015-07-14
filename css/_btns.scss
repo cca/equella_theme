@@ -49,7 +49,7 @@
   &:hover {
     // @todo are redundant border & color rules necessary?
     border: 1px solid #045F7F;
-    background: #CCC;
+    background: $light-gray;
     color: #045F7F;
   }
 }
