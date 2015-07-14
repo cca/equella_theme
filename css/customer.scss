@@ -8,7 +8,7 @@ body,
 }
 
 #header-inner h2 {
-  color: #045F7F;
+  color: $link-dark-blue;
   max-width: 660px;
   display: none;
 }
@@ -44,7 +44,7 @@ body,
 .alt-links a,
 .recent-item h4 a,
 .news-item h4 a {
-  color: #045F7F !important;
+  color: $link-dark-blue !important;
 }
 .recent-item h4 a:hover,
 .news-item h4 a:hover {
@@ -68,7 +68,7 @@ body,
   border: 1px solid #C69EB3;
 }
 .search-layout #col2 div.input h4 {
-  color: #045F7F;
+  color: $link-dark-blue;
   font-size: 12px;
   font-weight: normal;
 }
@@ -80,15 +80,15 @@ body,
 .topblock h3,
 .modal-content-inner h3,
 div.formsection h3 {
-  color: #045F7F;
+  color: $link-dark-blue;
   line-height: 16px;
 }
 .halfControl {
   width: 47%;
 }
 .modal-title h3 {
-  background: #045F7F;
-  border: 1px solid #045F7F;
+  background: $link-dark-blue;
+  border: 1px solid $link-dark-blue;
   color: #fff;
   text-shadow: none;
 }
@@ -105,8 +105,8 @@ div.formsection h3 {
   background-color: #aaa;
 }
 .modal-footer {
-  background: #045F7F;
-  border: 1px solid #045F7F;
+  background: $link-dark-blue;
+  border: 1px solid $link-dark-blue;
 }
 
 #footer {

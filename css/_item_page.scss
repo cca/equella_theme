@@ -104,19 +104,16 @@ dd.rights {
   }
 
   a {
-    // is there a reason we have two near-identical blue link colors?
-    // see _colors.scss for the other, these should likely be combined
-    color: #045F7F;
+    color: $link-dark-blue;
     &:hover {
-      // color is probably better as lighten($link-dark-blue, X%)
-      color: #7FAEBE;
+      color: lighten($link-dark-blue, 20%);
     }
   }
 
   #col2 ul li a {
-    color: #045F7F;
+    color: $link-dark-blue;
     &:hover {
-      color: #045F7F;
+      color: $link-dark-blue;
     }
   }
 }
@@ -162,10 +159,10 @@ div.area > div.displayNodeFull:first-child > h3 {
 div.area > div.displayNodeFull:first-child > h3 + p {
   background: #fff;
   border: none;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
   font-size: 18px;
   padding: 0;
-  color: #045F7F;
+  color: $link-dark-blue;
   width: 97%;
   margin: 0 0 8px -8px;
 }
@@ -410,7 +407,7 @@ dd.date {
 }
 
 .button input[type="button"] {
-  color: #045F7F;
+  color: $link-dark-blue;
   text-transform: uppercase;
 }
 #header-inner .banner {
@@ -419,7 +416,7 @@ dd.date {
 .alert-success {
   background-color: #dff0d8;
   border-color: rgba(4, 95, 127, 0.54);
-  color: #045F7F;
+  color: $link-dark-blue;
   font-variant: small-caps;
   font-size: 120%;
   text-align: center;
@@ -438,7 +435,7 @@ dd.date {
 dt.indentNoLine {
   font-size: 17px;
   margin: 10px 5px 5px 15px;
-  color: #045F7F;
+  color: $link-dark-blue;
   border-bottom: none;
 }
 dt.subHeading {

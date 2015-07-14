@@ -42,15 +42,15 @@
   -webkit-text-shadow: none;
 }
 .button-big {
-  border: 1px solid #045F7F;
-  background: #DDD;
-  color: #045F7F;
+  border: 1px solid $link-dark-blue;
+  background: #ddd;
+  color: $link-dark-blue;
 
   &:hover {
     // @todo are redundant border & color rules necessary?
-    border: 1px solid #045F7F;
+    border: 1px solid $link-dark-blue;
     background: $light-gray;
-    color: #045F7F;
+    color: $link-dark-blue;
   }
 }
 .button-big.rightarrow:hover {
