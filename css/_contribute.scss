@@ -1,131 +1,141 @@
-/* -------------------------------------------------
-Contribute - Right panel Save actions restyling
-------------------------------------------------- */
+//
+// Contribute - Right panel Save actions restyling
+//
+
 #wizard-actions {
-  padding-left: 10px;
-  text-align: left;
+    padding-left: 10px;
+    text-align: left;
 
-  /* hide "Save and Continue" link */
-  a[title="Save and continue"] {
-    display: none;
-  }
-  span {
-    display: none;
-  }
+    // hide "Save and Continue" link
+    a[title="Save and continue"] {
+        display: none;
+    }
+
+    a[title="Cancel"] {
+        background: $error-red url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+        background-size: 14px !important;
+        border-bottom-color: darken($error-red, 20%) !important;
+        width: 50px; // turns out to make "cancel" btn same length as "save"
+
+        // copied from .action-button in core styles.css
+        height: 28px;
+        font-weight: bold;
+        // needed b/c .action-button els are usually inputs
+        // these basically force an <a> to act like an <input>
+        display: inline-block;
+        line-height: 28px;
+        text-decoration: none;
+
+        &:hover {
+            background: #e22 url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+            background-size: 14px !important;
+        }
+    }
+
+    span {
+        display: none;
+    }
 }
 
-/* "major-actions" is basically just the "save" button */
+// "major-actions" is basically just the "save" button
 #wizard-major-actions {
-  margin-left: 10px;
+    margin-left: 10px;
 }
+
 #wizard-major-actions .action-button.save,
 #wizard-actions a[title="Cancel"],
 #ed_saveButton {
-  background: $success-green url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
-  background-size: 14px !important;
-  border-bottom: 1px solid #390 !important;
-  border-radius: 3px;
-  color: #000;
-  margin-left: 0;
-  padding-left: 40px !important;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-  width: 90px;
-
-  &:hover {
-    background: #9c0 url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
+    background: $success-green url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
     background-size: 14px !important;
-    color: #000 !important;
-  }
+    border-bottom: 1px solid #390 !important;
+    border-radius: 3px;
+    color: #000;
+    margin-left: 0;
+    padding-left: 40px !important;
+    transition: all .1s ease-out;
+    width: 90px;
+
+    &:hover {
+        background: #9c0 url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
+        background-size: 14px !important;
+        color: #000 !important;
+    }
 }
 
-#wizard-actions a[title="Cancel"] {
-  background: $error-red url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
-  background-size: 14px !important;
-  border-bottom-color: darken($error-red, 20%) !important;
-  width: 50px; // turns out to make "cancel" btn same length as "save"
+//
+// Main Page Section Styling
+//
 
-  /* copied from .action-button in core styles.css */
-  height: 28px;
-  font-weight: bold;
-  /* needed b/c .action-button els are usually inputs
-  these basically force an <a> to act like an <input> */
-  display: inline-block;
-  line-height: 28px;
-  text-decoration: none;
-
-  &:hover {
-    background: #e22 url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
-    background-size: 14px !important;
-  }
-}
-
-/* ---------------------------
-Main Page Section Styling
---------------------------- */
 #content-body .area {
-  background: #fff !important;
-  border: 1px solid #bbb !important;
-}
-// 10px margin-bottom is annoying, per arph 3/10/15
-.wizard-controls .control p {
-  margin: 0;
-}
-/* -------------------------------------------
-Re-styling Contribute page Fancybox Popup
-------------------------------------------- */
-#fancybox-inner {
-  .modal-title h3 {
-    background: #fff !important;
-    color: #000 !important;
-    font-weight: bold;
-    border: 1px solid #fff !important;
-  }
-  .modal-footer {
-    background: #fff !important;
-    border: none !important;
-    box-sizing: border-box;
-    padding-bottom: 33px;
-  }
-  .modal-content {
-    background: #fff !important;
-  }
-  .modal-content-background {
-    background: #fff !important;
-  }
-}
-#fancybox-outer .fancy-bg {
-  display: none !important;
-}
-#fancybox-overlay {
-  opacity: .5 !important;
-}
-#fancybox-inner .modal {
-  border: none !important;
-}
-
-/* taxonomy term chooser */
-#termChooser {
-  border: none !important;
-  padding: 0;
-
-  .ui-tabs-nav {
-    background: #fff !important;
-    border: none !important;
-  }
-  .ui-tabs-nav li[role='tab'] {
-    background: none !important;
-    border: none !important;
-  }
-  .ui-tabs-nav li[role='tab'].ui-tabs-active {
-    color: #000 !important;
-    font-weight: bold;
-  }
-  div[role='tabpanel'] {
     background: #fff !important;
     border: 1px solid #bbb !important;
-    border-radius: 4px !important;
-  }
+}
+
+// 10px margin-bottom is annoying, per arph 3/10/15
+.wizard-controls .control p {
+    margin: 0;
+}
+
+// Re-styling Contribute page Fancybox Popup
+#fancybox-inner {
+    .modal {
+        border: none !important;
+    }
+
+    .modal-title h3 {
+        background: #fff !important;
+        border: 1px solid #fff !important;
+        color: #000 !important;
+        font-weight: bold;
+    }
+
+    .modal-footer {
+        background: #fff !important;
+        border: none !important;
+        box-sizing: border-box;
+        padding-bottom: 33px;
+    }
+
+    .modal-content {
+        background: #fff !important;
+    }
+
+    .modal-content-background {
+        background: #fff !important;
+    }
+}
+
+#fancybox-outer .fancy-bg {
+    display: none !important;
+}
+
+#fancybox-overlay {
+    opacity: .5 !important;
+}
+
+// taxonomy term chooser
+#termChooser {
+    border: none !important;
+    padding: 0;
+
+    .ui-tabs-nav {
+        background: #fff !important;
+        border: none !important;
+
+        li[role='tab'] {
+            background: none !important;
+            border: none !important;
+
+            &.ui-tabs-active {
+                color: #000 !important;
+                font-weight: bold;
+            }
+        }
+    }
+
+    div[role='tabpanel'] {
+        background: #fff !important;
+        border: 1px solid #bbb !important;
+        border-radius: 4px !important;
+    }
 }

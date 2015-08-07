@@ -1,6 +1,6 @@
-/* student work galleries
-images with bits of metadata beneath
-used in CORE Waiver Portfolio & most Fine Arts Division SR Packets */
+// student work galleries
+// images with bits of metadata beneath
+// used in CORE Waiver Portfolio & most Fine Arts Division SR Packets
 
 // vars
 $md-margin-bottom: 5px;
@@ -14,24 +14,24 @@ $iwm-a-height: 90px;
     display: block;
     float: left;
     margin: 20px 0 10px;
-    min-height: 230px;
     max-height: $iwm-a-height + $md-pad + $md-margin-bottom + $md-height;
-    text-align: center;
     // just enough to fit three images in a row
     max-width: $iwm-width;
+    min-height: 230px;
+    text-align: center;
     width: $iwm-width;
 
     &:hover {
         overflow: visible;
-    }
 
-    &:hover .metadata {
-        max-height: 1000px;
-        background: #eee;
-        height: auto;
-        position: absolute;
-        white-space: normal;
-        z-index: 1;
+        .metadata {
+            background: #eee;
+            height: auto;
+            max-height: 1000px;
+            position: absolute;
+            white-space: normal;
+            z-index: 1;
+        }
     }
 
     &.shorter {
@@ -44,27 +44,27 @@ $iwm-a-height: 90px;
         width: 110px;
 
         &:hover {
-            border: none;
+            border: 0;
 
             img {
-                border-color:black;
+                border-color: #000;
             }
         }
     }
 
     .metadata {
-        // needed to override .itemsummary-layout .area .p { display: inline }
+        // needed to override .itemsummary-layout .area p { display: inline }
         // remove !imp once we get rid of that awful rule
         display: block !important;
         line-height: 20px;
         margin: 0 5px $md-margin-bottom 12px;
         max-height: $md-height;
+        max-width: $iwm-width - (2 * $md-pad);
         overflow: hidden;
         padding: $md-pad;
         text-align: left;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width: $iwm-width - (2 * $md-pad);
         width: $iwm-width - (2 * $md-pad);
 
         .title {

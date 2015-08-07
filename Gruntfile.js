@@ -28,6 +28,14 @@ module.exports = function (grunt) {
             }
           }
         },
+        scsslint: {
+          dist: [ 'css/*.scss' ],
+          options: {
+            compact: true,
+            config: '.scss-lint.yml',
+            colorizeOutput: true
+          }
+        },
         // copy over all images
         copy: {
             dist: {
@@ -74,6 +82,10 @@ module.exports = function (grunt) {
         'copy',
         'compress'
     ]);
+
+    grunt.registerTask('test', [
+        'scsslint'
+    ])
 
     grunt.registerTask('default', [
         'build'

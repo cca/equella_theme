@@ -3,33 +3,39 @@
 .button.add,
 .button.delete,
 .button.ccasave {
-  background: #eee;
-  border: 1px solid;
-  color: #738A99;
+    background: #eee;
+    border: 1px solid;
+    color: #738a99;
 }
+
 .button.ccasave {
-  font-weight: bold;
-  border: 2px solid;
-  padding: 5px;
+    border: 2px solid;
+    font-weight: bold;
+    padding: 5px;
 }
+
 .button-big.rightarrow,
 .button-big.leftarrow,
 .button.rightarrow {
-  color: #eee;
+    color: #eee;
 }
+
 .button.add,
 .button.delete {
-  padding: 5px;
+    padding: 5px;
 }
+
 .button:hover,
 .button.downarrow:hover,
 .button.add:hover,
 .button.delete:hover {
-  background: #ddd;
+    background: #ddd;
 }
+
 .button.downarrow.active {
-  border-bottom: 1px solid #738A99;
+    border-bottom: 1px solid #738a99;
 }
+
 .box_head h3,
 .button.downarrow,
 .button-big,
@@ -37,49 +43,53 @@
 .button-big:hover,
 .button-large:hover,
 .action-button {
-  text-shadow: none;
-  -moz-text-shadow: none;
-  -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -webkit-text-shadow: none;
+    text-shadow: none;
 }
+
 .button-big {
-  border: 1px solid $link-dark-blue;
-  background: #ddd;
-  color: $link-dark-blue;
-
-  &:hover {
-    // @todo are redundant border & color rules necessary?
+    background: #ddd;
     border: 1px solid $link-dark-blue;
-    background: $light-gray;
     color: $link-dark-blue;
-  }
+
+    &:hover {
+        // @TODO are redundant border & color rules necessary?
+        background: $light-gray;
+        border: 1px solid $link-dark-blue;
+        color: $link-dark-blue;
+    }
+
+    &.rightarrow:hover {
+        background-image: url(#{$img-path}/button-big-right.gif);
+        color: lighten($dark-gray, 6.5%);
+    }
+
+    &.leftarrow:hover {
+        background-image: url(#{$img-path}/button-big-left.gif);
+        color: lighten($dark-gray, 6.5%);
+    }
 }
-.button-big.rightarrow:hover {
-  background-image: url(#{$img-path}/button-big-right.gif);
-  color: lighten($dark-gray, 6.5%);
-}
+
 .button.rightarrow {
-  padding: 3px 15px;
-  font-size: 10px;
-  border: 1px solid #738A99;
+    border: 1px solid #738a99;
+    font-size: 10px;
+    padding: 3px 15px;
 
-  &:hover {
-    color: lighten($dark-gray, 6.5%);
-  }
-}
-.button-big.leftarrow:hover {
-  background-image: url(#{$img-path}/button-big-left.gif);
-  color: lighten($dark-gray, 6.5%);
+    &:hover {
+        color: lighten($dark-gray, 6.5%);
+    }
 }
 
-/* disabled buttons */
+// disabled buttons
 input[type="button"][disabled].button,
 input[type="button"][disabled].button-big,
 input[type="button"][disabled="disabled"].button-big,
 input[type="button"][disabled].button-large,
 input[type="button"][disabled="disabled"].button-large {
-  background: $dark-gray;
+    background: $dark-gray;
 
-  &:hover {
-    background: lighten($dark-gray, 6.5%);
-  }
+    &:hover {
+        background: lighten($dark-gray, 6.5%);
+    }
 }

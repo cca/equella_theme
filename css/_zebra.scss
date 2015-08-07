@@ -1,26 +1,32 @@
 /* ---------------------
 Zebra Table Styling
 --------------------- */
+
+// these are unavoidable for odd/even row type styling, disable
+// scss-lint:disable SelectorDepth, NestingDepth
 table.zebra {
     border: 0;
 
     tr th {
-      background: none;
-      color: #222;
-      font-weight: bold;
+        background: none;
+        color: #222;
+        font-weight: bold;
     }
+
     tbody {
-      overflow: hidden;
-      border: 0;
-    }
-    tbody tr.even td,
-    tbody tr.odd td {
-      background: #eee;
-      border-top: 1px solid #fff;
-      transition: all 0.1s ease-out;
-    }
-    tbody tr.odd td {
-      background: #f6f6f6;
+        border: 0;
+        overflow: hidden;
+
+        tr.even td,
+        tr.odd td {
+            background: #eee;
+            border-top: 1px solid #fff;
+            transition: all .1s ease-out;
+        }
+
+        tr.odd td {
+            background: #f6f6f6;
+        }
     }
 
     &.large {
@@ -28,14 +34,16 @@ table.zebra {
             font-size: 14px;
             font-weight: normal;
         }
+
         tbody tr {
             &.even td:hover,
             &.odd td:hover {
-              padding-left: 18px;
-              background: #eee;
+                background: #eee;
+                padding-left: 18px;
             }
+
             &.odd td:hover {
-              background: #f6f6f6;
+                background: #f6f6f6;
             }
         }
     }

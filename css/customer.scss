@@ -1,6 +1,6 @@
-@import '_vars';
-@import '_colors';
-@import '_mixins';
+@import 'vars';
+@import 'colors';
+@import 'mixins';
 
 body,
 #body {
@@ -307,16 +307,16 @@ or that the [alt] selector rules are unnecessary */
   display: inline;
 }
 
-@import '_text';
-@import '_btns';
-@import '_reset_icons';
-@import '_topbar';
-@import '_topblock';
-@import '_left_nav';
-@import '_contribute';
-@import '_item_page';
-@import '_img_with_metadata';
-@import '_search';
-@import '_zebra';
-@import '_reset_bootstrap_icons';
-@import '_reset_bootstrap_buttons';
+@import 'text';
+@import 'btns';
+@import 'reset_icons';
+@import 'topbar';
+@import 'topblock';
+@import 'left_nav';
+@import 'contribute';
+@import 'item_page';
+@import 'img_with_metadata';
+@import 'search';
+@import 'zebra';
+@import 'reset_bootstrap_icons';
+@import 'reset_bootstrap_buttons';

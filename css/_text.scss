@@ -1,9 +1,9 @@
 // wrap <pre>, for mods/abstract or addresses
 // where we need to preserve line breaks in text content
 pre {
-        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-        white-space: -pre-wrap;      /* Opera 4-6 */
-        white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: pre-wrap;       /* CSS 3 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
@@ -12,26 +12,33 @@ pre {
 .muted {
     color: #999;
 }
+
 // our $error-red much too bright
 .text-error {
     color: #b94a48;
 }
+
 // good or bad idea to make diff from $link-dark-blue?
 .text-info {
     color: #3a87ad;
 }
+
 .text-success {
     color: $success-green;
 }
+
 .text-warning {
     color: $warning-orange;
 }
+
 .text-left {
     text-align: left;
 }
+
 .text-right {
     text-align: right;
 }
+
 .text-center {
     text-align: center;
 }

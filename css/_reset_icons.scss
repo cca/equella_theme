@@ -2,37 +2,34 @@
 Random and Assorted Vault Icon Replacements
 --------------------------------------------- */
 @mixin icon-base($pad-left) {
-  padding-left: $pad-left;
-  -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-  -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-  -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-  transition: all 0.1s ease-out;
-  margin-left: 0;
+    padding-left: $pad-left;
+    transition: all .1s ease-out;
+    margin-left: 0;
 }
 
 #content-body {
-  #col2 {
-    /* -- Favorites -- */
-   .action-button.add-to-favourites {
-      background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
-      background-size: 12px !important;
-      @include icon-base(40px);
+    #col2 {
+        /* -- Favorites -- */
+        .action-button.add-to-favourites {
+            @include icon-base(40px);
+            background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
+            background-size: 12px !important;
 
-      &:hover {
-        margin-left: 5px;
-      }
-    }
+            &:hover {
+                margin-left: 5px;
+            }
+        }
 
     /* -- Favorites 2 -- */
     .action-button.addToFavourites,
     .action-button.removeFromFavourites {
-      background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
-      background-size: 12px !important;
-      @include icon-base(40px);
+        @include icon-base(40px);
+        background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
+        background-size: 12px !important;
 
-      &:hover {
-        margin-left: 5px;
-      }
+        &:hover {
+            margin-left: 5px;
+        }
     }
 
     .action-button.removeFromFavourites {

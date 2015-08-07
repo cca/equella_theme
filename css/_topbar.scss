@@ -1,44 +1,44 @@
 /* upper right menu with profile links */
 #topbar {
-  background: #fff;
-  height: 26px;
+    background: #fff;
+    height: 26px;
 }
 
 #topmenu {
-  a,
-  span {
-    color: #738A99;
-    text-decoration: none;
+    a,
+    span {
+        color: #738a99;
+        text-decoration: none;
 
-    &:hover {
-      background-color: inherit;
-      color: #936;
-      text-decoration: none;
+        &:hover {
+            background-color: inherit;
+            color: #936;
+            text-decoration: none;
+        }
     }
-  }
 
   // embiggen class is added to <a> when Tasks/Notifications are present
   // otherwise "disabled" class is present & element is a <span>
-  .embiggen {
-    background-color: $warning-orange;
-    color: #fff; // readable font: white on orange
+    .embiggen {
+        background-color: $warning-orange;
+        color: #fff; // readable font: white on orange
 
-    &:hover {
-        background-color: darken($warning-orange, 15%);
-        color: #fff;
+        &:hover {
+            background-color: darken($warning-orange, 15%);
+            color: #fff;
+        }
     }
-  }
 
-  // handle inconsistency in how Tasks & Notifications are highlighted
-  // Tasks get a nice red background, let's give Notif. that too
-  a[Title="Notifications"] {
-    // stolen from topbar.css:64 #topmenu .embiggen
-    background-color: $warning-orange;
-    color: #fff;
-
-    &:hover {
-        background-color: darken($warning-orange, 15%);
+    // handle inconsistency in how Tasks & Notifications are highlighted
+    // Tasks get a nice red background, let's give Notif. that too
+    a[Title="Notifications"] {
+        // stolen from topbar.css:64 #topmenu .embiggen
+        background-color: $warning-orange;
         color: #fff;
+
+        &:hover {
+            background-color: darken($warning-orange, 15%);
+            color: #fff;
+        }
     }
-  }
 }
