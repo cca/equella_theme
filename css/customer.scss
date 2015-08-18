@@ -19,22 +19,28 @@ body,
 #help a:hover {
   color: #C69EB3;
 }
+
 .area {
   border: 1px solid #C69EB3;
 }
+
 .area h2 {
   color: #936;
   font-size: 18px;
 }
+
 .area .displayNodeFull h2 {
   margin-bottom: 0;
 }
+
 .content a {
   color: $link-dark-blue;
 }
+
 .content a:hover {
   color: #235D8C;
 }
+
 #menu ul li .tooltip {
   background-color: $off-white;
   border-color: $light-gray;
@@ -46,10 +52,12 @@ body,
 .news-item h4 a {
   color: $link-dark-blue !important;
 }
+
 .recent-item h4 a:hover,
 .news-item h4 a:hover {
   color: $dark-font-color;
 }
+
 .recent-item span,
 .news-item .news-date {
   color: #777;
@@ -58,23 +66,28 @@ body,
 .itemsummary-layout .area {
   background: #fff;
 }
+
 #receipt-message,
 #versions li.selected {
   background-color: $off-white;
 }
+
 #screen-options,
 #help {
   background-color: $off-white;
   border: 1px solid #C69EB3;
 }
+
 .search-layout #col2 div.input h4 {
   color: $link-dark-blue;
   font-size: 12px;
   font-weight: normal;
 }
+
 .area fieldset h3 {
   color: #C69EB3;
 }
+
 .area .control h3,
 .area .edit h3,
 .topblock h3,
@@ -83,27 +96,34 @@ div.formsection h3 {
   color: $link-dark-blue;
   line-height: 16px;
 }
+
 .halfControl {
   width: 47%;
 }
+
 .modal-title h3 {
   background: $link-dark-blue;
   border: 1px solid $link-dark-blue;
   color: #fff;
   text-shadow: none;
 }
+
 .button-strip {
   background: 0;
 }
+
 .area .button-strip {
   background: none;
 }
+
 .box_head {
   background-color: $light-gray;
 }
+
 .box_head:hover {
   background-color: #aaa;
 }
+
 .modal-footer {
   background: $link-dark-blue;
   border: 1px solid $link-dark-blue;
@@ -121,6 +141,7 @@ div.formsection h3 {
     }
   }
 }
+
 #footer-inner {
   height: 0;
 }
@@ -128,6 +149,7 @@ div.formsection h3 {
 #socialmedia {
   display: none;
 }
+
 input[type="text"],
 input[type="password"],
 textarea,
@@ -155,16 +177,20 @@ Body
 #content {
   background: none;
 }
+
 #content-inner {
   background: none;
 }
+
 #content-bottom {
   background: none;
 }
+
 .box {
   background: none;
   border: 0;
 }
+
 .box_content {
   background: none;
   border-bottom: none;
@@ -186,6 +212,7 @@ Page Options
 #helpAndOptions {
   display: block;
 }
+
 #startTourBtn {
   position: absolute;
   right: 40px;
@@ -202,60 +229,77 @@ Page Options
 #header {
   border: none !important;
 }
+
 #content-body .area h2 {
   color: #222 !important;
   padding-bottom: 5px;
 }
+
 #content-body .area h1 {
   color: #222 !important;
 }
+
 #content-body a:hover {
   text-decoration: underline;
 }
+
 #sa_sortBox_minimise:active {
   background: none !important;
 }
+
 #sa_sortBox_minimise {
   background: none !important;
   border-top: none;
 }
+
 #sa_sortBox_minimise:hover {
   background: none !important;
 }
+
 #sa_filterBox_minimise:active {
   background: none !important;
 }
+
 #sa_filterBox_minimise {
   background: none !important;
   border-top: none;
 }
+
 #sa_filterBox_minimise:hover {
   background: none !important;
 }
+
 #isa_sortBox_minimise:active {
   background: none !important;
 }
+
 #isa_sortBox_minimise {
   background: none !important;
   border-top: none;
 }
+
 #isa_sortBox_minimise:hover {
   background: none !important;
 }
+
 #isa_filterBox_minimise:active {
   background: none !important;
 }
+
 #isa_filterBox_minimise {
   background: none !important;
   border-top: none;
 }
+
 #isa_filterBox_minimise:hover {
   background: none !important;
 }
+
 .box_head {
   background: #fff !important;
   border: none !important;
 }
+
 .box_title_wrapper {
   background: #fff !important;
 }
@@ -280,12 +324,15 @@ or that the [alt] selector rules are unnecessary */
 .search-layout #col2 div.input h4 {
   color: $dark-gray !important;
 }
+
 .box_content hr {
   border-color: #fff !important;
 }
+
 .area .control h3 {
   color: $dark-gray;
 }
+
 #breadcrumbs a {
   color: #444;
 }
