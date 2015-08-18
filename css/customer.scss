@@ -88,13 +88,17 @@ body,
   color: #C69EB3;
 }
 
-.area .control h3,
-.area .edit h3,
-.topblock h3,
-.modal-content-inner h3,
-div.formsection h3 {
-  color: $link-dark-blue;
-  line-height: 16px;
+.area .control,
+.area .edit,
+.topblock,
+.modal-content-inner,
+div.formsection {
+  h3 {
+    // why make headings link colored? seems confusing in at least one place:
+    // open up ".topblock" Help section to see
+    color: $link-dark-blue;
+    line-height: 16px;
+  }
 }
 
 .halfControl {
