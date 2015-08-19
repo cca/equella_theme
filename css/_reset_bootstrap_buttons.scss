@@ -1,12 +1,10 @@
-/* ----------------------------------------------
-Customizing Default Bootstrap Button Classes
----------------------------------------------- */
+// Customizing Default Bootstrap Button Classes
 @mixin flat-button($bg-color) {
-    color: #000 !important;
-    text-shadow: none !important;
     background: $bg-color !important;
     border: 0;
     border-bottom: 1px solid #bbb;
+    color: #000 !important;
+    text-shadow: none !important;
     transition: all .1s ease-out;
 
     &:hover {
@@ -15,14 +13,14 @@ Customizing Default Bootstrap Button Classes
     }
 }
 
-/* -- Default Gray Buttons -- */
+// Default Gray Buttons
 .btn.btn-equella,
 .btn.btn-primary,
 .btn-info {
     @include flat-button(#ddd);
 }
 
-/* -- Danger button -- */
+// Danger button
 // make "complete wizard" button look like an error
 // this selector brought to you by the insanity that is EQUELLA's HTML markup
 button.btn.btn-equella[id="1_complete"],
@@ -30,12 +28,12 @@ button.btn.btn-equella[id="1_complete"],
     @include flat-button($error-red);
 }
 
-/* -- Warning button -- */
+// Warning button
 .btn-warning {
     @include flat-button($warning-orange);
 }
 
-/* -- Success Button / Save -- */
+// Success Button / Save
 .btn-success {
     @include flat-button($success-green);
 }

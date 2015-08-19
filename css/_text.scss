@@ -1,11 +1,8 @@
 // wrap <pre>, for mods/abstract or addresses
 // where we need to preserve line breaks in text content
 pre {
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: pre-wrap;       /* CSS 3 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: pre-wrap;  // CSS 3
+    word-wrap: break-word;  // Internet Explorer 5.5+
 }
 
 // make up for inexplicable lack of core Bootstrap utility classes
