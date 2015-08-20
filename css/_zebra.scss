@@ -24,7 +24,7 @@ table.zebra {
         }
 
         tr.odd td {
-            background: $off-white;
+            background: darken($white, 12.5%);
         }
     }
 
@@ -42,7 +42,7 @@ table.zebra {
             }
 
             &.odd td:hover {
-                background: $off-white;
+                background: darken($white, 12.5%);
             }
         }
     }
