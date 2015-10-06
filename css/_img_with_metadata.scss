@@ -11,14 +11,15 @@ $iwm-width: 174px;
 $iwm-a-height: 90px;
 
 .image-with-metadata {
+    // to obscure text from any overlapping rows above
+    background: #fff;
     display: block;
     float: left;
-    margin: 20px 0 10px;
-    max-height: $iwm-a-height + $md-pad + $md-margin-bottom + $md-height;
-    // just enough to fit three images in a row
-    max-width: $iwm-width;
-    min-height: 230px;
+    // constant height allows floated images to stack in a row
+    height: $iwm-a-height + $md-pad + $md-margin-bottom + $md-height;
+    padding: 20px 0 10px;
     text-align: center;
+    // just enough to fit three images in a row
     width: $iwm-width;
 
     &:hover {
@@ -27,7 +28,6 @@ $iwm-a-height: 90px;
         .metadata {
             background: #eee;
             height: auto;
-            max-height: 1000px;
             position: absolute;
             white-space: normal;
             z-index: 1;
@@ -35,7 +35,7 @@ $iwm-a-height: 90px;
     }
 
     &.shorter {
-        min-height: 150px;
+        height: 150px;
     }
 
     > a {
@@ -59,7 +59,6 @@ $iwm-a-height: 90px;
         line-height: 20px;
         margin: 0 5px $md-margin-bottom 12px;
         max-height: $md-height;
-        max-width: $iwm-width - (2 * $md-pad);
         overflow: hidden;
         padding: $md-pad;
         text-align: left;
