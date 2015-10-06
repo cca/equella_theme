@@ -4,7 +4,7 @@
 
 // vars
 $md-margin-bottom: 5px;
-$md-height: 220px;
+$md-height: 120px;
 $md-pad: 8px;
 $iwm-width: 174px;
 // link wrapping image, this height involves standard EQUELLA thumbnail size
@@ -17,48 +17,18 @@ $iwm-a-height: 90px;
     float: left;
     // constant height allows floated images to stack in a row
     height: $iwm-a-height + $md-pad + $md-margin-bottom + $md-height;
-    padding: 20px 0 10px;
+    padding: 5px 0;
     text-align: center;
     // just enough to fit three images in a row
     width: $iwm-width;
-
-    &:hover {
-        overflow: visible;
-
-        .metadata {
-            background: #eee;
-            height: auto;
-            position: absolute;
-            white-space: normal;
-            z-index: 1;
-        }
-    }
-
-    &.shorter {
-        height: 150px;
-    }
-
-    > a {
-        display: block;
-        margin: auto;
-        width: 110px;
-
-        &:hover {
-            border: 0;
-
-            img {
-                border-color: #000;
-            }
-        }
-    }
 
     .metadata {
         // needed to override .itemsummary-layout .area p { display: inline }
         // remove !imp once we get rid of that awful rule
         display: block !important;
+        height: $md-height;
         line-height: 20px;
         margin: 0 5px $md-margin-bottom 12px;
-        max-height: $md-height;
         overflow: hidden;
         padding: $md-pad;
         text-align: left;
@@ -75,6 +45,40 @@ $iwm-a-height: 90px;
             padding-bottom: 7px;
             text-overflow: ellipsis;
             width: 100%;
+        }
+    }
+
+    &:hover {
+        overflow: visible;
+
+        .metadata {
+            background: #eee;
+            height: auto !important;
+            position: absolute;
+            white-space: normal;
+            z-index: 1;
+        }
+    }
+
+    &.shorter {
+        height: 160px;
+
+        .metadata {
+            height: 60px;
+        }
+    }
+
+    > a {
+        display: block;
+        margin: auto;
+        width: 110px;
+
+        &:hover {
+            border: 0;
+
+            img {
+                border-color: #000;
+            }
         }
     }
 }
