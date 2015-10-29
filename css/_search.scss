@@ -1,71 +1,71 @@
 /* --------------------
-  searchresults
+  search results
 ----------------------- */
 // itemresult needs to inherit micro-clearfix
 // prevents search result thumbnails from bleeding into
 // next result row
 .itemresult {
     @include clearfix;
+
+    &.selected {
+        background-color: $light-pink;
+        padding: 10px;
+    }
+
+    h3 a {
+        border: 0;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 #searchresults {
-  /* @todo check if necessary
+  /* @TODO check if necessary
   likely already solved by #content-body .area styles */
-  background: #fff;
+    background: #fff;
 
-  .itemresult-content p {
-    font-size: 12px;
-  }
+    .itemresult-content p {
+        font-size: 12px;
+    }
 
-  .itemresult-metaline {
-    font-size: 12px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-  }
+    .itemresult-metaline {
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
 }
 
 .itemresult-metaline .itemresult-meta-delim,
 .itemresult-metaline abbr {
-  color: $dark-gray;
+    color: $dark-gray;
 }
 
 .search-layout .searchresults-header {
-  background: #fff;
+    background: #fff;
 }
 
 .timeago {
-  margin-left: 3px;
+    margin-left: 3px;
 }
 
 // div needed for specificity of 1st background rule
 // overrides div.itemresult-wrapper on gallerylist.css:1
 div.itemresult-wrapper {
-  // override gray background in gallery view
-  background: #fff;
-  // usually we have a 1px solid $light-gray border on the bottom
-  // but that looks awkward in Gallery view, plus there's no way
-  // to target .itemresult-wrapper in Gallery vs. Standard view
-  // compromise: remove all borders in both views
-  border: 0;
-  padding-bottom: 10px;
+    // override gray background in gallery view
+    background: #fff;
+    // usually we have a 1px solid $light-gray border on the bottom
+    // but that looks awkward in Gallery view, plus there's no way
+    // to target .itemresult-wrapper in Gallery vs. Standard view
+    // compromise: remove all borders in both views
+    border: 0;
+    padding-bottom: 10px;
 
-  &:last-child {
-    // border: 0
-    padding-bottom: 0;
-  }
-}
-
-.itemresult.selected {
-  background-color: $light-pink;
-  padding: 10px;
-}
-
-.itemresult h3 a {
-  border: 0;
-
-  &:hover {
-    text-decoration: none;
-  }
+    &:last-child {
+        // border: 0
+        padding-bottom: 0;
+    }
 }
 
 /* gallery view */
@@ -73,70 +73,85 @@ div.itemresult-wrapper {
     max-width: 100%;
 }
 
-// hide rating ability since we don't use it
 .itemresult-rating {
-  background: #fff;
-  display: none;
+    // prevent "Select" button position from varying
+    @include clearfix;
 
-  // prevent "Select" button position from varying
-  @include clearfix;
+    background: #fff;
 
-  .rating-bar {
-    border: 0;
-  }
-}
-// but we need .itemresult-rating to "select" results on Manage Resources pg… (1)
-// and to remove saved searches on Favorites pg (2)
-// and to moderate items on task list pg (3)
-// and to delete portlets (4)
-// only way to target solely those pages is with these crazy selectors
-#itemadmin-page + #searchresults-outer-div,
-#query-header + #searchresults-outer-div,
-#eqpageForm[action*="/access/tasklist.do"],
-#content-body.portaladmin {
-  .itemresult-rating {
-    display: inherit;
-  }
+    .rating-bar {
+        border: 0;
+
+        // we _never_ want stars & comments to show, even on non-search pages
+        .itemresult-stars,
+        // "hey, should we put a class on the comments & 'add to hierarchy' links?"
+        // "nah, no one will ever want to style those"
+        [title="0 comments"],
+        [title="Add to hierarchy"],
+        // with all the 2 neighbors hidden, separator bars are orphans
+        .separator {
+            display: none;
+        }
+    }
 }
 
-/* "sort" & "filter" options on search results page */
+// New approach: we hide the "itemresult-rating" (stars, comments, "add to favs")
+// _only on the search & hierarchy_ pages which can only be targeted by form URL.
+// Formerly we hid the class globally, but it's used for action buttons
+// all over the place (portlets, favorites, tasks, notifications)
+// so the whitelist of places to show the rating row kept growing.
+#eqpageForm {
+    &[action*="/access/searching.do"],
+    &[action*="/access/hierarchy.do"] {
+        .itemresult-rating {
+            display: none;
+        }
+    }
+}
+
+// "sort" & "filter" options on search results page
 #actioncontent.resulttopblock {
-  background: 0;
-  border-bottom: 0;
-  border-color: #8F8B7E;
+    background: 0;
+    border-bottom: 0;
+    border-color: #8f8b7e;
 }
 // no border betw various filter options
 .resulttopblock hr {
-  border: 1px solid #fff;
+    border: 1px solid #fff;
 
-  &:last-child {
-    display: none;
-  }
+    &:last-child {
+        display: none;
+    }
 }
+
 #sra_sort,
 #sra_filter,
 #sra_share {
-  border-bottom: 0;
+    border-bottom: 0;
 }
-/* headings in this section */
+
+// headings in this section
 #searchresults-actions #actioncontent {
-  h3 {
-    color: #222;
-  }
-  p {
-    margin: 0;
-  }
-  label {
-    color: #000;
-  }
-  a {
-    color: $link-dark-blue;
-  }
-  // on itemadmin.do page, can't see owner text in "filter by owner"
-  // #searchresults-actions #actioncontent p white font on white bg, wth
-  span {
-      color: #000;
-  }
+    h3 {
+        color: #222;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    label {
+        color: #000;
+    }
+
+    a {
+        color: $link-dark-blue;
+    }
+    // on itemadmin.do page, can't see owner text in "filter by owner"
+    // #searchresults-actions #actioncontent p white font on white bg, wth
+    span {
+        color: #000;
+    }
 }
 
 // we want to do this _only for single column search results_
