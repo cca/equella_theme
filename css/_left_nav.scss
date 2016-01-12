@@ -16,139 +16,106 @@
         li {
             background: transparent !important;
             border: none !important;
-            transition: all 0.1s ease-out;
+            transition: all .1s ease-out;
 
             a {
                 background-color: #fff;
                 border: 0;
                 color: #000;
             }
+
             a:hover {
                 background-color: #fff;
                 text-shadow: none;
             }
+
             &:hover {
-                padding-left: 5px;
                 border-bottom: 1px solid #000;
+                padding-left: 5px;
             }
+
             &:first-child {
                 border: none !important;
             }
         }
     }
 
-  /* ------------------
-  LEFT HAND NAV ICONS
-  ------------------ */
-  /* ---------------------------******--------------------------- */
-  /* Having troube with these ever-changing left-hand nav ID's? */
-  /* ------------------------------------------------------------ */
+    // main menu icons
+    // !important needed for all of these because default icons are implemented
+    // via a style attribute, thanks EQUELLA
 
-  /* - Instead of referring to links by their #ID's,
-  which appear to change randomly -__-" you could refer to them by their links
-  which ( might ) be more static across all pages.
-
-  Example:(Dashboard Link)
-
-  #menu a[href='/access/home.do'] {
-    background: url('http:#{$icons-path}/icon_50669.png') no-repeat 10px center !important;
-    background-size: 15px !important;
-  }
-  This should only effect this dashboard link on the left-hand nav.
-
-  Good luck!:) - */
-
-  /* ------------------------------------------------------------ */
-  /* CHRISTOPHER */
-  /* ---------------------------******--------------------------- */
-
-    /* -- DASHBOARD -- */
-    a[href*='access/home.do'] {
+    // dashboard
+    [href*='home.do'] {
         background: url('#{$icons-path}/icon_50669.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- SETTINGS -- */
-    a[href*='access/settings.do'] {
+    // settings
+    [href*='settings.do'] {
         background: url('#{$icons-path}/engine.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- MY RESOURCES -- */
-    a[href*='access/myresources.do'] {
+    // my resources
+    [href*='myresources.do'] {
         background: url('#{$icons-path}/manage.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- FAVOURITES -- */
-    a[href*='access/favourites.do'] {
+    // favorites
+    [href*='favourites.do'] {
         background: url('#{$icons-path}/star.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- MANAGE RESOURCES -- */
-    a[href*='access/itemadmin.do'] {
+    // manage resources
+    [href*='itemadmin.do'] {
         background: url('#{$icons-path}/manage.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- all the hierarchy links -- */
-    a[href^='access/hierarchy.do'] {
+    // all hierarchy links
+    [href*='hierarchy.do'] {
         background: url('#{$icons-path}/list 1.png') 10px center / 13px no-repeat !important;
     }
 
-    /* -- CONTRIBUTE -- */
-    a[href*='access/contribute.do'] {
+    // contribute
+    [href*='contribute.do'] {
         background: url('#{$icons-path}/upload.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- CCA LIBRARIES CATALOG-- */
-    a[href*='libraries.cca.edu'] {
+    // libraries' catalog
+    [href*='libraries.cca.edu'] {
         background: url('#{$icons-path}/catalog.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- ANNEMARIE HAAR -- */
-    a[href*='libraries.cca.edu/staff'] {
-        background: url('#{$icons-path}/email 1.png') 10px center / 15px no-repeat !important;
-    }
-
-    /* -- TASKS -- */
-    a[href*='access/tasklist.do'] {
+    // tasks
+    [href*='tasklist.do'] {
         background: url('#{$icons-path}/calendar.png') 10px center / 14px no-repeat !important;
     }
 
-    /* -- MANAGE ACTIVATIONS -- */
-    a[href*='access/activations.do'] {
+    // manage activations
+    [href*='activations.do'] {
         background: url('#{$icons-path}/icon_50776.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- SEARCH -- */
-    a[href*='access/searching.do'] {
+    // search
+    [href*='searching.do'] {
         background: url('#{$icons-path}/search.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- NOTIFICATIONS -- */
-    a[href*='access/notifications.do'] {
-        background: url('#{$icons-path}/flag.png') 10px center / 13px no-repeat !important;
-    }
-
-    /* -- REPORTS -- */
-    a[href*='access/reports.do'] {
+    // reports
+    [href*='access/reports.do'] {
         background: url('#{$icons-path}/icon_50834.png') 10px center / 15px no-repeat !important;
     }
 
-    /* -- Assessments -- */
-    a[href*='access/runwizard.do?method=newitem&itemdefUuid=64efdfe9-9fcb-40ed-9688-206f1985eea0'] {
-        background: url('#{$icons-path}/info.png') 14px center / 6px no-repeat !important;
-    }
-
-    /* -- Technology -- */
-    a[href*='technology.cca.edu'] {
+    // ETS
+    [href*='technology.cca.edu'] {
         background: url('#{$icons-path}/display.png') 11px center / 14px no-repeat  !important;
     }
 
-    /* -- CCA -- */
-    a[href*='www.cca.edu'] {
+    // CCA home
+    [href$='www.cca.edu'] {
         background: url('#{$icons-path}/cca.png') 13px center / 11px no-repeat  !important;
     }
 
-    /* -- Webadvisor -- */
-    a[href*='webadvisor.cca.edu'] {
+    // Webadvisor
+    [href*='webadvisor.cca.edu'] {
         background: url('#{$icons-path}/flash.png') 14px center / 8px no-repeat  !important;
     }
 }
