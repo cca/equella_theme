@@ -167,3 +167,14 @@ div.itemresult-wrapper {
         position: static;
     }
 }
+
+#searchresults-select {
+    background: 0;
+    border: 0;
+    font-size: 18px;
+}
+
+#searchresults-select a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
