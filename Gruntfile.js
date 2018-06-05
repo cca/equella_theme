@@ -1,8 +1,7 @@
 /* global module,require */
-module.exports = function (grunt) {
-    'use strict';
+module.exports = (grunt) => {
     // load all grunt tasks
-    require('load-grunt-tasks')(grunt);
+    require('load-grunt-tasks')(grunt)
 
     grunt.initConfig({
         clean: {
