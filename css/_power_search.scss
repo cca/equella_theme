@@ -1,0 +1,19 @@
+#searchform {
+    // for taxonomy pop-up browser form controls
+    // make the "Select terms" button sit alongdside the lengthy term selector
+    .popupbrowser {
+        table {
+            float: left;
+            margin: 0;
+            width: 80%;
+        }
+        .add {
+            display: inline-block;
+            margin: 4px 1em;
+        }
+        .unselect {
+            height: inherit;
+        }
+    }
+
+}
