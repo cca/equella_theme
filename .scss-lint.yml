@@ -5,11 +5,16 @@ linters:
         enabled: false
     Comment:
         enabled: false
+    HexNotation:
+        enabled: false
     # IDs are sadly necessary when customizing vendor sites
     IdSelector:
         enabled: false
     # Just too noisy…best practice but we need a _lot_ of !important here
     ImportantRule:
+        enabled: false
+    # Another one needed for specificity
+    QualifyingElement:
         enabled: false
     # many selectors target EQUELLA HTML where we don't control format
     # of IDs & class names, unable to meet this standard

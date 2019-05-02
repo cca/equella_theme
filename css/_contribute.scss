@@ -71,7 +71,7 @@
 // Re-styling Contribute page Fancybox Popup
 #fancybox-inner {
     .modal {
-        border: none !important;
+        border: 0 !important;
     }
 
     .modal-title h3 {
@@ -83,7 +83,7 @@
 
     .modal-footer {
         background: $white !important;
-        border: none !important;
+        border: 0 !important;
         box-sizing: border-box;
         padding-bottom: 33px;
     }
@@ -107,16 +107,16 @@
 
 // taxonomy term chooser
 #termChooser {
-    border: none;
+    border: 0;
     padding: 0;
 
     .ui-tabs-nav {
         background: $white !important;
-        border: none !important;
+        border: 0 !important;
 
         li[role='tab'] {
             background: none !important;
-            border: none !important;
+            border: 0 !important;
 
             &.ui-tabs-active {
                 color: $black !important;

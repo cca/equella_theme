@@ -2,14 +2,14 @@
 Random and Assorted Vault Icon Replacements
 --------------------------------------------- */
 @mixin icon-base($pad-left) {
+    margin-left: 0;
     padding-left: $pad-left;
     transition: all .1s ease-out;
-    margin-left: 0;
 }
 
 #content-body {
     #col2 {
-        /* -- Favorites -- */
+        // Favorites
         .action-button.add-to-favourites {
             @include icon-base(40px);
             background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
@@ -20,175 +20,182 @@ Random and Assorted Vault Icon Replacements
             }
         }
 
-    /* -- Favorites 2 -- */
-    .action-button.addToFavourites,
-    .action-button.removeFromFavourites {
-        @include icon-base(40px);
-        background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
+        // Favorites 2
+        .action-button.addToFavourites,
+        .action-button.removeFromFavourites {
+            @include icon-base(40px);
+            background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
+            background-size: 12px !important;
+
+            &:hover {
+                margin-left: 5px;
+            }
+        }
+
+        .action-button.removeFromFavourites {
+            background: url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+            background-size: 12px !important;
+        }
+
+        /* -- Share -- */
+        .action-button.share-search {
+            @include icon-base(40px);
+            background-size: 12px !important;
+            background: url('#{$icons-path}/share.png') no-repeat 10px center !important;
+        }
+
+        .action-button.share-search:hover {
+            margin-left: 4px;
+        }
+
+        /* -- Share 2 -- */
+        .action-button.shareButton {
+            @include icon-base(40px);
+            background-size: 12px !important;
+            background: url('#{$icons-path}/share.png') no-repeat 10px center !important;
+        }
+
+        .action-button.shareButton:hover {
+            margin-left: 4px;
+        }
+
+        /* -- Search -- */
+        .action-button.remote-repo {
+            @include icon-base(40px);
+            background-size: 12px !important;
+            background: url('#{$icons-path}/search.png') no-repeat 10px center !important;
+        }
+
+        .action-button.remote-repo:hover {
+            margin-left: 4px;
+        }
+
+        /* -- Clear Selected -- */
+        #bss_clearSelectedButton {
+            @include icon-base(40px);
+            background-size: 14px !important;
+            background: #ddd url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+            border-bottom: 1px solid #bbb !important;
+            border-radius: 3px;
+            border: 0 !important;
+            color: #000 !important;
+            text-shadow: none !important;
+            width: 130px;
+        }
+
+        #bss_clearSelectedButton:hover {
+            background: $light-gray url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+            color: #000 !important;
+            background-size: 14px !important;
+        }
+
+        /* -- Execute Action -- */
+        .action-button.execute-action {
+            @include icon-base(40px);
+            background-size: 8px !important;
+            background: #ddd url('#{$icons-path}/play.png') no-repeat 10px center !important;
+            border-bottom: 1px solid #bbb !important;
+            border-radius: 3px;
+            color: #000;
+            width: 144px;
+        }
+
+        .action-button.execute-action:hover {
+            background-size: 8px !important;
+            background: $light-gray url('#{$icons-path}/play.png') no-repeat 10px center !important;
+            color: #000 !important;
+        }
+
+        /* -- Add files -- */
+        .action-button.add_handle_button {
+            @include icon-base(40px);
+            background-size: 8px !important;
+            background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            border-bottom: 1px solid #bbb !important;
+            border-radius: 3px;
+            color: #000;
+            width: 144px;
+        }
+
+        .action-button.execute-action:hover {
+            background-size: 8px !important;
+            background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            color: #000 !important;
+        }
+
+        #cmca_b {
+            @include icon-base(40px);
+            background-size: 10px !important;
+            background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            border-bottom: 1px solid #bbb !important;
+            border-radius: 3px;
+            color: #000;
+            width: 114px;
+        }
+
+        #cmca_b:hover {
+            background-size: 10px !important;
+            background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            color: #000 !important;
+        }
+
+        #cmca2_b {
+            @include icon-base(40px);
+            background-size: 12px !important;
+            background: #ddd url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
+            border-bottom: 1px solid #bbb !important;
+            border-radius: 3px;
+            color: #000;
+            width: 174px;
+        }
+
+        #cmca2_b:hover {
+            background-size: 12px !important;
+            background: $light-gray url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
+            color: #000 !important;
+        }
+
+    } // end #col2 rule
+
+    // Add +
+    a.add {
+        background-color: #c0e091 !important;
         background-size: 12px !important;
+        background: #c0e091 url('#{$icons-path}/plus.png') no-repeat 10px center !important;
+        border-bottom: 1px solid #b0c061;
+        border-radius: 3px;
+        color: #000;
+        padding-left: 30px;
+        padding: 5px 10px;
+        transition: all .1s ease-out;
 
         &:hover {
-            margin-left: 5px;
+            background-size: 12px !important;
+            background: #b0d071 url('#{$icons-path}/plus.png') no-repeat 10px center !important;
+            border-bottom: 1px solid #a5c031 !important;
+            color: #000 !important;
+            text-decoration: none !important;
         }
     }
-
-    .action-button.removeFromFavourites {
-      background: url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
-      background-size: 12px !important;
-    }
-
-    /* -- Share -- */
-    .action-button.share-search {
-      background: url('#{$icons-path}/share.png') no-repeat 10px center !important;
-      background-size: 12px !important;
-      @include icon-base(40px);
-    }
-    .action-button.share-search:hover {
-      margin-left: 4px;
-    }
-
-    /* -- Share 2 -- */
-    .action-button.shareButton {
-      background: url('#{$icons-path}/share.png') no-repeat 10px center !important;
-      background-size: 12px !important;
-      @include icon-base(40px);
-    }
-    .action-button.shareButton:hover {
-      margin-left: 4px;
-    }
-
-    /* -- Search -- */
-    .action-button.remote-repo {
-      background: url('#{$icons-path}/search.png') no-repeat 10px center !important;
-      background-size: 12px !important;
-      @include icon-base(40px);
-    }
-    .action-button.remote-repo:hover {
-      margin-left: 4px;
-    }
-
-    /* -- Clear Selected -- */
-    #bss_clearSelectedButton {
-      background: #ddd url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
-      background-size: 14px !important;
-      @include icon-base(40px);
-      color: #000 !important;
-      text-shadow: none !important;
-      border: 0 !important;
-      border-bottom: 1px solid #bbb !important;
-      width: 130px;
-      border-radius: 3px;
-    }
-    #bss_clearSelectedButton:hover {
-      background: $light-gray url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
-      color: #000 !important;
-      background-size: 14px !important;
-    }
-
-    /* -- Execute Action -- */
-    .action-button.execute-action {
-      background: #ddd url('#{$icons-path}/play.png') no-repeat 10px center !important;
-      background-size: 8px !important;
-      @include icon-base(40px);
-      width: 144px;
-      border-bottom: 1px solid #bbb !important;
-      border-radius: 3px;
-      color: #000;
-    }
-    .action-button.execute-action:hover {
-      background: $light-gray url('#{$icons-path}/play.png') no-repeat 10px center !important;
-      color: #000 !important;
-      background-size: 8px !important;
-    }
-
-    /* -- Add files -- */
-    .action-button.add_handle_button {
-      background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center !important;
-      background-size: 8px !important;
-      @include icon-base(40px);
-      width: 144px;
-      border-bottom: 1px solid #bbb !important;
-      border-radius: 3px;
-      color: #000;
-    }
-    .action-button.execute-action:hover {
-      background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
-      color: #000 !important;
-      background-size: 8px !important;
-    }
-    #cmca_b {
-      background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center !important;
-      background-size: 10px !important;
-      border-bottom: 1px solid #bbb !important;
-      border-radius: 3px;
-      color: #000;
-      @include icon-base(40px);
-      width: 114px;
-    }
-    #cmca_b:hover {
-      background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
-      color: #000 !important;
-      background-size: 10px !important;
-    }
-    #cmca2_b {
-      background: #ddd url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
-      background-size: 12px !important;
-      @include icon-base(40px);
-      width: 174px;
-      border-bottom: 1px solid #bbb !important;
-      border-radius: 3px;
-      color: #000;
-    }
-    #cmca2_b:hover {
-      background: $light-gray url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
-      color: #000 !important;
-      background-size: 12px !important;
-    }
-
-  } // end #col2 rule
-
-  /* -- Add + -- */
-  a.add {
-    background: #c0e091 url('#{$icons-path}/plus.png') no-repeat 10px center !important;
-    color: #000;
-    padding: 5px 10px;
-    border-radius: 3px;
-    border-bottom: 1px solid #b0c061;
-    background-color: #c0e091 !important;
-    padding-left: 30px;
-    background-size: 12px !important;
-    -webkit-transition: all 0.1s ease-out; /* Chrome 1-25, Safari 3.2+ */
-    -moz-transition: all 0.1s ease-out; /* Firefox 4-15 */
-    -o-transition: all 0.1s ease-out; /* Opera 10.50–12.00 */
-    transition: all 0.1s ease-out;
-
-    &:hover {
-      background: #b0d071 url('#{$icons-path}/plus.png') no-repeat 10px center !important;
-      color: #000 !important;
-      border-bottom: 1px solid #a5c031 !important;
-      background-size: 12px !important;
-      text-decoration: none !important;
-    }
-  }
 } // end #content-body rule
 
 /* override yellow "add to favorites" star with #000 icon */
 .search-layout a.add-to-favourites {
-  background: url("#{$icons-path}/star.png") no-repeat -1px center;
-  background-size: 16px;
+    background: url("#{$icons-path}/star.png") no-repeat -1px center;
+    background-size: 16px;
 }
 
 #ed_changePassButton {
-  background: url('#{$icons-path}/locked.png') no-repeat 10px center !important;
-  background-size: 12px !important;
-  @include icon-base(40px);
+    @include icon-base(40px);
+    background-size: 12px !important;
+    background: url('#{$icons-path}/locked.png') no-repeat 10px center !important;
 }
 #ed_changePassButton:hover {
-  margin-left: 4px;
+    margin-left: 4px;
 }
 
 /* -- Date Picker / Calendar -- */
 .ui-datepicker-trigger {
-  width: 16px;
-  padding-top: 5px;
+    padding-top: 5px;
+    width: 16px;
 }

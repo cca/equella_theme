@@ -4,88 +4,88 @@
 
 body,
 #body {
-  background: #fff;
+    background: #fff;
 }
 
 #header-inner h2 {
-  color: $link-dark-blue;
-  max-width: 660px;
-  display: none;
+    color: $link-dark-blue;
+    display: none;
+    max-width: 660px;
 }
 
 #screen-options a,
 #help a,
 #screen-options a:hover,
 #help a:hover {
-  color: #C69EB3;
+    color: #C69EB3;
 }
 
 .area {
-  border: 1px solid #C69EB3;
+    border: 1px solid #C69EB3;
 }
 
 .area h2 {
-  color: #936;
-  font-size: 18px;
+    color: #936;
+    font-size: 18px;
 }
 
 .area .displayNodeFull h2 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .content a {
-  color: $link-dark-blue;
+    color: $link-dark-blue;
 }
 
 .content a:hover {
-  color: #235D8C;
+    color: #235D8C;
 }
 
 #menu ul li .tooltip {
-  background-color: $light-pink;
-  border-color: $light-gray;
-  padding: 5px;
+    background-color: $light-pink;
+    border-color: $light-gray;
+    padding: 5px;
 }
 
 .alt-links a,
 .recent-item h4 a,
 .news-item h4 a {
-  color: $link-dark-blue !important;
+    color: $link-dark-blue !important;
 }
 
 .recent-item h4 a:hover,
 .news-item h4 a:hover {
-  color: $dark-font-color;
+    color: $dark-font-color;
 }
 
 .recent-item span,
 .news-item .news-date {
-  color: #777;
+    color: #777;
 }
 
 .itemsummary-layout .area {
-  background: #fff;
+    background: #fff;
 }
 
 #receipt-message,
 #versions li.selected {
-  background-color: $light-pink;
+    background-color: $light-pink;
 }
 
 #screen-options,
 #help {
-  background-color: $light-pink;
-  border: 1px solid #C69EB3;
+    background-color: $light-pink;
+    border: 1px solid #C69EB3;
 }
 
 .search-layout #col2 div.input h4 {
-  color: $link-dark-blue;
-  font-size: 12px;
-  font-weight: normal;
+    color: $link-dark-blue;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .area fieldset h3 {
-  color: #C69EB3;
+    color: #C69EB3;
 }
 
 .area .control,
@@ -93,75 +93,75 @@ body,
 .topblock,
 .modal-content-inner,
 div.formsection {
-  h3 {
-    // why make headings link colored? seems confusing in at least one place:
-    // open up ".topblock" Help section to see
-    color: $link-dark-blue;
-    line-height: 16px;
-  }
+    h3 {
+        // why make headings link colored? seems confusing in at least one place:
+        // open up ".topblock" Help section to see
+        color: $link-dark-blue;
+        line-height: 16px;
+    }
 }
 
 .halfControl {
-  width: 47%;
+    width: 47%;
 }
 
 .modal-title h3 {
-  background: $link-dark-blue;
-  border: 1px solid $link-dark-blue;
-  color: #fff;
-  text-shadow: none;
+    background: $link-dark-blue;
+    border: 1px solid $link-dark-blue;
+    color: #fff;
+    text-shadow: none;
 }
 
 .button-strip {
-  background: 0;
+    background: 0;
 }
 
 .area .button-strip {
-  background: none;
+    background: none;
 }
 
 .box_head {
-  background-color: $light-gray;
+    background-color: $light-gray;
 }
 
 .box_head:hover {
-  background-color: #aaa;
+    background-color: #aaa;
 }
 
 .modal-footer {
-  background: $link-dark-blue;
-  border: 1px solid $link-dark-blue;
+    background: $link-dark-blue;
+    border: 1px solid $link-dark-blue;
 }
 
 #footer {
-  color: $dark-gray;
-  border-top: 4px double $light-gray;
+    border-top: 4px double $light-gray;
+    color: $dark-gray;
 
-  a {
-    color: $link-dark-blue;
+    a {
+        color: $link-dark-blue;
 
-    &:hover {
-        color: #235D8C;
+        &:hover {
+            color: #235D8C;
+        }
     }
-  }
 }
 
 #footer-inner {
-  height: 0;
+    height: 0;
 }
 
 #socialmedia {
-  display: none;
+    display: none;
 }
 
 input[type="text"],
 input[type="password"],
 textarea,
 select[multiple="multiple"] {
-  border: 1px solid #CFCBBE;
-  border-right: 1px solid #C3BEAE;
-  border-top: 1px solid #C3BEAE;
-  margin-right: 3px;
+    border: 1px solid #CFCBBE;
+    border-right: 1px solid #C3BEAE;
+    border-top: 1px solid #C3BEAE;
+    margin-right: 3px;
 }
 
 /* ------------------ Implemented Update 2014 ------------------ */
@@ -179,32 +179,32 @@ select[multiple="multiple"] {
 Body
 ------------------ */
 #content {
-  background: none;
+    background: none;
 }
 
 #content-inner {
-  background: none;
+    background: none;
 }
 
 #content-bottom {
-  background: none;
+    background: none;
 }
 
 .box {
-  background: none;
-  border: 0;
+    background: none;
+    border: 0;
 }
 
 .box_content {
-  background: none;
-  border-bottom: none;
+    background: none;
+    border-bottom: 0;
 }
 
 /* top "screen options" & "help" sections */
 #bluebar_screenoptions,
 #bluebar_help {
-  border: 0;
-  margin-bottom: 0;
+    border: 0;
+    margin-bottom: 0;
 }
 
 /* Buttons */
@@ -214,98 +214,98 @@ Page Options
 
 /* New Navigation (Help and Options) */
 #helpAndOptions {
-  display: block;
+    display: block;
 }
 
 #startTourBtn {
-  position: absolute;
-  right: 40px;
-  top: 44px;
-  text-align: right;
-  z-index: 10;
-  cursor: pointer;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    text-align: right;
+    top: 44px;
+    z-index: 10;
 
-  &:hover {
-    text-decoration: underline !important;
-  }
+    &:hover {
+        text-decoration: underline !important;
+    }
 }
 
 #header {
-  border: none !important;
+    border: 0 !important;
 }
 
 #content-body .area h2 {
-  color: #222 !important;
-  padding-bottom: 5px;
+    color: #222 !important;
+    padding-bottom: 5px;
 }
 
 #content-body .area h1 {
-  color: #222 !important;
+    color: #222 !important;
 }
 
 #content-body a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #sa_sortBox_minimise:active {
-  background: none !important;
+    background: none !important;
 }
 
 #sa_sortBox_minimise {
-  background: none !important;
-  border-top: none;
+    background: none !important;
+    border-top: 0;
 }
 
 #sa_sortBox_minimise:hover {
-  background: none !important;
+    background: none !important;
 }
 
 #sa_filterBox_minimise:active {
-  background: none !important;
+    background: none !important;
 }
 
 #sa_filterBox_minimise {
-  background: none !important;
-  border-top: none;
+    background: none !important;
+    border-top: 0;
 }
 
 #sa_filterBox_minimise:hover {
-  background: none !important;
+    background: none !important;
 }
 
 #isa_sortBox_minimise:active {
-  background: none !important;
+    background: none !important;
 }
 
 #isa_sortBox_minimise {
-  background: none !important;
-  border-top: none;
+    background: none !important;
+    border-top: 0;
 }
 
 #isa_sortBox_minimise:hover {
-  background: none !important;
+    background: none !important;
 }
 
 #isa_filterBox_minimise:active {
-  background: none !important;
+    background: none !important;
 }
 
 #isa_filterBox_minimise {
-  background: none !important;
-  border-top: none;
+    background: none !important;
+    border-top: 0;
 }
 
 #isa_filterBox_minimise:hover {
-  background: none !important;
+    background: none !important;
 }
 
 .box_head {
-  background: #fff !important;
-  border: none !important;
+    background: #fff !important;
+    border: 0 !important;
 }
 
 .box_title_wrapper {
-  background: #fff !important;
+    background: #fff !important;
 }
 
 /* @todo I suspect this is dead code
@@ -313,49 +313,49 @@ or that the [alt] selector rules are unnecessary */
 #sa_filterBox .box_minimise,
 #isa_filterBox .box_minimise,
 #searchactions-sort .box_minimise {
-  content: url("#{$icons-path}/rightArrow.png") !important;
-  width: 12px;
-  height: 12px;
-  background: #fff !important;
-
-  &[alt='Hide the contents of this box'] {
-    content: url("#{$icons-path}/downArrow.png") !important;
-    width: 12px;
+    background: #fff !important;
+    content: url("#{$icons-path}/rightArrow.png") !important;
     height: 12px;
-  }
+    width: 12px;
+
+    &[alt='Hide the contents of this box'] {
+        content: url("#{$icons-path}/downArrow.png") !important;
+        height: 12px;
+        width: 12px;
+    }
 }
 
 .search-layout #col2 div.input h4 {
-  color: $dark-gray !important;
+    color: $dark-gray !important;
 }
 
 .box_content hr {
-  border-color: #fff !important;
+    border-color: #fff !important;
 }
 
 .area .control h3 {
-  color: $dark-gray;
+    color: $dark-gray;
 }
 
 #breadcrumbs a {
-  color: #444;
+    color: #444;
 }
 
 /* contribute page selected course - highlight */
 #p0c3d_ttri14 td {
-  background: #fff !important;
+    background: #fff !important;
 }
 
 // only way to get the .icon-comment & number sitting
 // in a .gallery-action <a> without useful style hooks
 #searchresults .gallery-action:last-child {
-  display: none;
+    display: none;
 }
 
 /* /access/myresources.do?type=scrapbook
  scrapbook Add to favs/Upload Files/Author new… actions look awkward as blocks */
 .query-action {
-  display: inline;
+    display: inline;
 }
 
 @import 'text';

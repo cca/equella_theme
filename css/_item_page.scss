@@ -1,179 +1,194 @@
 // styles on individual item pages e.g. /items/{{id}}/{{version}}/ URLs
 // often involve classes commonly used in display templates
 #title {
-  color: #936;
+    color: #936;
 }
+
 #more {
-  float: left;
-  padding: 10px;
-  display: inline;
-  color: #C69EB3;
-  font-weight: bold;
-  margin-left: 195px;
+    color: #C69EB3;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    margin-left: 195px;
+    padding: 10px;
 }
+
 // only use I can find is in Libraries collection
 #secondtitle {
-  margin: 0 0 0 10px;
-  padding: 0;
-  font-size: 12px;
-  color: $dark-gray;
-  display: block;
+    color: $dark-gray;
+    display: block;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    padding: 0;
 }
 
 // special types of metadata: location, subject, rights/permissions
 dt.loc {
-  border-bottom: none;
-  border: 1px solid $light-gray;
-  padding: 5px;
+    border: 1px solid $light-gray;
+    border-bottom: 0;
+    padding: 5px;
 }
+
 dd.subject {
-  display: inline;
-  float: left;
-  min-width: 210px;
+    display: inline;
+    float: left;
+    min-width: 210px;
 }
+
 dd.rights {
-  margin-top: 15px;
-  border-top: 1px solid $light-gray;
-  padding-top: 15px;
-  text-align: center;
-  clear: both;
-  border-bottom: 1px solid $light-gray;
-  padding-bottom: 15px;
+    border-bottom: 1px solid $light-gray;
+    border-top: 1px solid $light-gray;
+    clear: both;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .itemsummary-layout {
-  .area {
-    h2 {
-      margin: 8px 0 8px 0;
-      color: $dark-gray;
-      border-bottom: 1px solid #DDD;
-    }
-    h3 {
-      font-size: 12px;
-      font-weight: normal;
-      margin: 5px 0 0 0;
-      color: #936;
+    .area {
+        h2 {
+            border-bottom: 1px solid #DDD;
+            color: $dark-gray;
+            margin: 8px 0;
+        }
+
+        h3 {
+            color: #936;
+            font-size: 12px;
+            font-weight: normal;
+            margin: 5px 0 0;
+        }
+
+      /* disable links that point nowhere */
+        a[href=""] {
+            color: $dark-font-color; /* default text color */
+            pointer-events: none;
+        }
+
+        /* this rule is killing me all the time
+        why would we want all paragraphs to be inline?
+        where is this useful? -EJP */
+        p {
+            display: inline;
+
+            &.caption {
+                display: block;
+                line-height: 15px;
+                margin: 0 5px 5px 0;
+            }
+
+            &.commImagelist {
+                display: block;
+                line-height: 12px;
+                margin: 0 5px 5px 10px;
+            }
+
+            &.photoImagelist {
+                display: block;
+                margin: 0 5px 5px 12px;
+                max-height: 220px;
+            }
+
+            &.artistDocs {
+                display: block;
+                line-height: 12px;
+                margin: 0 15px 0 5px;
+                word-break: break-word;
+            }
+        }
     }
 
-    /* disable links that point nowhere */
-    a[href=""] {
-      color: $dark-font-color; /* default text color */
-      pointer-events: none;
+    #col1 .displayNodeHalf,
+    #col1 .displayNodeFull {
+        display: inline-block;
+        margin: 0;
+        padding-left: 10px;
+        vertical-align: top;
+        width: 47%;
     }
 
-    /* this rule is killing me all the time
-    why would we want all paragraphs to be inline?
-    where is this useful? -EJP */
-    p {
-      display: inline;
-
-      &.caption {
-        margin: 0 5px 5px 0;
-        line-height: 15px;
-        display: block;
-      }
-      &.commImagelist {
-        margin: 0 5px 5px 10px;
-        line-height: 12px;
-        display: block;
-      }
-      &.photoImagelist {
-        margin: 0 5px 5px 12px;
-        display: block;
-        max-height: 220px;
-      }
-      &.artistDocs {
-        margin: 0 15px 0 5px;
-        line-height: 12px;
-        display: block;
-        word-break: break-word;
-      }
+    #col1 .displayNodeFull {
+        width: 100%;
     }
-  }
 
-  #col1 .displayNodeHalf,
-  #col1 .displayNodeFull {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    width: 47%;
-    padding-left: 10px;
-  }
-  #col1 .displayNodeFull {
-    width: 100%;
-  }
+    a {
+        color: $link-dark-blue;
 
-  a {
-    color: $link-dark-blue;
-    &:hover {
-      color: lighten($link-dark-blue, 20%);
+        &:hover {
+            color: lighten($link-dark-blue, 20%);
+        }
     }
-  }
 
-  #col2 ul li a {
-    color: $link-dark-blue;
-    &:hover {
-      color: $link-dark-blue;
+    #col2 ul li a {
+        color: $link-dark-blue;
+
+        &:hover {
+            color: $link-dark-blue;
+        }
     }
-  }
 }
 
 div.itemsummary-layout img {
-  margin: 5px;
-  border: 1px solid $light-gray;
-  padding: 5px;
+    border: 1px solid $light-gray;
+    margin: 5px;
+    padding: 5px;
 }
 
 /* hide error message for wrap */
 .displayNodeHalf p span {
-  display: none;
+    display: none;
 }
+
 .displayNodeHalf p,
 .displayNodeFull p {
-  background: #fff;
-  padding: 0 15px;
-  float: left;
-  min-width: 85%;
-  margin: 0 0 5px 0;
+    background: #fff;
+    float: left;
+    margin: 0 0 5px;
+    min-width: 85%;
+    padding: 0 15px;
 }
 
 div.area > div.displayNodeFull:first-child > h3 {
-  display: none;
+    display: none;
 }
 
 /* change color of every other element */
 .displayNodeHalf p:nth-child(odd):before {
-  content: "* ";
+    content: '* ';
 }
+
 .displayNodeHalf p:nth-child(odd):after {
-  content: " *";
+    content: ' *';
 }
+
 .displayNodeHalf p:nth-child(odd) {
-  padding: 0 15px 3px 15px;
+    padding: 0 15px 3px;
 }
+
 .displayNodeFull p {
-  width: 89%;
+    width: 89%;
 }
 
 /* title */
 div.area > div.displayNodeFull:first-child > h3 + p {
-  background: #fff;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  font-size: 18px;
-  padding: 0;
-  color: $link-dark-blue;
-  width: 97%;
-  margin: 0 0 8px -8px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    border: 0;
+    color: $link-dark-blue;
+    font-size: 18px;
+    margin: 0 0 8px -8px;
+    padding: 0;
+    width: 97%;
 }
 
 /* collection */
 /* um…this selector is insane, can't be necessary -EJP */
 div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
-  padding: 0;
-  margin: 0;
-  text-align: right;
-  color: #999;
+    color: #999;
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
 // override Bootstrap thumbnail border & excess spacing
@@ -184,264 +199,305 @@ div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
 
 // NOTE: Bootstrap has .thumbnail .caption style which supplements this
 p.caption {
-  color: $dark-gray;
-  font-size: 8pt;
-  text-align: center;
+    color: $dark-gray;
+    font-size: 8pt;
+    text-align: center;
 }
 
 .rating-form div.input {
-  margin-top: 5;
+    margin-top: 5;
 }
+
 .rate {
-  position: absolute;
-  top: -5px;
-  right: 0;
-  width: 190px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 190px;
 }
+
 #image-descrip {
-  float: right;
-  max-width: 170px;
-  text-align: left;
+    float: right;
+    max-width: 170px;
+    text-align: left;
 }
 
 p.photoImagelist {
-  color: $dark-gray;
-  font-size: 8pt;
-  text-align: left;
-  max-width: 130px;
-  white-space: wrap;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
-  line-height: 20px;
-
-  i {
-    display: block;
-    width: 100% !important;
+    color: $dark-gray;
+    font-size: 8pt;
+    line-height: 20px;
+    max-width: 130px;
+    overflow: hidden !important;
+    text-align: left;
     text-overflow: ellipsis;
-    overflow: hidden;
-  }
-}
-p.artistDocs {
-  color: $dark-gray;
-  font-size: 8pt;
-  text-align: left;
-  max-width: 110px;
+    white-space: wrap;
 
-  &.label {
-    font-style: italic;
-    text-decoration: underline;
-  }
+    i {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100% !important;
+    }
 }
+
+p.artistDocs {
+    color: $dark-gray;
+    font-size: 8pt;
+    max-width: 110px;
+    text-align: left;
+
+    &.label {
+        font-style: italic;
+        text-decoration: underline;
+    }
+}
+
 // below is a mess, various slightly-different classes used in
 // several different collections
 div.image-studentWork {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 130px;
-  text-align: center;
+    float: left;
+    max-width: 130px;
+    min-height: 130px;
+    min-width: 130px;
+    text-align: center;
 }
+
 div.image-INTERstudentWork {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 165px;
-  text-align: center;
+    float: left;
+    max-width: 130px;
+    min-height: 165px;
+    min-width: 130px;
+    text-align: center;
 }
+
 div.image-photoStudentWork,
 div.image-seniorPacket {
-  float: left;
-  max-width: 400px;
-  min-height: 220px;
+    float: left;
+    max-width: 400px;
+    min-height: 220px;
 }
+
 div.image-photoSeniorPacket {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 235px;
+    float: left;
+    max-width: 130px;
+    min-height: 235px;
+    min-width: 130px;
 }
+
 div.image-artistDocs {
-  float: left;
-  max-width: 130px;
-  min-width: 130px;
-  min-height: 140px;
+    float: left;
+    max-width: 130px;
+    min-height: 140px;
+    min-width: 130px;
 }
+
 div.image-juniorReviewDocs {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
+    float: left;
+    min-width: 130px;
+    max-width: 130px;
 }
+
 div.image-Comm2 {
-  float: left;
-  width: 250px;
-  text-align: left;
-  min-height: auto;
-  max-height: 400px;
-  overflow: auto;
+    float: left;
+    max-height: 400px;
+    min-height: auto;
+    overflow: auto;
+    text-align: left;
+    width: 250px;
 }
+
 p.commImagelist {
-  color: $dark-gray;
-  font-size: 8pt;
+    color: $dark-gray;
+    font-size: 8pt;
 }
+
 table.commImages,
 td.commImages,
 th.commImages {
-  border: none;
-  width: 260px;
-  height: 120px;
-  text-align: right;
-  vertical-align: middle;
-  padding: 10px;
+    border: 0;
+    height: 120px;
+    padding: 10px;
+    text-align: right;
+    vertical-align: middle;
+    width: 260px;
 }
+
 div.image-juniorReviewWork {
-  float: left;
-  min-width: 130px;
-  max-width: 130px;
-  min-height: 255px;
+    float: left;
+    max-width: 130px;
+    min-height: 255px;
+    min-width: 130px;
 }
+
 div.image-juniorReviewMovImgWork {
-  float: left;
-  min-width: 500px;
-  max-width: 500px;
-  min-height: 170px;
-  margin-left: 20px;
+    float: left;
+    margin-left: 20px;
+    max-width: 500px;
+    min-height: 170px;
+    min-width: 500px;
 }
+
 p.imageList {
-  margin: 0 5px 5px 0;
-  line-height: 15px;
-  display: block;
-  text-align: left;
-  color: $dark-gray;
-  font-size: 11px;
+    color: $dark-gray;
+    display: block;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 0 5px 5px 0;
+    text-align: left;
 }
+
 // @TODO: do VISST & WRLIT really need slightly different course info sizes?
 #coursestuff {
-  display: block;
-  margin-left: 15px;
-  margin-bottom: 6px;
-  font-size: 11px;
-  line-height: 22px;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 6px;
+    font-size: 11px;
+    line-height: 22px;
 }
+
 #VisStcoursestuff {
-  display: block;
-  font-size: 11px;
-  margin-bottom: 6px;
-  line-height: 22px;
+    display: block;
+    font-size: 11px;
+    line-height: 22px;
+    margin-bottom: 6px;
 }
+
 #WrLitcoursestuff {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 6px;
-  line-height: 22px;
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 6px;
 }
 
 /* -------------------itemresults freemarker------------------------------ */
 dt,
 .itemsummary-layout .area h3 {
-  font-size: 17px;
-  margin: 16px 0 8px 0;
-  color: $dark-gray;
-  border-bottom: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    color: $dark-gray;
+    font-size: 17px;
+    margin: 16px 0 8px 0;
 }
+
 .itemsummary-layout h4 {
-  color: $dark-gray;
-  text-decoration: underline;
+    color: $dark-gray;
+    text-decoration: underline;
 }
+
 dt {
-  clear: both;
+    clear: both;
 }
+
 dd {
-  font-size: 12px;
-  margin: 6px 30px 6px 15px;
-  line-height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 6px 30px 6px 15px;
 }
+
 dt.hide {
-  display: none;
+    display: none;
 }
+
 dd.collection {
-  text-align: right;
-  font-size: 11px;
+    font-size: 11px;
+    text-align: right;
 }
+
 #namestuff {
-  display: block;
-  margin-left: 25px;
-  font-size: 11px;
-  color: $dark-gray;
-  line-height: 20px;
+    color: $dark-gray;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    margin-left: 25px;
 }
+
 dt.minor {
-  font-size: 12px;
-  margin: 0 0 0 15px;
-  border: none;
-  display: inline;
+    border: 0;
+    display: inline;
+    font-size: 12px;
+    margin: 0 0 0 15px;
 }
+
 dd.minor {
-  display: inline;
-  margin-left: 0;
+    display: inline;
+    margin-left: 0;
 }
+
 #indent {
-  margin-left: 15px;
+    margin-left: 15px;
 }
+
 .attachments-browse {
-  border: none;
+    border: 0;
 }
+
 .attachments-preview .attachments-thumb {
-  height: 80px;
+    height: 80px;
 }
+
 div.itemsummary-layout img.droparrow {
-  margin: 0;
-  padding: 2px;
+    margin: 0;
+    padding: 2px;
 }
+
 .customlinks #cls_selector_opener {
-  color: $dark-gray;
+    color: $dark-gray;
 }
+
 #input-right {
-  float: right;
+    float: right;
 }
+
 dd.date {
-  min-width: 210px;
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    min-width: 210px;
 }
 
 .button input[type="button"] {
-  color: $link-dark-blue;
-  text-transform: uppercase;
+    color: $link-dark-blue;
+    text-transform: uppercase;
 }
+
 #header-inner .banner {
-  display: none;
+    display: none;
 }
+
 .alert-success {
-  background-color: #dff0d8;
-  border-color: rgba(4, 95, 127, 0.54);
-  color: $link-dark-blue;
-  font-variant: small-caps;
-  font-size: 120%;
-  text-align: center;
+    background-color: #dff0d8;
+    border-color: rgba(4, 95, 127, .54);
+    color: $link-dark-blue;
+    font-size: 120%;
+    font-variant: small-caps;
+    text-align: center;
 }
+
 .box_content_inner {
-  padding: 0 5px 5px 5px;
-  background: none !important;
+    background: none !important;
+    padding: 0 5px 5px;
 }
+
 #servermessage {
-  background: #F99;
-  border-color: #F99;
+    background: #F99;
+    border-color: #F99;
 }
+
 .icon-circle-arrow-down {
-  display: none;
+    display: none;
 }
+
 dt.indentNoLine {
-  font-size: 17px;
-  margin: 10px 5px 5px 15px;
-  color: $link-dark-blue;
-  border-bottom: none;
+    border-bottom: 0;
+    color: $link-dark-blue;
+    font-size: 17px;
+    margin: 10px 5px 5px 15px;
 }
+
 dt.subHeading {
-  font-size: 15px;
-  margin: 10px 5px 5px 15px;
-  color: $dark-gray;
-  border-bottom: none;
+    border-bottom: 0;
+    color: $dark-gray;
+    font-size: 15px;
+    margin: 10px 5px 5px 15px;
 }
+
 dd.big {
-  font-size: 14px;
+    font-size: 14px;
 }
