@@ -27,13 +27,8 @@ module.exports = (grunt) => {
             }
           }
         },
-        scsslint: {
-          dist: [ 'css/*.scss' ],
-          options: {
-            compact: true,
-            config: '.scss-lint.yml',
-            colorizeOutput: true
-          }
+        exec: {
+          scsslint: 'scss-lint -c .scss-lint.yml css/*.scss'
         },
         // copy over all images
         copy: {
@@ -83,7 +78,7 @@ module.exports = (grunt) => {
     ]);
 
     grunt.registerTask('test', [
-        'scsslint'
+        'exec:scsslint'
     ])
 
     grunt.registerTask('default', [
