@@ -12,8 +12,7 @@ Random and Assorted Vault Icon Replacements
         // Favorites
         .action-button.add-to-favourites {
             @include icon-base(40px);
-            background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
-            background-size: 12px !important;
+            background: url('#{$icons-path}/heart.png') no-repeat 10px center / 12px !important;
 
             &:hover {
                 margin-left: 5px;
@@ -24,8 +23,7 @@ Random and Assorted Vault Icon Replacements
         .action-button.addToFavourites,
         .action-button.removeFromFavourites {
             @include icon-base(40px);
-            background: url('#{$icons-path}/heart.png') no-repeat 10px center !important;
-            background-size: 12px !important;
+            background: url('#{$icons-path}/heart.png') no-repeat 10px center / 12px !important;
 
             &:hover {
                 margin-left: 5px;
@@ -33,15 +31,13 @@ Random and Assorted Vault Icon Replacements
         }
 
         .action-button.removeFromFavourites {
-            background: url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
-            background-size: 12px !important;
+            background: url('#{$icons-path}/error 2.png') no-repeat 10px center / 12px !important;
         }
 
         /* -- Share -- */
         .action-button.share-search {
             @include icon-base(40px);
-            background-size: 12px !important;
-            background: url('#{$icons-path}/share.png') no-repeat 10px center !important;
+            background: url('#{$icons-path}/share.png') no-repeat 10px center / 12px !important;
         }
 
         .action-button.share-search:hover {
@@ -51,8 +47,7 @@ Random and Assorted Vault Icon Replacements
         /* -- Share 2 -- */
         .action-button.shareButton {
             @include icon-base(40px);
-            background-size: 12px !important;
-            background: url('#{$icons-path}/share.png') no-repeat 10px center !important;
+            background: url('#{$icons-path}/share.png') no-repeat 10px center / 12px !important;
         }
 
         .action-button.shareButton:hover {
@@ -62,8 +57,7 @@ Random and Assorted Vault Icon Replacements
         /* -- Search -- */
         .action-button.remote-repo {
             @include icon-base(40px);
-            background-size: 12px !important;
-            background: url('#{$icons-path}/search.png') no-repeat 10px center !important;
+            background: url('#{$icons-path}/search.png') no-repeat 10px center / 12px !important;
         }
 
         .action-button.remote-repo:hover {
@@ -73,8 +67,7 @@ Random and Assorted Vault Icon Replacements
         /* -- Clear Selected -- */
         #bss_clearSelectedButton {
             @include icon-base(40px);
-            background-size: 14px !important;
-            background: #ddd url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+            background: #ddd url('#{$icons-path}/error 2.png') no-repeat 10px center / 12px !important;
             border-bottom: 1px solid #bbb !important;
             border-radius: 3px;
             border: 0 !important;
@@ -84,16 +77,14 @@ Random and Assorted Vault Icon Replacements
         }
 
         #bss_clearSelectedButton:hover {
-            background: $light-gray url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+            background: $light-gray url('#{$icons-path}/error 2.png') no-repeat 10px center / 14px !important;
             color: #000 !important;
-            background-size: 14px !important;
         }
 
         /* -- Execute Action -- */
         .action-button.execute-action {
             @include icon-base(40px);
-            background-size: 8px !important;
-            background: #ddd url('#{$icons-path}/play.png') no-repeat 10px center !important;
+            background: #ddd url('#{$icons-path}/play.png') no-repeat 10px center / 8px !important;
             border-bottom: 1px solid #bbb !important;
             border-radius: 3px;
             color: #000;
@@ -101,16 +92,14 @@ Random and Assorted Vault Icon Replacements
         }
 
         .action-button.execute-action:hover {
-            background-size: 8px !important;
-            background: $light-gray url('#{$icons-path}/play.png') no-repeat 10px center !important;
+            background: $light-gray url('#{$icons-path}/play.png') no-repeat 10px center / 8px !important;
             color: #000 !important;
         }
 
         /* -- Add files -- */
         .action-button.add_handle_button {
             @include icon-base(40px);
-            background-size: 8px !important;
-            background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center / 8px !important;
             border-bottom: 1px solid #bbb !important;
             border-radius: 3px;
             color: #000;
@@ -118,15 +107,13 @@ Random and Assorted Vault Icon Replacements
         }
 
         .action-button.execute-action:hover {
-            background-size: 8px !important;
-            background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center / 8px !important;
             color: #000 !important;
         }
 
         #cmca_b {
             @include icon-base(40px);
-            background-size: 10px !important;
-            background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center / 10px !important;
             border-bottom: 1px solid #bbb !important;
             border-radius: 3px;
             color: #000;
@@ -134,15 +121,13 @@ Random and Assorted Vault Icon Replacements
         }
 
         #cmca_b:hover {
-            background-size: 10px !important;
-            background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center !important;
+            background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center / 12px  !important;
             color: #000 !important;
         }
 
         #cmca2_b {
             @include icon-base(40px);
-            background-size: 12px !important;
-            background: #ddd url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
+            background: #ddd url('#{$icons-path}/file plus.png') no-repeat 10px center / 12px !important;
             border-bottom: 1px solid #bbb !important;
             border-radius: 3px;
             color: #000;
@@ -150,8 +135,7 @@ Random and Assorted Vault Icon Replacements
         }
 
         #cmca2_b:hover {
-            background-size: 12px !important;
-            background: $light-gray url('#{$icons-path}/file plus.png') no-repeat 10px center !important;
+            background: $light-gray url('#{$icons-path}/file plus.png') no-repeat 10px center / 12px !important;
             color: #000 !important;
         }
 
@@ -160,8 +144,7 @@ Random and Assorted Vault Icon Replacements
     // Add +
     a.add {
         background-color: #c0e091 !important;
-        background-size: 12px !important;
-        background: #c0e091 url('#{$icons-path}/plus.png') no-repeat 10px center !important;
+        background: #c0e091 url('#{$icons-path}/plus.png') no-repeat 10px center / 12px !important;
         border-bottom: 1px solid #b0c061;
         border-radius: 3px;
         color: #000;
@@ -170,8 +153,7 @@ Random and Assorted Vault Icon Replacements
         transition: all .1s ease-out;
 
         &:hover {
-            background-size: 12px !important;
-            background: #b0d071 url('#{$icons-path}/plus.png') no-repeat 10px center !important;
+            background: #b0d071 url('#{$icons-path}/plus.png') no-repeat 10px center / 12px !important;
             border-bottom: 1px solid #a5c031 !important;
             color: #000 !important;
             text-decoration: none !important;
@@ -181,14 +163,12 @@ Random and Assorted Vault Icon Replacements
 
 /* override yellow "add to favorites" star with #000 icon */
 .search-layout a.add-to-favourites {
-    background: url("#{$icons-path}/star.png") no-repeat -1px center;
-    background-size: 16px;
+    background: url("#{$icons-path}/star.png") no-repeat -1px center / 16px;
 }
 
 #ed_changePassButton {
     @include icon-base(40px);
-    background-size: 12px !important;
-    background: url('#{$icons-path}/locked.png') no-repeat 10px center !important;
+    background: url('#{$icons-path}/locked.png') no-repeat 10px center / 12px !important;
 }
 #ed_changePassButton:hover {
     margin-left: 4px;
