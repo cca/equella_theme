@@ -49,9 +49,9 @@
         background: url('#{$icons-path}/icon_50669.png') 10px center / 15px no-repeat !important;
     }
 
-    // settings
-    [href*='settings.do'] {
-        background: url('#{$icons-path}/engine.png') 10px center / 15px no-repeat !important;
+    // favorites
+    [href*='favourites.do'] {
+        background: url('#{$icons-path}/star.png') 10px center / 15px no-repeat !important;
     }
 
     // my resources
@@ -59,19 +59,9 @@
         background: url('#{$icons-path}/manage.png') 10px center / 15px no-repeat !important;
     }
 
-    // favorites
-    [href*='favourites.do'] {
-        background: url('#{$icons-path}/star.png') 10px center / 15px no-repeat !important;
-    }
-
-    // manage resources
-    [href*='itemadmin.do'] {
-        background: url('#{$icons-path}/manage.png') 10px center / 15px no-repeat !important;
-    }
-
-    // all hierarchy links
-    [href*='hierarchy.do'] {
-        background: url('#{$icons-path}/list 1.png') 10px center / 13px no-repeat !important;
+    // search
+    [href*='searching.do'] {
+        background: url('#{$icons-path}/search.png') 10px center / 15px no-repeat !important;
     }
 
     // contribute
@@ -79,33 +69,28 @@
         background: url('#{$icons-path}/upload.png') 10px center / 15px no-repeat !important;
     }
 
+    // all hierarchy links
+    [href*='hierarchy.do'] {
+        background: url('#{$icons-path}/list 1.png') 10px center / 13px no-repeat !important;
+    }
+
+    // Q&A contrib link, this is its UUID
+    [href*='64efdfe9-9fcb-40ed-9688-206f1985eea0'] {
+        background: url('/entity/1454480/info.png') 15px center / 6px no-repeat  !important;
+    }
+
+    // Workday
+    [href*='workday.cca.edu'] {
+        background: url('/entity/2777887/workday-bw.png') 11px center / 13px no-repeat  !important;
+    }
+
     // libraries' catalog
     [href*='libraries.cca.edu'] {
         background: url('#{$icons-path}/catalog.png') 10px center / 15px no-repeat !important;
     }
 
-    // tasks
-    [href*='tasklist.do'] {
-        background: url('#{$icons-path}/calendar.png') 10px center / 14px no-repeat !important;
-    }
-
-    // manage activations
-    [href*='activations.do'] {
-        background: url('#{$icons-path}/icon_50776.png') 10px center / 15px no-repeat !important;
-    }
-
-    // search
-    [href*='searching.do'] {
-        background: url('#{$icons-path}/search.png') 10px center / 15px no-repeat !important;
-    }
-
-    // reports
-    [href*='access/reports.do'] {
-        background: url('#{$icons-path}/icon_50834.png') 10px center / 15px no-repeat !important;
-    }
-
     // ETS
-    [href*='technology.cca.edu'] {
+    [href*='portal.cca.edu/essentials/educational-technology-services/'] {
         background: url('#{$icons-path}/display.png') 11px center / 14px no-repeat  !important;
     }
 
@@ -114,8 +99,28 @@
         background: url('#{$icons-path}/cca.png') 13px center / 11px no-repeat  !important;
     }
 
-    // Webadvisor
-    [href*='webadvisor.cca.edu'] {
-        background: url('#{$icons-path}/flash.png') 14px center / 8px no-repeat  !important;
+    // tasks
+    [href*='tasklist.do'] {
+        background: url('#{$icons-path}/calendar.png') 10px center / 14px no-repeat !important;
+    }
+
+    // manage resources
+    [href*='itemadmin.do'] {
+        background: url('#{$icons-path}/manage.png') 10px center / 15px no-repeat !important;
+    }
+
+    // manage activations
+    [href*='activations.do'] {
+        background: url('#{$icons-path}/icon_50776.png') 10px center / 15px no-repeat !important;
+    }
+
+    // reports
+    [href*='access/reports.do'] {
+        background: url('#{$icons-path}/icon_50834.png') 10px center / 15px no-repeat !important;
+    }
+
+    // settings
+    [href*='settings.do'] {
+        background: url('#{$icons-path}/engine.png') 10px center / 15px no-repeat !important;
     }
 }
