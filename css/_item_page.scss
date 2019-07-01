@@ -22,13 +22,7 @@
     padding: 0;
 }
 
-// special types of metadata: location, subject, rights/permissions
-dt.loc {
-    border: 1px solid $light-gray;
-    border-bottom: 0;
-    padding: 5px;
-}
-
+// special types of metadata: subject, rights/permissions
 dd.subject {
     display: inline;
     float: left;
