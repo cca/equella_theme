@@ -49,29 +49,6 @@
     text-shadow: none;
 }
 
-.button-big {
-    background: #ddd;
-    border: 1px solid $link-dark-blue;
-    color: $link-dark-blue;
-
-    &:hover {
-        // @TODO are redundant border & color rules necessary?
-        background: $light-gray;
-        border: 1px solid $link-dark-blue;
-        color: $link-dark-blue;
-    }
-
-    &.rightarrow:hover {
-        background-image: url(#{$img-path}/button-big-right.gif);
-        color: lighten($dark-gray, 6.5%);
-    }
-
-    &.leftarrow:hover {
-        background-image: url(#{$img-path}/button-big-left.gif);
-        color: lighten($dark-gray, 6.5%);
-    }
-}
-
 .button.rightarrow {
     border: 1px solid #738a99;
     font-size: 10px;
