@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "VAULT theme",
   "scripts": {
+    "build": "grunt build",
+    "dev": "grunt build && open http://vault-test.cca.edu/access/themesettings.do",
+    "start": "grunt build && open https://vault.cca.edu/access/themesettings.do",
     "test": "grunt csslint"
   },
   "repository": {
