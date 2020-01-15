@@ -1,6 +1,6 @@
 // EQUELLA version ends up as part of many paths
-// …what a terrible idea, btw
 $eq-version: '2019.2.0';
 // a lot of assets end up stored in here
-$bs-path: '/p/r/#{$eq-version}/com.tle.web.sections.equella/bootstrap';
+$bs-path: '/p/r/#{$eq-version}/com.equella.core/bootstrap';
+// @TODO not sure if this path is still correct in 2019.2
 $icons-path: '/p/r/#{$eq-version}/com.tle.web.ALLICONS/images';
