@@ -1,0 +1,28 @@
+// box - portlets
+
+.box {
+    background: none;
+    border: 0;
+}
+
+.box_content {
+    background: none;
+    border-bottom: 0;
+
+    hr {
+        border-color: $white !important;
+    }
+}
+
+.box_head {
+    background: $white !important;
+    border: 0 !important;
+
+    &:hover {
+        background-color: #aaa;
+    }
+}
+
+.box_title_wrapper {
+    background: $white !important;
+}
