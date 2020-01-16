@@ -1,6 +1,4 @@
-/* ---------------------------------------------
-Random and Assorted Vault Icon Replacements
---------------------------------------------- */
+// Random, assorted Vault icon replacements
 @mixin icon-base($pad-left) {
     margin-left: 0;
     padding-left: $pad-left;
@@ -34,7 +32,7 @@ Random and Assorted Vault Icon Replacements
             background: url('#{$icons-path}/error 2.png') no-repeat 10px center / 12px !important;
         }
 
-        /* -- Share -- */
+        // Share
         .action-button.share-search {
             @include icon-base(40px);
             background: url('#{$icons-path}/share.png') no-repeat 10px center / 12px !important;
@@ -44,7 +42,7 @@ Random and Assorted Vault Icon Replacements
             margin-left: 4px;
         }
 
-        /* -- Share 2 -- */
+        // Share 2
         .action-button.shareButton {
             @include icon-base(40px);
             background: url('#{$icons-path}/share.png') no-repeat 10px center / 12px !important;
@@ -54,7 +52,7 @@ Random and Assorted Vault Icon Replacements
             margin-left: 4px;
         }
 
-        /* -- Search -- */
+        // Search
         .action-button.remote-repo {
             @include icon-base(40px);
             background: url('#{$icons-path}/search.png') no-repeat 10px center / 12px !important;
@@ -64,7 +62,7 @@ Random and Assorted Vault Icon Replacements
             margin-left: 4px;
         }
 
-        /* -- Clear Selected -- */
+        // Clear Selected
         #bss_clearSelectedButton {
             @include icon-base(40px);
             background: #ddd url('#{$icons-path}/error 2.png') no-repeat 10px center / 12px !important;
@@ -81,7 +79,7 @@ Random and Assorted Vault Icon Replacements
             color: #000 !important;
         }
 
-        /* -- Execute Action -- */
+        // Execute Action
         .action-button.execute-action {
             @include icon-base(40px);
             background: #ddd url('#{$icons-path}/play.png') no-repeat 10px center / 8px !important;
@@ -96,7 +94,7 @@ Random and Assorted Vault Icon Replacements
             color: #000 !important;
         }
 
-        /* -- Add files -- */
+        //  Add files
         .action-button.add_handle_button {
             @include icon-base(40px);
             background: #ddd url('#{$icons-path}/file up.png') no-repeat 10px center / 8px !important;
@@ -104,11 +102,6 @@ Random and Assorted Vault Icon Replacements
             border-radius: 3px;
             color: #000;
             width: 144px;
-        }
-
-        .action-button.execute-action:hover {
-            background: $light-gray url('#{$icons-path}/file up.png') no-repeat 10px center / 8px !important;
-            color: #000 !important;
         }
 
         #cmca_b {
@@ -160,7 +153,7 @@ Random and Assorted Vault Icon Replacements
     }
 } // end #content-body rule
 
-/* override yellow "add to favorites" star with #000 icon */
+// override yellow "add to favorites" star with #000 icon
 .search-layout a.add-to-favourites {
     background: url("#{$icons-path}/star.png") no-repeat -1px center / 16px;
 }
@@ -173,7 +166,7 @@ Random and Assorted Vault Icon Replacements
     margin-left: 4px;
 }
 
-/* -- Date Picker / Calendar -- */
+// Date Picker / Calendar
 .ui-datepicker-trigger {
     padding-top: 5px;
     width: 16px;
