@@ -501,4 +501,8 @@ dd.big {
 // ID needed for specificity
 #comments-list .comment-username {
     background: url("/p/r/2019.2.0/com.tle.web.ALLICONS/images/user.png") 10px center/15px no-repeat;
+
+    abbr {
+        text-decoration: none;
+    }
 }
