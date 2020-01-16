@@ -42,7 +42,7 @@ dd.rights {
 .itemsummary-layout {
     .area {
         background: $white;
-        
+
         h2 {
             border-bottom: 1px solid #DDD;
             color: $dark-gray;
@@ -364,7 +364,7 @@ p.imageList {
     margin-bottom: 6px;
 }
 
-/* -------------------itemresults freemarker------------------------------ */
+// itemresults freemarker
 dt,
 .itemsummary-layout .area h3 {
     border-bottom: 1px solid #DDD;
@@ -496,4 +496,9 @@ dt.subHeading {
 
 dd.big {
     font-size: 14px;
+}
+
+// ID needed for specificity
+#comments-list .comment-username {
+    background: url("/p/r/2019.2.0/com.tle.web.ALLICONS/images/user.png") 10px center/15px no-repeat;
 }
