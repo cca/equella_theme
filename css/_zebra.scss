@@ -7,8 +7,7 @@ table.zebra {
 
     tr th {
         background: none;
-        // @TODO color variable here, also can this just be black?
-        color: #222;
+        color: $darker-gray;
         font-weight: bold;
     }
 

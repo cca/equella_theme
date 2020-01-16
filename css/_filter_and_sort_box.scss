@@ -1,0 +1,69 @@
+// @TODO I suspect a bunch of these could be combined
+#sa_sortBox_minimise:active {
+    background: none !important;
+}
+
+#sa_sortBox_minimise {
+    background: none !important;
+    border-top: 0;
+}
+
+#sa_sortBox_minimise:hover {
+    background: none !important;
+}
+
+#sa_filterBox_minimise:active {
+    background: none !important;
+}
+
+#sa_filterBox_minimise {
+    background: none !important;
+    border-top: 0;
+}
+
+#sa_filterBox_minimise:hover {
+    background: none !important;
+}
+
+#isa_sortBox_minimise:active {
+    background: none !important;
+}
+
+#isa_sortBox_minimise {
+    background: none !important;
+    border-top: 0;
+}
+
+#isa_sortBox_minimise:hover {
+    background: none !important;
+}
+
+#isa_filterBox_minimise:active {
+    background: none !important;
+}
+
+#isa_filterBox_minimise {
+    background: none !important;
+    border-top: 0;
+}
+
+#isa_filterBox_minimise:hover {
+    background: none !important;
+}
+
+/* @todo I suspect this is dead code
+or that the [alt] selector rules are unnecessary */
+#sa_filterBox .box_minimise,
+#isa_filterBox .box_minimise,
+#searchactions-sort .box_minimise {
+    background: $white !important;
+    content: url("#{$icons-path}/rightArrow.png") !important;
+    height: 12px;
+    width: 12px;
+
+    &[alt='Hide the contents of this box'] {
+        content: url("#{$icons-path}/downArrow.png") !important;
+        height: 12px;
+        width: 12px;
+    }
+}

@@ -1,0 +1,42 @@
+// see also: _item_page.scss: .itemsummary-layout .area
+#content-body .area {
+    fieldset h3 {
+        color: $pinkish;
+    }
+
+    h1 {
+        color: $darker-gray !important;
+    }
+
+    h2 {
+        color: $darker-gray !important;
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+    .button-strip {
+        background: none;
+    }
+
+    .control h3 {
+        color: $dark-gray;
+    }
+
+    .displayNodeFull h2 {
+        margin-bottom: 0;
+    }
+}
+
+.content a {
+    color: $link-dark-blue;
+
+    &:hover {
+        color: $link-hover-blue;
+    }
+}
+
+#content,
+#content-inner,
+#content-bottom {
+    background: none;
+}

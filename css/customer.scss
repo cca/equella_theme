@@ -4,7 +4,7 @@
 
 body,
 #body {
-    background: #fff;
+    background: $white;
 }
 
 #header-inner h2 {
@@ -13,69 +13,31 @@ body,
     max-width: 660px;
 }
 
-#screen-options a,
-#help a,
-#screen-options a:hover,
-#help a:hover {
-    color: #C69EB3;
-}
-
-.area {
-    border: 1px solid #C69EB3;
-}
-
-.area h2 {
-    color: #936;
-    font-size: 18px;
-}
-
-.area .displayNodeFull h2 {
-    margin-bottom: 0;
-}
-
-.content a {
-    color: $link-dark-blue;
-}
-
-.content a:hover {
-    color: #235D8C;
-}
-
 #menu ul li .tooltip {
     background-color: $light-pink;
     border-color: $light-gray;
     padding: 5px;
 }
 
+// what are these? not used in our display templates afaik
 .alt-links a,
 .recent-item h4 a,
 .news-item h4 a {
     color: $link-dark-blue !important;
-}
 
-.recent-item h4 a:hover,
-.news-item h4 a:hover {
-    color: $dark-font-color;
+    &:hover {
+        color: $dark-font-color;
+    }
 }
 
 .recent-item span,
 .news-item .news-date {
-    color: #777;
+    color: $darker-gray;
 }
 
-.itemsummary-layout .area {
-    background: #fff;
-}
-
-#receipt-message,
+#receipt-message, // alert up top you see after saving/sharing/etc.
 #versions li.selected {
     background-color: $light-pink;
-}
-
-#screen-options,
-#help {
-    background-color: $light-pink;
-    border: 1px solid #C69EB3;
 }
 
 .search-layout #col2 div.input h4 {
@@ -84,19 +46,13 @@ body,
     font-weight: normal;
 }
 
-.area fieldset h3 {
-    color: #C69EB3;
-}
-
 .area .control,
 .area .edit,
 .topblock,
 .modal-content-inner,
 div.formsection {
     h3 {
-        // why make headings link colored? seems confusing in at least one place:
-        // open up ".topblock" Help section to see
-        color: $link-dark-blue;
+        color: $dark-gray;
         line-height: 16px;
     }
 }
@@ -116,42 +72,9 @@ div.formsection {
     background: 0;
 }
 
-.area .button-strip {
-    background: none;
-}
-
-.box_head {
-    background-color: $light-gray;
-}
-
-.box_head:hover {
-    background-color: #aaa;
-}
-
 .modal-footer {
     background: $link-dark-blue;
     border: 1px solid $link-dark-blue;
-}
-
-#footer {
-    border-top: 4px double $light-gray;
-    color: $dark-gray;
-
-    a {
-        color: $link-dark-blue;
-
-        &:hover {
-            color: #235D8C;
-        }
-    }
-}
-
-#footer-inner {
-    height: 0;
-}
-
-#socialmedia {
-    display: none;
 }
 
 input[type="text"],
@@ -164,7 +87,6 @@ select[multiple="multiple"] {
     margin-right: 3px;
 }
 
-/* ------------------ Implemented Update 2014 ------------------ */
 /* --------- CSS STYLES INDEX -----------
 
 - Body
@@ -174,21 +96,8 @@ select[multiple="multiple"] {
 - Page Body Styles
 
 - Main Page Section Styling
-
-/* ------------------
-Body
------------------- */
-#content {
-    background: none;
-}
-
-#content-inner {
-    background: none;
-}
-
-#content-bottom {
-    background: none;
-}
+*/
+// Body
 
 .box {
     background: none;
@@ -198,24 +107,26 @@ Body
 .box_content {
     background: none;
     border-bottom: 0;
+
+    hr {
+        border-color: $white !important;
+    }
 }
 
-/* top "screen options" & "help" sections */
-#bluebar_screenoptions,
-#bluebar_help {
-    border: 0;
-    margin-bottom: 0;
+.box_head {
+    background: $white !important;
+    border: 0 !important;
+
+    &:hover {
+        background-color: #aaa;
+    }
 }
 
-/* Buttons */
-/* ------------------
-Page Options
------------------- */
-
-/* New Navigation (Help and Options) */
-#helpAndOptions {
-    display: block;
+.box_title_wrapper {
+    background: $white !important;
 }
+
+// Page Options
 
 #startTourBtn {
     cursor: pointer;
@@ -234,116 +145,13 @@ Page Options
     border: 0 !important;
 }
 
-#content-body .area h2 {
-    color: #222 !important;
-    padding-bottom: 5px;
-}
-
-#content-body .area h1 {
-    color: #222 !important;
-}
-
-#content-body a:hover {
-    text-decoration: underline;
-}
-
-#sa_sortBox_minimise:active {
-    background: none !important;
-}
-
-#sa_sortBox_minimise {
-    background: none !important;
-    border-top: 0;
-}
-
-#sa_sortBox_minimise:hover {
-    background: none !important;
-}
-
-#sa_filterBox_minimise:active {
-    background: none !important;
-}
-
-#sa_filterBox_minimise {
-    background: none !important;
-    border-top: 0;
-}
-
-#sa_filterBox_minimise:hover {
-    background: none !important;
-}
-
-#isa_sortBox_minimise:active {
-    background: none !important;
-}
-
-#isa_sortBox_minimise {
-    background: none !important;
-    border-top: 0;
-}
-
-#isa_sortBox_minimise:hover {
-    background: none !important;
-}
-
-#isa_filterBox_minimise:active {
-    background: none !important;
-}
-
-#isa_filterBox_minimise {
-    background: none !important;
-    border-top: 0;
-}
-
-#isa_filterBox_minimise:hover {
-    background: none !important;
-}
-
-.box_head {
-    background: #fff !important;
-    border: 0 !important;
-}
-
-.box_title_wrapper {
-    background: #fff !important;
-}
-
-/* @todo I suspect this is dead code
-or that the [alt] selector rules are unnecessary */
-#sa_filterBox .box_minimise,
-#isa_filterBox .box_minimise,
-#searchactions-sort .box_minimise {
-    background: #fff !important;
-    content: url("#{$icons-path}/rightArrow.png") !important;
-    height: 12px;
-    width: 12px;
-
-    &[alt='Hide the contents of this box'] {
-        content: url("#{$icons-path}/downArrow.png") !important;
-        height: 12px;
-        width: 12px;
-    }
-}
-
 .search-layout #col2 div.input h4 {
     color: $dark-gray !important;
 }
 
-.box_content hr {
-    border-color: #fff !important;
-}
-
-.area .control h3 {
-    color: $dark-gray;
-}
-
-#breadcrumbs a {
-    color: #444;
-}
-
 /* contribute page selected course - highlight */
 #p0c3d_ttri14 td {
-    background: #fff !important;
+    background: $white !important;
 }
 
 // only way to get the .icon-comment & number sitting
@@ -358,6 +166,10 @@ or that the [alt] selector rules are unnecessary */
     display: inline;
 }
 
+@import 'footer';
+@import 'area_and_content';
+@import 'help_and_screen_options';
+@import 'filter_and_sort_box';
 @import 'text';
 @import 'btns';
 @import 'reset_icons';
