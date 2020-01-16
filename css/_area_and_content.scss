@@ -1,5 +1,8 @@
 // see also: _item_page.scss: .itemsummary-layout .area
 #content-body .area {
+    background: $white !important;
+    border: 1px solid #bbb !important;
+    
     fieldset h3 {
         color: $pinkish;
     }

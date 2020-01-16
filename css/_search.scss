@@ -22,9 +22,11 @@
 }
 
 #searchresults {
-  /* @TODO check if necessary
-  likely already solved by #content-body .area styles */
-    background: #fff;
+    // only way to get the .icon-comment & number sitting
+    // in a .gallery-action <a> without useful style hooks
+    .gallery-action:last-child {
+        display: none;
+    }
 
     .itemresult-content p {
         font-size: 12px;
@@ -43,7 +45,13 @@
 }
 
 .search-layout .searchresults-header {
-    background: #fff;
+    background: $white;
+}
+
+.search-layout #col2 div.input h4 {
+    color: $dark-gray !important;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .timeago {
@@ -54,7 +62,7 @@
 // overrides div.itemresult-wrapper on gallerylist.css:1
 div.itemresult-wrapper {
     // override gray background in gallery view
-    background: #fff;
+    background: $white;
     // usually we have a 1px solid $light-gray border on the bottom
     // but that looks awkward in Gallery view, plus there's no way
     // to target .itemresult-wrapper in Gallery vs. Standard view
@@ -77,7 +85,7 @@ div.itemresult-wrapper {
     // prevent "Select" button position from varying
     @include clearfix;
 
-    background: #fff;
+    background: $white;
 
     .rating-bar {
         border: 0;
@@ -117,7 +125,7 @@ div.itemresult-wrapper {
 }
 // no border betw various filter options
 .resulttopblock hr {
-    border: 1px solid #fff;
+    border: 1px solid $white;
 
     &:last-child {
         display: none;

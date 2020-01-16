@@ -7,19 +7,16 @@ body,
     background: $white;
 }
 
+#header {
+    border: 0 !important;
+}
+
 #header-inner h2 {
     color: $link-dark-blue;
     display: none;
     max-width: 660px;
 }
 
-#menu ul li .tooltip {
-    background-color: $light-pink;
-    border-color: $light-gray;
-    padding: 5px;
-}
-
-// what are these? not used in our display templates afaik
 .alt-links a,
 .recent-item h4 a,
 .news-item h4 a {
@@ -40,12 +37,6 @@ body,
     background-color: $light-pink;
 }
 
-.search-layout #col2 div.input h4 {
-    color: $link-dark-blue;
-    font-size: 12px;
-    font-weight: normal;
-}
-
 .area .control,
 .area .edit,
 .topblock,
@@ -61,103 +52,16 @@ div.formsection {
     width: 47%;
 }
 
-.modal-title h3 {
-    background: $link-dark-blue;
-    border: 1px solid $link-dark-blue;
-    color: #fff;
-    text-shadow: none;
-}
-
 .button-strip {
     background: 0;
-}
-
-.modal-footer {
-    background: $link-dark-blue;
-    border: 1px solid $link-dark-blue;
 }
 
 input[type="text"],
 input[type="password"],
 textarea,
 select[multiple="multiple"] {
-    border: 1px solid #CFCBBE;
-    border-right: 1px solid #C3BEAE;
     border-top: 1px solid #C3BEAE;
     margin-right: 3px;
-}
-
-/* --------- CSS STYLES INDEX -----------
-
-- Body
-
-- Page Options
-
-- Page Body Styles
-
-- Main Page Section Styling
-*/
-// Body
-
-.box {
-    background: none;
-    border: 0;
-}
-
-.box_content {
-    background: none;
-    border-bottom: 0;
-
-    hr {
-        border-color: $white !important;
-    }
-}
-
-.box_head {
-    background: $white !important;
-    border: 0 !important;
-
-    &:hover {
-        background-color: #aaa;
-    }
-}
-
-.box_title_wrapper {
-    background: $white !important;
-}
-
-// Page Options
-
-#startTourBtn {
-    cursor: pointer;
-    position: absolute;
-    right: 40px;
-    text-align: right;
-    top: 44px;
-    z-index: 10;
-
-    &:hover {
-        text-decoration: underline !important;
-    }
-}
-
-#header {
-    border: 0 !important;
-}
-
-.search-layout #col2 div.input h4 {
-    color: $dark-gray !important;
-}
-
-/* contribute page selected course - highlight */
-#p0c3d_ttri14 td {
-    background: $white !important;
-}
-
-// only way to get the .icon-comment & number sitting
-// in a .gallery-action <a> without useful style hooks
-#searchresults .gallery-action:last-child {
-    display: none;
 }
 
 /* /access/myresources.do?type=scrapbook
@@ -170,6 +74,7 @@ select[multiple="multiple"] {
 @import 'area_and_content';
 @import 'help_and_screen_options';
 @import 'filter_and_sort_box';
+@import 'box';
 @import 'text';
 @import 'btns';
 @import 'reset_icons';
