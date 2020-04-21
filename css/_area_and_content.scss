@@ -2,7 +2,8 @@
 #content-body .area {
     background: $white !important;
     border: 1px solid #bbb !important;
-    
+    overflow-wrap: break-word;
+
     fieldset h3 {
         color: $pinkish;
     }
