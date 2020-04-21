@@ -1,3 +1,5 @@
+const sass = require('node-sass')
+
 /* global module,require */
 module.exports = (grunt) => {
     // load all grunt tasks
@@ -19,6 +21,7 @@ module.exports = (grunt) => {
         sass: {
           dist: {
             options: {
+              implementation: sass,
               style: 'compressed',
               sourcemap: 'none'
             },
