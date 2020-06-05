@@ -28,6 +28,6 @@
     "grunt-open": "^0.2.4",
     "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.14.1"
   }
 }
