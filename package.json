@@ -6,7 +6,7 @@
     "build": "grunt build",
     "dev": "grunt build && open http://vault-test.cca.edu/access/themesettings.do",
     "start": "grunt build && open https://vault.cca.edu/access/themesettings.do",
-    "test": "grunt csslint"
+    "test": "grunt sasslint"
   },
   "repository": {
     "type": "git",
@@ -21,13 +21,13 @@
   "devDependencies": {
     "grunt": "^1.3.0",
     "grunt-contrib-clean": "^2.0",
-    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-compress": "^2.0.0",
     "grunt-contrib-copy": "^1.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-exec": "^3.0.0",
     "grunt-open": "^0.2.4",
     "grunt-sass": "^3.1.0",
+    "grunt-sass-lint": "^0.2.4",
     "load-grunt-tasks": "^5.1.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^5.0.0"
   }
 }

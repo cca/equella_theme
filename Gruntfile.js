@@ -30,8 +30,11 @@ module.exports = (grunt) => {
             }
           }
         },
-        exec: {
-          scsslint: 'scss-lint -c .scss-lint.yml css/*.scss'
+        sasslint: {
+          options: {
+              configFile: '.sass-lint.yml'
+          },
+          target: ['css/*.scss']
         },
         // copy over all images
         copy: {
