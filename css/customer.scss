@@ -56,16 +56,16 @@ div.formsection {
     background: 0;
 }
 
-input[type="text"],
-input[type="password"],
+input[type='text'],
+input[type='password'],
 textarea,
-select[multiple="multiple"] {
+select[multiple='multiple'] {
     border-top: 1px solid #C3BEAE;
     margin-right: 3px;
 }
 
-/* /access/myresources.do?type=scrapbook
- scrapbook Add to favs/Upload Files/Author new… actions look awkward as blocks */
+// /access/myresources.do?type=scrapbook
+// scrapbook Add to favs/Upload Files/Author new… actions look awkward as blocks
 .query-action {
     display: inline;
 }

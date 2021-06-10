@@ -1,6 +1,6 @@
-/* --------------------
-  search results
------------------------ */
+// #################
+//  search results
+// ################
 // itemresult needs to inherit micro-clearfix
 // prevents search result thumbnails from bleeding into
 // next result row
@@ -76,7 +76,7 @@ div.itemresult-wrapper {
     }
 }
 
-/* gallery view */
+// gallery view
 .gallery-preview img {
     max-width: 100%;
 }
@@ -94,8 +94,8 @@ div.itemresult-wrapper {
         .itemresult-stars,
         // "hey, should we put a class on the comments & 'add to hierarchy' links?"
         // "nah, no one will ever want to style those"
-        [title="0 comments"],
-        [title="Add to hierarchy"],
+        [title='0 comments'],
+        [title='Add to hierarchy'],
         // with all the 2 neighbors hidden, separator bars are orphans
         .separator {
             display: none;
@@ -109,8 +109,8 @@ div.itemresult-wrapper {
 // all over the place (portlets, favorites, tasks, notifications)
 // so the whitelist of places to show the rating row kept growing.
 #eqpageForm {
-    &[action*="/access/searching.do"],
-    &[action*="/access/hierarchy.do"] {
+    &[action*='/access/searching.do'],
+    &[action*='/access/hierarchy.do'] {
         .itemresult-rating {
             display: none;
         }
@@ -123,6 +123,7 @@ div.itemresult-wrapper {
     border-bottom: 0;
     border-color: #8f8b7e;
 }
+
 // no border betw various filter options
 .resulttopblock hr {
     border: 1px solid $white;
@@ -155,6 +156,7 @@ div.itemresult-wrapper {
     a {
         color: $link-dark-blue;
     }
+
     // on itemadmin.do page, can't see owner text in "filter by owner"
     // #searchresults-actions #actioncontent p white font on white bg, wth
     span {

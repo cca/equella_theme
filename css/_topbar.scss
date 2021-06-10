@@ -17,8 +17,8 @@
         }
     }
 
-  // embiggen class is added to <a> when Tasks/Notifications are present
-  // otherwise "disabled" class is present & element is a <span>
+    // embiggen class is added to <a> when Tasks/Notifications are present
+    // otherwise "disabled" class is present & element is a <span>
     .embiggen {
         background-color: $warning-orange;
         color: #fff; // readable font: white on orange
@@ -31,7 +31,7 @@
 
     // handle inconsistency in how Tasks & Notifications are highlighted
     // Tasks get a nice red background, let's give Notif. that too
-    a[Title="Notifications"] {
+    a[Title='Notifications'] {
         // stolen from topbar.css:64 #topmenu .embiggen
         background-color: $warning-orange;
         color: #fff;

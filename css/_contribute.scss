@@ -8,7 +8,7 @@
 }
 
 #wizard-major-actions .action-button.save,
-#wizard-actions a[title="Cancel"],
+#wizard-actions a[title='Cancel'],
 #ed_saveButton {
     background: $success-green url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
     background-size: 14px !important;
@@ -32,12 +32,12 @@
     text-align: left;
 
     // hide "Save and Continue" link
-    a[title="Save and continue"] {
+    a[title='Save and continue'] {
         display: none;
     }
 
-    a[title="Cancel"] {
-        // scss-lint:disable PropertySortOrder
+    a[title='Cancel'] {
+        // sass-lint:disable property-sort-order
         background: $error-red url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
         background-size: 14px !important;
         border-bottom-color: darken($error-red, 20%) !important;

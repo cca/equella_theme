@@ -23,7 +23,7 @@
 // Danger button
 // make "complete wizard" button look like an error
 // this selector brought to you by the insanity that is EQUELLA's HTML markup
-button.btn.btn-equella[id="1_complete"],
+button.btn.btn-equella[id='1_complete'],
 .btn-danger {
     @include flat-button($error-red);
 }

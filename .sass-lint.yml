@@ -14,6 +14,7 @@ rules:
     # without these two disabled we just cannot reference external assets
     no-url-domains: 0
     no-url-protocols: 0
+    no-qualifying-elements: 0
     selector-format: 0
     space-between-parens: 0
     variable-name-format: 0

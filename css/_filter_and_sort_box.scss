@@ -51,18 +51,18 @@
     background: none !important;
 }
 
-/* @todo I suspect this is dead code
-or that the [alt] selector rules are unnecessary */
+// @TODO I suspect this is dead code
+// or that the [alt] selector rules are unnecessary
 #sa_filterBox .box_minimise,
 #isa_filterBox .box_minimise,
 #searchactions-sort .box_minimise {
     background: $white !important;
-    content: url("#{$icons-path}/rightArrow.png") !important;
+    content: url('#{$icons-path}/rightArrow.png') !important;
     height: 12px;
     width: 12px;
 
     &[alt='Hide the contents of this box'] {
-        content: url("#{$icons-path}/downArrow.png") !important;
+        content: url('#{$icons-path}/downArrow.png') !important;
         height: 12px;
         width: 12px;
     }

@@ -155,13 +155,14 @@
 
 // override yellow "add to favorites" star with #000 icon
 .search-layout a.add-to-favourites {
-    background: url("#{$icons-path}/star.png") no-repeat -1px center / 16px;
+    background: url('#{$icons-path}/star.png') no-repeat -1px center / 16px;
 }
 
 #ed_changePassButton {
     @include icon-base(40px);
     background: url('#{$icons-path}/locked.png') no-repeat 10px center / 12px !important;
 }
+
 #ed_changePassButton:hover {
     margin-left: 4px;
 }

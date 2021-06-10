@@ -44,8 +44,6 @@
 .button-big:hover,
 .button-large:hover,
 .action-button {
-    -moz-text-shadow: none;
-    -webkit-text-shadow: none;
     text-shadow: none;
 }
 
@@ -60,11 +58,11 @@
 }
 
 // disabled buttons
-input[type="button"][disabled].button,
-input[type="button"][disabled].button-big,
-input[type="button"][disabled="disabled"].button-big,
-input[type="button"][disabled].button-large,
-input[type="button"][disabled="disabled"].button-large {
+input[type='button'][disabled].button,
+input[type='button'][disabled].button-big,
+input[type='button'][disabled='disabled'].button-big,
+input[type='button'][disabled].button-large,
+input[type='button'][disabled='disabled'].button-large {
     background: $dark-gray;
 
     &:hover {

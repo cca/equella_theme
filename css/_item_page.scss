@@ -56,15 +56,15 @@ dd.rights {
             margin: 5px 0 0;
         }
 
-      /* disable links that point nowhere */
-        a[href=""] {
-            color: $dark-font-color; /* default text color */
+        // disable links that point nowhere
+        a[href=''] {
+            color: $dark-font-color; // default text color
             pointer-events: none;
         }
 
-        /* this rule is killing me all the time
-        why would we want all paragraphs to be inline?
-        where is this useful? -EJP */
+        // this rule is killing me all the time
+        // why would we want all paragraphs to be inline?
+        // where is this useful? -EP
         p {
             display: inline;
 
@@ -131,7 +131,7 @@ div.itemsummary-layout img {
     padding: 5px;
 }
 
-/* hide error message for wrap */
+// hide error message for wrap
 .displayNodeHalf p span {
     display: none;
 }
@@ -149,16 +149,16 @@ div.area > div.displayNodeFull:first-child > h3 {
     display: none;
 }
 
-/* change color of every other element */
-.displayNodeHalf p:nth-child(odd):before {
+// change color of every other element
+.displayNodeHalf p:disabled:nth-child(odd)::before {
     content: '* ';
 }
 
-.displayNodeHalf p:nth-child(odd):after {
+.displayNodeHalf p:disabled:nth-child(odd)::after {
     content: ' *';
 }
 
-.displayNodeHalf p:nth-child(odd) {
+.displayNodeHalf p:disabled:nth-child(odd) {
     padding: 0 15px 3px;
 }
 
@@ -166,7 +166,7 @@ div.area > div.displayNodeFull:first-child > h3 {
     width: 89%;
 }
 
-/* title */
+// title
 div.area > div.displayNodeFull:first-child > h3 + p {
     background: #fff;
     border-bottom: 1px solid #ddd;
@@ -178,8 +178,8 @@ div.area > div.displayNodeFull:first-child > h3 + p {
     width: 97%;
 }
 
-/* collection */
-/* um…this selector is insane, can't be necessary -EJP */
+// collection
+// um…this selector is insane, can't be necessary -EP
 div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
     color: #999;
     margin: 0;
@@ -288,8 +288,8 @@ div.image-artistDocs {
 
 div.image-juniorReviewDocs {
     float: left;
-    min-width: 130px;
     max-width: 130px;
+    min-width: 130px;
 }
 
 div.image-Comm2 {
@@ -344,10 +344,10 @@ p.imageList {
 // @TODO: do VISST & WRLIT really need slightly different course info sizes?
 #coursestuff {
     display: block;
-    margin-left: 15px;
-    margin-bottom: 6px;
     font-size: 11px;
     line-height: 22px;
+    margin-bottom: 6px;
+    margin-left: 15px;
 }
 
 #VisStcoursestuff {
@@ -370,7 +370,7 @@ dt,
     border-bottom: 1px solid #DDD;
     color: $dark-gray;
     font-size: 17px;
-    margin: 16px 0 8px 0;
+    margin: 16px 0 8px;
 }
 
 .itemsummary-layout h4 {
@@ -448,7 +448,7 @@ dd.date {
     min-width: 210px;
 }
 
-.button input[type="button"] {
+.button input[type='button'] {
     color: $link-dark-blue;
     text-transform: uppercase;
 }
@@ -500,7 +500,7 @@ dd.big {
 
 // ID needed for specificity
 #comments-list .comment-username {
-    background: url("/p/r/2019.2.0/com.tle.web.ALLICONS/images/user.png") 10px center/15px no-repeat;
+    background: url('/p/r/2019.2.0/com.tle.web.ALLICONS/images/user.png') 10px center/15px no-repeat;
 
     abbr {
         text-decoration: none;

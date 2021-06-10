@@ -15,7 +15,7 @@
 
         li {
             background: transparent !important;
-            border: none !important;
+            border: 0 !important;
             transition: all .1s ease-out;
 
             a {
@@ -35,7 +35,7 @@
             }
 
             &:first-child {
-                border: none !important;
+                border: 0 !important;
             }
         }
     }

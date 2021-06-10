@@ -1,13 +1,13 @@
 // micro-clearfix
 // http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix {
-    &:after,
-    &:before {
+    &::after,
+    &::before {
         content: '';
         display: table;
     }
 
-    &:after {
+    &::after {
         clear: both;
     }
 }
