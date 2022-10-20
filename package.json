@@ -20,14 +20,14 @@
   "homepage": "https://github.com/cca/equella_theme",
   "devDependencies": {
     "grunt": "^1.5.3",
-    "grunt-contrib-clean": "^2.0",
+    "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-compress": "^2.0.0",
-    "grunt-contrib-copy": "^1.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-open": "^0.2.4",
     "grunt-sass": "^3.1.0",
     "grunt-sass-lint": "^0.2.4",
     "load-grunt-tasks": "^5.1.0",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.3"
   }
 }

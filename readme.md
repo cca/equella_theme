@@ -14,6 +14,6 @@ To install the theme, run `grunt build` & then visit [/access/themesettings.do](
 
 `grunt dev` is like `open` but for our development server.
 
-# LICENSE
+## LICENSE
 
 [ECL Version 2.0](https://opensource.org/licenses/ECL-2.0)
