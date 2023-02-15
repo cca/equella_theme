@@ -128,3 +128,9 @@
 a.viewterm {
     display: none;
 }
+
+// https://github.com/cca/equella_templates/issues/16
+// attachment action links break onto 2nd line
+.MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 2px;
+}
