@@ -1,33 +1,39 @@
 // see also: _item_page.scss: .itemsummary-layout .area
-#content-body .area {
-    background: $white !important;
-    border: 1px solid #bbb !important;
-    overflow-wrap: break-word;
+#content-body {
+    // fix #17 safari layout bug, main menu pushed below content
+    // this was originally 32px 16px 32px 0 but the right padding serves no purpose other than to waste space
+    padding: 32px 0;
 
-    fieldset h3 {
-        color: $pinkish;
-    }
+    .area {
+        background: $white !important;
+        border: 1px solid #bbb !important;
+        overflow-wrap: break-word;
 
-    h1 {
-        color: $darker-gray !important;
-    }
+        fieldset h3 {
+            color: $pinkish;
+        }
 
-    h2 {
-        color: $darker-gray !important;
-        font-size: 18px;
-        padding-bottom: 5px;
-    }
+        h1 {
+            color: $darker-gray !important;
+        }
 
-    .button-strip {
-        background: none;
-    }
+        h2 {
+            color: $darker-gray !important;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
 
-    .control h3 {
-        color: $dark-gray;
-    }
+        .button-strip {
+            background: none;
+        }
 
-    .displayNodeFull h2 {
-        margin-bottom: 0;
+        .control h3 {
+            color: $dark-gray;
+        }
+
+        .displayNodeFull h2 {
+            margin-bottom: 0;
+        }
     }
 }
 
