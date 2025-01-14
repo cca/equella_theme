@@ -5,6 +5,7 @@
   "scripts": {
     "build": "grunt build",
     "dev": "grunt build && open http://vault-test.cca.edu/access/themesettings.do",
+    "sass": "sass --style compressed --no-source-map --quiet css/customer.scss > dist/css/customer.css",
     "start": "grunt build && open https://vault.cca.edu/access/themesettings.do",
     "test": "grunt sasslint"
   },
@@ -28,6 +29,6 @@
     "grunt-sass": "^3.1.0",
     "grunt-sass-lint": "^0.2.4",
     "load-grunt-tasks": "^5.1.0",
-    "node-sass": "^9.0.0"
+    "sass": "^1.83.1"
   }
 }
