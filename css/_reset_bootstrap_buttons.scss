@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'colors';
+
 // Customizing Default Bootstrap Button Classes
 @mixin flat-button($bg-color) {
     background: $bg-color !important;
@@ -8,8 +11,8 @@
     transition: all .1s ease-out;
 
     &:hover {
-        background: lighten($bg-color, 6.5%) !important;
-        color: lighten(#000, 6.5%) !important;
+        background: color.adjust($bg-color, $lightness: 6.5%) !important;
+        color: color.adjust(#000, $lightness: 6.5%) !important;
     }
 }
 
@@ -25,15 +28,15 @@
 // this selector brought to you by the insanity that is EQUELLA's HTML markup
 button.btn.btn-equella[id='1_complete'],
 .btn-danger {
-    @include flat-button($error-red);
+    @include flat-button(colors.$error-red);
 }
 
 // Warning button
 .btn-warning {
-    @include flat-button($warning-orange);
+    @include flat-button(colors.$warning-orange);
 }
 
 // Success Button / Save
 .btn-success {
-    @include flat-button($success-green);
+    @include flat-button(colors.$success-green);
 }

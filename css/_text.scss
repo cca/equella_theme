@@ -1,3 +1,5 @@
+@use 'colors';
+
 // wrap <pre>, for mods/abstract or addresses
 // where we need to preserve line breaks in text content
 pre {
@@ -21,11 +23,11 @@ pre {
 }
 
 .text-success {
-    color: $success-green;
+    color: colors.$success-green;
 }
 
 .text-warning {
-    color: $warning-orange;
+    color: colors.$warning-orange;
 }
 
 .text-left {

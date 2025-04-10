@@ -1,10 +1,11 @@
-@import 'vars';
-@import 'colors';
-@import 'mixins';
+@use 'sass:meta';
+@use 'vars';
+@use 'colors';
+@use 'mixins';
 
 body,
 #body {
-    background: $white;
+    background: colors.$white;
 }
 
 #header {
@@ -12,7 +13,7 @@ body,
 }
 
 #header-inner h2 {
-    color: $link-dark-blue;
+    color: colors.$link-dark-blue;
     display: none;
     max-width: 660px;
 }
@@ -20,21 +21,21 @@ body,
 .alt-links a,
 .recent-item h4 a,
 .news-item h4 a {
-    color: $link-dark-blue !important;
+    color: colors.$link-dark-blue !important;
 
     &:hover {
-        color: $dark-font-color;
+        color: colors.$dark-font-color;
     }
 }
 
 .recent-item span,
 .news-item .news-date {
-    color: $darker-gray;
+    color: colors.$darker-gray;
 }
 
 #receipt-message, // alert up top you see after saving/sharing/etc.
 #versions li.selected {
-    background-color: $light-pink;
+    background-color: colors.$light-pink;
 }
 
 .area .control,
@@ -43,7 +44,7 @@ body,
 .modal-content-inner,
 div.formsection {
     h3 {
-        color: $dark-gray;
+        color: colors.$dark-gray;
         line-height: 16px;
     }
 }
@@ -60,7 +61,7 @@ input[type='text'],
 input[type='password'],
 textarea,
 select[multiple='multiple'] {
-    border-top: 1px solid #C3BEAE;
+    border-top: 1px solid #c3beae;
     margin-right: 3px;
 }
 
@@ -70,22 +71,22 @@ select[multiple='multiple'] {
     display: inline;
 }
 
-@import 'footer';
-@import 'area_and_content';
-@import 'help_and_screen_options';
-@import 'filter_and_sort_box';
-@import 'box';
-@import 'text';
-@import 'btns';
-@import 'reset_icons';
-@import 'topbar';
-@import 'topblock';
-@import 'left_nav';
-@import 'contribute';
-@import 'item_page';
-@import 'img_with_metadata';
-@import 'power_search';
-@import 'search';
-@import 'zebra';
-@import 'reset_bootstrap_icons';
-@import 'reset_bootstrap_buttons';
+@include meta.load-css('footer');
+@include meta.load-css('area_and_content');
+@include meta.load-css('help_and_screen_options');
+@include meta.load-css('filter_and_sort_box');
+@include meta.load-css('box');
+@include meta.load-css('text');
+@include meta.load-css('btns');
+@include meta.load-css('reset_icons');
+@include meta.load-css('topbar');
+@include meta.load-css('topblock');
+@include meta.load-css('left_nav');
+@include meta.load-css('contribute');
+@include meta.load-css('item_page');
+@include meta.load-css('img_with_metadata');
+@include meta.load-css('power_search');
+@include meta.load-css('search');
+@include meta.load-css('zebra');
+@include meta.load-css('reset_bootstrap_icons');
+@include meta.load-css('reset_bootstrap_buttons');

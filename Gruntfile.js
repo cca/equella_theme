@@ -30,12 +30,6 @@ module.exports = (grunt) => {
             }
           }
         },
-        sasslint: {
-          options: {
-              configFile: '.sass-lint.yml'
-          },
-          target: ['css/*.scss']
-        },
         // copy over all images
         copy: {
             dist: {
@@ -74,20 +68,16 @@ module.exports = (grunt) => {
               path: 'https://vault.cca.edu/access/themesettings.do'
           }
       }
-    });
+    })
 
     grunt.registerTask('build', [
         'clean',
         'sass',
         'copy',
         'compress'
-    ]);
-
-    grunt.registerTask('test', [
-        'exec:scsslint'
     ])
 
     grunt.registerTask('default', [
         'build'
-    ]);
-};
+    ])
+}

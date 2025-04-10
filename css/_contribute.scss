@@ -1,3 +1,7 @@
+@use 'sass:color';
+@use 'colors';
+@use 'vars';
+
 //
 // Contribute - Right panel Save actions restyling
 //
@@ -10,7 +14,7 @@
 #wizard-major-actions .action-button.save,
 #wizard-actions a[title='Cancel'],
 #ed_saveButton {
-    background: $success-green url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
+    background: colors.$success-green url('#{vars.$icons-path}/tick 2.png') no-repeat 10px center !important;
     background-size: 14px !important;
     border-bottom: 1px solid #390 !important;
     border-radius: 3px;
@@ -21,7 +25,7 @@
     width: 90px;
 
     &:hover {
-        background: #9c0 url('#{$icons-path}/tick 2.png') no-repeat 10px center !important;
+        background: #9c0 url('#{vars.$icons-path}/tick 2.png') no-repeat 10px center !important;
         background-size: 14px !important;
         color: #000 !important;
     }
@@ -38,9 +42,9 @@
 
     a[title='Cancel'] {
         // sass-lint:disable property-sort-order
-        background: $error-red url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+        background: colors.$error-red url('#{vars.$icons-path}/error 2.png') no-repeat 10px center !important;
         background-size: 14px !important;
-        border-bottom-color: darken($error-red, 20%) !important;
+        border-bottom-color: color.adjust(colors.$error-red, $lightness: -20%) !important;
         font-weight: bold;
         width: 50px; // turns out to make "cancel" btn same length as "save"
 
@@ -51,7 +55,7 @@
         text-decoration: none;
 
         &:hover {
-            background: #e22 url('#{$icons-path}/error 2.png') no-repeat 10px center !important;
+            background: #e22 url('#{vars.$icons-path}/error 2.png') no-repeat 10px center !important;
             background-size: 14px !important;
         }
     }
@@ -68,25 +72,25 @@
     }
 
     .modal-title h3 {
-        background: $white !important;
-        border: 1px solid $white !important;
+        background: colors.$white !important;
+        border: 1px solid colors.$white !important;
         color: #000 !important;
         font-weight: bold;
     }
 
     .modal-footer {
-        background: $white !important;
+        background: colors.$white !important;
         border: 0 !important;
         box-sizing: border-box;
         padding-bottom: 33px;
     }
 
     .modal-content {
-        background: $white !important;
+        background: colors.$white !important;
     }
 
     .modal-content-background {
-        background: $white !important;
+        background: colors.$white !important;
     }
 }
 
@@ -104,7 +108,7 @@
     padding: 0;
 
     .ui-tabs-nav {
-        background: $white !important;
+        background: colors.$white !important;
         border: 0 !important;
 
         li[role='tab'] {
@@ -112,15 +116,15 @@
             border: 0 !important;
 
             &.ui-tabs-active {
-                color: $black !important;
+                color: colors.$black !important;
                 font-weight: bold;
             }
         }
     }
 
     div[role='tabpanel'] {
-        background: $white;
-        border: 1px solid $light-gray;
+        background: colors.$white;
+        border: 1px solid colors.$light-gray;
         border-radius: 4px;
     }
 }

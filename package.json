@@ -7,7 +7,7 @@
     "dev": "grunt build && open http://vault-test.cca.edu/access/themesettings.do",
     "sass": "sass --style compressed --no-source-map --quiet css/customer.scss > dist/css/customer.css",
     "start": "grunt build && open https://vault.cca.edu/access/themesettings.do",
-    "test": "grunt sasslint"
+    "test": "stylelint --cache --config .stylelintrc.json --fix css/*.scss"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,12 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-open": "^0.2.4",
-    "grunt-sass": "^3.1.0",
-    "grunt-sass-lint": "^0.2.4",
+    "grunt-sass": "^4.0.0",
     "load-grunt-tasks": "^5.1.0",
-    "sass": "^1.86.3"
+    "sass": "^1.86.3",
+    "stylelint": "^16.18.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.11.1"
   }
 }

@@ -1,3 +1,5 @@
+@use 'vars';
+
 // Resetting Bootstrap Icons from white to black
 .icon-chevron-down,
 .icon-off,
@@ -10,5 +12,5 @@
 .icon-user,
 .icon-warning-sign,
 .icon-wrench {
-    background-image: url('#{$bs-path}/img/glyphicons-halflings.png');
+    background-image: url('#{vars.$bs-path}/img/glyphicons-halflings.png');
 }

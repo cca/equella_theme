@@ -1,13 +1,15 @@
+@use 'colors';
+
 .topblock {
     background: #fff;
     border: 0;
     border-bottom: 1px solid #ddd;
-    color: $dark-gray;
+    color: colors.$dark-gray;
     margin-bottom: 20px;
     padding: 20px 5px 5px;
 
     a,
     a:hover {
-        color: $link-dark-blue;
+        color: colors.$link-dark-blue;
     }
 }

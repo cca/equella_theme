@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'colors';
+
 // Zebra Table Styling
 
 // these are unavoidable for odd/even row type styling, disable
@@ -7,7 +10,7 @@ table.zebra {
 
     tr th {
         background: none;
-        color: $darker-gray;
+        color: colors.$darker-gray;
         font-weight: bold;
     }
 
@@ -17,13 +20,13 @@ table.zebra {
 
         tr.even td,
         tr.odd td {
-            background: darken($white, 6.25%);
-            border-top: 1px solid $white;
+            background: color.adjust(colors.$white, $lightness: -6.25%);
+            border-top: 1px solid colors.$white;
             transition: all .1s ease-out;
         }
 
         tr.odd td {
-            background: darken($white, 12.5%);
+            background: color.adjust(colors.$white, $lightness: -12.5%);
         }
     }
 
@@ -36,12 +39,12 @@ table.zebra {
         tbody tr {
             &.even td:hover,
             &.odd td:hover {
-                background: darken($white, 6.25%);
+                background: color.adjust(colors.$white, $lightness: -6.25%);
                 padding-left: 18px;
             }
 
             &.odd td:hover {
-                background: darken($white, 12.5%);
+                background: color.adjust(colors.$white, $lightness: -12.5%);
             }
         }
     }

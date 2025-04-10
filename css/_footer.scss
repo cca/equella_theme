@@ -1,12 +1,14 @@
+@use 'colors';
+
 #footer {
-    border-top: 4px double $light-gray;
-    color: $dark-gray;
+    border-top: 4px double colors.$light-gray;
+    color: colors.$dark-gray;
 
     a {
-        color: $link-dark-blue;
+        color: colors.$link-dark-blue;
 
         &:hover {
-            color: #235D8C;
+            color: #235d8c;
         }
     }
 }

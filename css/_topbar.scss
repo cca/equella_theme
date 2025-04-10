@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'colors';
+
 // upper right menu with profile links
 #topbar {
     background: #fff;
@@ -20,11 +23,11 @@
     // embiggen class is added to <a> when Tasks/Notifications are present
     // otherwise "disabled" class is present & element is a <span>
     .embiggen {
-        background-color: $warning-orange;
+        background-color: colors.$warning-orange;
         color: #fff; // readable font: white on orange
 
         &:hover {
-            background-color: darken($warning-orange, 15%);
+            background-color: color.adjust(colors.$warning-orange, $lightness: -15%);
             color: #fff;
         }
     }
@@ -33,11 +36,11 @@
     // Tasks get a nice red background, let's give Notif. that too
     a[Title='Notifications'] {
         // stolen from topbar.css:64 #topmenu .embiggen
-        background-color: $warning-orange;
+        background-color: colors.$warning-orange;
         color: #fff;
 
         &:hover {
-            background-color: darken($warning-orange, 15%);
+            background-color: color.adjust(colors.$warning-orange, $lightness: -15%);
             color: #fff;
         }
     }

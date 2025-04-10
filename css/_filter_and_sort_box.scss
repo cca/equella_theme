@@ -1,3 +1,6 @@
+@use 'colors';
+@use 'vars';
+
 // TODO I suspect a bunch of these could be combined
 #sa_sortBox_minimise:active {
     background: none !important;
@@ -56,13 +59,13 @@
 #sa_filterBox .box_minimise,
 #isa_filterBox .box_minimise,
 #searchactions-sort .box_minimise {
-    background: $white !important;
-    content: url('#{$icons-path}/rightArrow.png') !important;
+    background: colors.$white !important;
+    content: url('#{vars.$icons-path}/rightArrow.png') !important;
     height: 12px;
     width: 12px;
 
     &[alt='Hide the contents of this box'] {
-        content: url('#{$icons-path}/downArrow.png') !important;
+        content: url('#{vars.$icons-path}/downArrow.png') !important;
         height: 12px;
         width: 12px;
     }

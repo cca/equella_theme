@@ -1,3 +1,5 @@
+@use 'colors';
+
 // see also: _item_page.scss: .itemsummary-layout .area
 #content-body {
     // fix #17 safari layout bug, main menu pushed below content
@@ -5,20 +7,20 @@
     padding: 32px 0;
 
     .area {
-        background: $white !important;
+        background: colors.$white !important;
         border: 1px solid #bbb !important;
         overflow-wrap: break-word;
 
         fieldset h3 {
-            color: $pinkish;
+            color: colors.$pinkish;
         }
 
         h1 {
-            color: $darker-gray !important;
+            color: colors.$darker-gray !important;
         }
 
         h2 {
-            color: $darker-gray !important;
+            color: colors.$darker-gray !important;
             font-size: 18px;
             padding-bottom: 5px;
         }
@@ -28,7 +30,7 @@
         }
 
         .control h3 {
-            color: $dark-gray;
+            color: colors.$dark-gray;
         }
 
         .displayNodeFull h2 {
@@ -38,10 +40,10 @@
 }
 
 .content a {
-    color: $link-dark-blue;
+    color: colors.$link-dark-blue;
 
     &:hover {
-        color: $link-hover-blue;
+        color: colors.$link-hover-blue;
     }
 }
 

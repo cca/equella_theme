@@ -1,3 +1,6 @@
+@use 'colors';
+@use 'mixins';
+
 // #################
 //  search results
 // ################
@@ -5,10 +8,10 @@
 // prevents search result thumbnails from bleeding into
 // next result row
 .itemresult {
-    @include clearfix;
+    @include mixins.clearfix;
 
     &.selected {
-        background-color: $light-pink;
+        background-color: colors.$light-pink;
         padding: 10px;
     }
 
@@ -41,15 +44,15 @@
 
 .itemresult-metaline .itemresult-meta-delim,
 .itemresult-metaline abbr {
-    color: $dark-gray;
+    color: colors.$dark-gray;
 }
 
 .search-layout .searchresults-header {
-    background: $white;
+    background: colors.$white;
 }
 
 .search-layout #col2 div.input h4 {
-    color: $dark-gray !important;
+    color: colors.$dark-gray !important;
     font-size: 12px;
     font-weight: normal;
 }
@@ -62,7 +65,7 @@
 // overrides div.itemresult-wrapper on gallerylist.css:1
 div.itemresult-wrapper {
     // override gray background in gallery view
-    background: $white;
+    background: colors.$white;
     // usually we have a 1px solid $light-gray border on the bottom
     // but that looks awkward in Gallery view, plus there's no way
     // to target .itemresult-wrapper in Gallery vs. Standard view
@@ -83,9 +86,9 @@ div.itemresult-wrapper {
 
 .itemresult-rating {
     // prevent "Select" button position from varying
-    @include clearfix;
+    @include mixins.clearfix;
 
-    background: $white;
+    background: colors.$white;
 
     .rating-bar {
         border: 0;
@@ -126,7 +129,7 @@ div.itemresult-wrapper {
 
 // no border betw various filter options
 .resulttopblock hr {
-    border: 1px solid $white;
+    border: 1px solid colors.$white;
 
     &:last-child {
         display: none;
@@ -142,7 +145,7 @@ div.itemresult-wrapper {
 // headings in this section
 #searchresults-actions #actioncontent {
     h3 {
-        color: $darker-gray;
+        color: colors.$darker-gray;
     }
 
     p {
@@ -154,7 +157,7 @@ div.itemresult-wrapper {
     }
 
     a {
-        color: $link-dark-blue;
+        color: colors.$link-dark-blue;
     }
 
     // on itemadmin.do page, can't see owner text in "filter by owner"

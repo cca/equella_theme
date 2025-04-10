@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'colors';
+
 // styles on individual item pages e.g. /items/{{id}}/{{version}}/ URLs
 // often involve classes commonly used in display templates
 #title {
@@ -5,7 +8,7 @@
 }
 
 #more {
-    color: #C69EB3;
+    color: #c69eb3;
     display: inline;
     float: left;
     font-weight: bold;
@@ -15,7 +18,7 @@
 
 // only use I can find is in Libraries collection
 #secondtitle {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     display: block;
     font-size: 12px;
     margin: 0 0 0 10px;
@@ -30,8 +33,8 @@ dd.subject {
 }
 
 dd.rights {
-    border-bottom: 1px solid $light-gray;
-    border-top: 1px solid $light-gray;
+    border-bottom: 1px solid colors.$light-gray;
+    border-top: 1px solid colors.$light-gray;
     clear: both;
     margin-top: 15px;
     padding-bottom: 15px;
@@ -41,11 +44,11 @@ dd.rights {
 
 .itemsummary-layout {
     .area {
-        background: $white;
+        background: colors.$white;
 
         h2 {
-            border-bottom: 1px solid #DDD;
-            color: $dark-gray;
+            border-bottom: 1px solid #ddd;
+            color: colors.$dark-gray;
             margin: 8px 0;
         }
 
@@ -58,7 +61,7 @@ dd.rights {
 
         // disable links that point nowhere
         a[href=''] {
-            color: $dark-font-color; // default text color
+            color: colors.$dark-font-color; // default text color
             pointer-events: none;
         }
 
@@ -109,24 +112,24 @@ dd.rights {
     }
 
     a {
-        color: $link-dark-blue;
+        color: colors.$link-dark-blue;
 
         &:hover {
-            color: lighten($link-dark-blue, 20%);
+            color: color.adjust(colors.$link-dark-blue, $lightness: 20%);
         }
     }
 
     #col2 ul li a {
-        color: $link-dark-blue;
+        color: colors.$link-dark-blue;
 
         &:hover {
-            color: $link-dark-blue;
+            color: colors.$link-dark-blue;
         }
     }
 }
 
 div.itemsummary-layout img {
-    border: 1px solid $light-gray;
+    border: 1px solid colors.$light-gray;
     margin: 5px;
     padding: 5px;
 }
@@ -171,7 +174,7 @@ div.area > div.displayNodeFull:first-child > h3 + p {
     background: #fff;
     border-bottom: 1px solid #ddd;
     border: 0;
-    color: $link-dark-blue;
+    color: colors.$link-dark-blue;
     font-size: 18px;
     margin: 0 0 8px -8px;
     padding: 0;
@@ -195,7 +198,7 @@ div.area > div.displayNodeFull:first-child + div.displayNodeFull p {
 
 // NOTE: Bootstrap has .thumbnail .caption style which supplements this
 p.caption {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     font-size: 8pt;
     text-align: center;
 }
@@ -218,7 +221,7 @@ p.caption {
 }
 
 p.photoImagelist {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     font-size: 8pt;
     line-height: 20px;
     max-width: 130px;
@@ -236,7 +239,7 @@ p.photoImagelist {
 }
 
 p.artistDocs {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     font-size: 8pt;
     max-width: 110px;
     text-align: left;
@@ -302,7 +305,7 @@ div.image-Comm2 {
 }
 
 p.commImagelist {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     font-size: 8pt;
 }
 
@@ -333,7 +336,7 @@ div.image-juniorReviewMovImgWork {
 }
 
 p.imageList {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     display: block;
     font-size: 11px;
     line-height: 15px;
@@ -367,14 +370,14 @@ p.imageList {
 // itemresults freemarker
 dt,
 .itemsummary-layout .area h3 {
-    border-bottom: 1px solid #DDD;
-    color: $dark-gray;
+    border-bottom: 1px solid #ddd;
+    color: colors.$dark-gray;
     font-size: 17px;
     margin: 16px 0 8px;
 }
 
 .itemsummary-layout h4 {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     text-decoration: underline;
 }
 
@@ -398,7 +401,7 @@ dd.collection {
 }
 
 #namestuff {
-    color: $dark-gray;
+    color: colors.$dark-gray;
     display: block;
     font-size: 11px;
     line-height: 20px;
@@ -435,7 +438,7 @@ div.itemsummary-layout img.droparrow {
 }
 
 .customlinks #cls_selector_opener {
-    color: $dark-gray;
+    color: colors.$dark-gray;
 }
 
 #input-right {
@@ -449,7 +452,7 @@ dd.date {
 }
 
 .button input[type='button'] {
-    color: $link-dark-blue;
+    color: colors.$link-dark-blue;
     text-transform: uppercase;
 }
 
@@ -460,7 +463,7 @@ dd.date {
 .alert-success {
     background-color: #dff0d8;
     border-color: rgba(4, 95, 127, .54);
-    color: $link-dark-blue;
+    color: colors.$link-dark-blue;
     font-size: 120%;
     font-variant: small-caps;
     text-align: center;
@@ -472,8 +475,8 @@ dd.date {
 }
 
 #servermessage {
-    background: #F99;
-    border-color: #F99;
+    background: #f99;
+    border-color: #f99;
 }
 
 .icon-circle-arrow-down {
@@ -482,14 +485,14 @@ dd.date {
 
 dt.indentNoLine {
     border-bottom: 0;
-    color: $link-dark-blue;
+    color: colors.$link-dark-blue;
     font-size: 17px;
     margin: 10px 5px 5px 15px;
 }
 
 dt.subHeading {
     border-bottom: 0;
-    color: $dark-gray;
+    color: colors.$dark-gray;
     font-size: 15px;
     margin: 10px 5px 5px 15px;
 }
