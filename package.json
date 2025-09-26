@@ -28,10 +28,10 @@
     "grunt-open": "^0.2.4",
     "grunt-sass": "^4.0.0",
     "load-grunt-tasks": "^5.1.0",
-    "sass": "^1.86.3",
-    "stylelint": "^16.18.0",
+    "sass": "^1.93.2",
+    "stylelint": "^16.24.0",
     "stylelint-config-sass-guidelines": "^12.1.0",
-    "stylelint-order": "^6.0.4",
-    "stylelint-scss": "^6.11.1"
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.1"
   }
 }
