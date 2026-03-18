@@ -26,12 +26,12 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-open": "^0.2.4",
-    "grunt-sass": "^4.0.0",
+    "grunt-sass": "^4.1.0",
     "load-grunt-tasks": "^5.1.0",
-    "sass": "^1.93.2",
-    "stylelint": "^16.24.0",
-    "stylelint-config-sass-guidelines": "^12.1.0",
-    "stylelint-order": "^7.0.0",
-    "stylelint-scss": "^6.12.1"
+    "sass": "^1.98.0",
+    "stylelint": "^17.4.0",
+    "stylelint-config-sass-guidelines": "^13.0.0",
+    "stylelint-order": "^8.0.0",
+    "stylelint-scss": "^7.0.0"
   }
 }
